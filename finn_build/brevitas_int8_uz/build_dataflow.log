@@ -1,0 +1,417 @@
+[2025-10-29 23:24:49,037] Running step: step_qonnx_to_finn [1/19]
+[2025-10-29 23:24:49,114] /finn_repo/deps/qonnx/src/qonnx/transformation/extract_conv_bias.py:52: UserWarning: Could not extract bias from node input: "Quant_0_out0"
+[2025-10-29 23:24:49,114] input: "Quant_1_out0"
+[2025-10-29 23:24:49,114] input: "Quant_2_out0"
+[2025-10-29 23:24:49,114] output: "Conv_0_out0"
+[2025-10-29 23:24:49,114] name: "Conv_0"
+[2025-10-29 23:24:49,114] op_type: "Conv"
+[2025-10-29 23:24:49,114] attribute {
+[2025-10-29 23:24:49,114]   name: "dilations"
+[2025-10-29 23:24:49,114]   ints: 1
+[2025-10-29 23:24:49,114]   ints: 1
+[2025-10-29 23:24:49,114]   type: INTS
+[2025-10-29 23:24:49,114] }
+[2025-10-29 23:24:49,114] attribute {
+[2025-10-29 23:24:49,114]   name: "group"
+[2025-10-29 23:24:49,114]   i: 1
+[2025-10-29 23:24:49,114]   type: INT
+[2025-10-29 23:24:49,114] }
+[2025-10-29 23:24:49,114] attribute {
+[2025-10-29 23:24:49,114]   name: "kernel_shape"
+[2025-10-29 23:24:49,114]   ints: 3
+[2025-10-29 23:24:49,114]   ints: 3
+[2025-10-29 23:24:49,114]   type: INTS
+[2025-10-29 23:24:49,114] }
+[2025-10-29 23:24:49,114] attribute {
+[2025-10-29 23:24:49,114]   name: "pads"
+[2025-10-29 23:24:49,114]   ints: 1
+[2025-10-29 23:24:49,115]   ints: 1
+[2025-10-29 23:24:49,115]   ints: 1
+[2025-10-29 23:24:49,115]   ints: 1
+[2025-10-29 23:24:49,115]   type: INTS
+[2025-10-29 23:24:49,115] }
+[2025-10-29 23:24:49,115] attribute {
+[2025-10-29 23:24:49,115]   name: "strides"
+[2025-10-29 23:24:49,115]   ints: 1
+[2025-10-29 23:24:49,115]   ints: 1
+[2025-10-29 23:24:49,115]   type: INTS
+[2025-10-29 23:24:49,115] }
+[2025-10-29 23:24:49,115] 
+[2025-10-29 23:24:49,115]   warnings.warn(f"Could not extract bias from node {n}")
+[2025-10-29 23:24:49,115] /finn_repo/deps/qonnx/src/qonnx/transformation/extract_conv_bias.py:52: UserWarning: Could not extract bias from node input: "MaxPool_0_out0"
+[2025-10-29 23:24:49,115] input: "Quant_3_out0"
+[2025-10-29 23:24:49,115] input: "Quant_4_out0"
+[2025-10-29 23:24:49,115] output: "Conv_1_out0"
+[2025-10-29 23:24:49,115] name: "Conv_1"
+[2025-10-29 23:24:49,115] op_type: "Conv"
+[2025-10-29 23:24:49,115] attribute {
+[2025-10-29 23:24:49,115]   name: "dilations"
+[2025-10-29 23:24:49,115]   ints: 1
+[2025-10-29 23:24:49,115]   ints: 1
+[2025-10-29 23:24:49,115]   type: INTS
+[2025-10-29 23:24:49,115] }
+[2025-10-29 23:24:49,115] attribute {
+[2025-10-29 23:24:49,115]   name: "group"
+[2025-10-29 23:24:49,115]   i: 1
+[2025-10-29 23:24:49,115]   type: INT
+[2025-10-29 23:24:49,115] }
+[2025-10-29 23:24:49,115] attribute {
+[2025-10-29 23:24:49,115]   name: "kernel_shape"
+[2025-10-29 23:24:49,115]   ints: 3
+[2025-10-29 23:24:49,115]   ints: 3
+[2025-10-29 23:24:49,115]   type: INTS
+[2025-10-29 23:24:49,115] }
+[2025-10-29 23:24:49,115] attribute {
+[2025-10-29 23:24:49,115]   name: "pads"
+[2025-10-29 23:24:49,115]   ints: 1
+[2025-10-29 23:24:49,116]   ints: 1
+[2025-10-29 23:24:49,116]   ints: 1
+[2025-10-29 23:24:49,116]   ints: 1
+[2025-10-29 23:24:49,116]   type: INTS
+[2025-10-29 23:24:49,116] }
+[2025-10-29 23:24:49,116] attribute {
+[2025-10-29 23:24:49,116]   name: "strides"
+[2025-10-29 23:24:49,116]   ints: 1
+[2025-10-29 23:24:49,116]   ints: 1
+[2025-10-29 23:24:49,116]   type: INTS
+[2025-10-29 23:24:49,116] }
+[2025-10-29 23:24:49,116] 
+[2025-10-29 23:24:49,116]   warnings.warn(f"Could not extract bias from node {n}")
+[2025-10-29 23:24:49,118] /finn_repo/deps/qonnx/src/qonnx/transformation/gemm_to_matmul.py:57: UserWarning: The GemmToMatMul transformation only offers explicit support for version 9 of the Gemm node, but the ONNX version of the supplied model is 17. Thus the transformation may fail or return incomplete results.
+[2025-10-29 23:24:49,118]   warnings.warn(
+[2025-10-29 23:32:43,985] Running step: step_qonnx_to_finn [1/19]
+[2025-10-29 23:32:44,057] /finn_repo/deps/qonnx/src/qonnx/transformation/extract_conv_bias.py:52: UserWarning: Could not extract bias from node input: "Quant_0_out0"
+[2025-10-29 23:32:44,057] input: "Quant_1_out0"
+[2025-10-29 23:32:44,057] input: "Quant_2_out0"
+[2025-10-29 23:32:44,057] output: "Conv_0_out0"
+[2025-10-29 23:32:44,057] name: "Conv_0"
+[2025-10-29 23:32:44,057] op_type: "Conv"
+[2025-10-29 23:32:44,057] attribute {
+[2025-10-29 23:32:44,057]   name: "dilations"
+[2025-10-29 23:32:44,057]   ints: 1
+[2025-10-29 23:32:44,057]   ints: 1
+[2025-10-29 23:32:44,057]   type: INTS
+[2025-10-29 23:32:44,057] }
+[2025-10-29 23:32:44,057] attribute {
+[2025-10-29 23:32:44,057]   name: "group"
+[2025-10-29 23:32:44,057]   i: 1
+[2025-10-29 23:32:44,058]   type: INT
+[2025-10-29 23:32:44,058] }
+[2025-10-29 23:32:44,058] attribute {
+[2025-10-29 23:32:44,058]   name: "kernel_shape"
+[2025-10-29 23:32:44,058]   ints: 3
+[2025-10-29 23:32:44,058]   ints: 3
+[2025-10-29 23:32:44,058]   type: INTS
+[2025-10-29 23:32:44,058] }
+[2025-10-29 23:32:44,058] attribute {
+[2025-10-29 23:32:44,058]   name: "pads"
+[2025-10-29 23:32:44,058]   ints: 1
+[2025-10-29 23:32:44,058]   ints: 1
+[2025-10-29 23:32:44,058]   ints: 1
+[2025-10-29 23:32:44,058]   ints: 1
+[2025-10-29 23:32:44,058]   type: INTS
+[2025-10-29 23:32:44,058] }
+[2025-10-29 23:32:44,058] attribute {
+[2025-10-29 23:32:44,058]   name: "strides"
+[2025-10-29 23:32:44,058]   ints: 1
+[2025-10-29 23:32:44,058]   ints: 1
+[2025-10-29 23:32:44,058]   type: INTS
+[2025-10-29 23:32:44,058] }
+[2025-10-29 23:32:44,058] 
+[2025-10-29 23:32:44,058]   warnings.warn(f"Could not extract bias from node {n}")
+[2025-10-29 23:32:44,058] /finn_repo/deps/qonnx/src/qonnx/transformation/extract_conv_bias.py:52: UserWarning: Could not extract bias from node input: "MaxPool_0_out0"
+[2025-10-29 23:32:44,058] input: "Quant_3_out0"
+[2025-10-29 23:32:44,058] input: "Quant_4_out0"
+[2025-10-29 23:32:44,058] output: "Conv_1_out0"
+[2025-10-29 23:32:44,058] name: "Conv_1"
+[2025-10-29 23:32:44,058] op_type: "Conv"
+[2025-10-29 23:32:44,058] attribute {
+[2025-10-29 23:32:44,058]   name: "dilations"
+[2025-10-29 23:32:44,058]   ints: 1
+[2025-10-29 23:32:44,058]   ints: 1
+[2025-10-29 23:32:44,058]   type: INTS
+[2025-10-29 23:32:44,058] }
+[2025-10-29 23:32:44,058] attribute {
+[2025-10-29 23:32:44,059]   name: "group"
+[2025-10-29 23:32:44,059]   i: 1
+[2025-10-29 23:32:44,059]   type: INT
+[2025-10-29 23:32:44,059] }
+[2025-10-29 23:32:44,059] attribute {
+[2025-10-29 23:32:44,059]   name: "kernel_shape"
+[2025-10-29 23:32:44,059]   ints: 3
+[2025-10-29 23:32:44,059]   ints: 3
+[2025-10-29 23:32:44,059]   type: INTS
+[2025-10-29 23:32:44,059] }
+[2025-10-29 23:32:44,059] attribute {
+[2025-10-29 23:32:44,059]   name: "pads"
+[2025-10-29 23:32:44,059]   ints: 1
+[2025-10-29 23:32:44,059]   ints: 1
+[2025-10-29 23:32:44,059]   ints: 1
+[2025-10-29 23:32:44,059]   ints: 1
+[2025-10-29 23:32:44,059]   type: INTS
+[2025-10-29 23:32:44,059] }
+[2025-10-29 23:32:44,059] attribute {
+[2025-10-29 23:32:44,059]   name: "strides"
+[2025-10-29 23:32:44,059]   ints: 1
+[2025-10-29 23:32:44,059]   ints: 1
+[2025-10-29 23:32:44,059]   type: INTS
+[2025-10-29 23:32:44,059] }
+[2025-10-29 23:32:44,059] 
+[2025-10-29 23:32:44,059]   warnings.warn(f"Could not extract bias from node {n}")
+[2025-10-29 23:32:44,061] /finn_repo/deps/qonnx/src/qonnx/transformation/gemm_to_matmul.py:57: UserWarning: The GemmToMatMul transformation only offers explicit support for version 9 of the Gemm node, but the ONNX version of the supplied model is 17. Thus the transformation may fail or return incomplete results.
+[2025-10-29 23:32:44,062]   warnings.warn(
+[2025-10-29 23:35:24,583] Running step: step_qonnx_to_finn [1/19]
+[2025-10-29 23:35:24,655] /finn_repo/deps/qonnx/src/qonnx/transformation/extract_conv_bias.py:52: UserWarning: Could not extract bias from node input: "Quant_0_out0"
+[2025-10-29 23:35:24,655] input: "Quant_1_out0"
+[2025-10-29 23:35:24,655] input: "Quant_2_out0"
+[2025-10-29 23:35:24,655] output: "Conv_0_out0"
+[2025-10-29 23:35:24,655] name: "Conv_0"
+[2025-10-29 23:35:24,655] op_type: "Conv"
+[2025-10-29 23:35:24,655] attribute {
+[2025-10-29 23:35:24,655]   name: "dilations"
+[2025-10-29 23:35:24,655]   ints: 1
+[2025-10-29 23:35:24,655]   ints: 1
+[2025-10-29 23:35:24,655]   type: INTS
+[2025-10-29 23:35:24,655] }
+[2025-10-29 23:35:24,655] attribute {
+[2025-10-29 23:35:24,655]   name: "group"
+[2025-10-29 23:35:24,655]   i: 1
+[2025-10-29 23:35:24,655]   type: INT
+[2025-10-29 23:35:24,655] }
+[2025-10-29 23:35:24,655] attribute {
+[2025-10-29 23:35:24,655]   name: "kernel_shape"
+[2025-10-29 23:35:24,655]   ints: 3
+[2025-10-29 23:35:24,655]   ints: 3
+[2025-10-29 23:35:24,655]   type: INTS
+[2025-10-29 23:35:24,656] }
+[2025-10-29 23:35:24,656] attribute {
+[2025-10-29 23:35:24,656]   name: "pads"
+[2025-10-29 23:35:24,656]   ints: 1
+[2025-10-29 23:35:24,656]   ints: 1
+[2025-10-29 23:35:24,656]   ints: 1
+[2025-10-29 23:35:24,656]   ints: 1
+[2025-10-29 23:35:24,656]   type: INTS
+[2025-10-29 23:35:24,656] }
+[2025-10-29 23:35:24,656] attribute {
+[2025-10-29 23:35:24,656]   name: "strides"
+[2025-10-29 23:35:24,656]   ints: 1
+[2025-10-29 23:35:24,656]   ints: 1
+[2025-10-29 23:35:24,656]   type: INTS
+[2025-10-29 23:35:24,656] }
+[2025-10-29 23:35:24,656] 
+[2025-10-29 23:35:24,656]   warnings.warn(f"Could not extract bias from node {n}")
+[2025-10-29 23:35:24,656] /finn_repo/deps/qonnx/src/qonnx/transformation/extract_conv_bias.py:52: UserWarning: Could not extract bias from node input: "MaxPool_0_out0"
+[2025-10-29 23:35:24,656] input: "Quant_3_out0"
+[2025-10-29 23:35:24,656] input: "Quant_4_out0"
+[2025-10-29 23:35:24,656] output: "Conv_1_out0"
+[2025-10-29 23:35:24,656] name: "Conv_1"
+[2025-10-29 23:35:24,656] op_type: "Conv"
+[2025-10-29 23:35:24,656] attribute {
+[2025-10-29 23:35:24,656]   name: "dilations"
+[2025-10-29 23:35:24,656]   ints: 1
+[2025-10-29 23:35:24,656]   ints: 1
+[2025-10-29 23:35:24,656]   type: INTS
+[2025-10-29 23:35:24,656] }
+[2025-10-29 23:35:24,656] attribute {
+[2025-10-29 23:35:24,656]   name: "group"
+[2025-10-29 23:35:24,656]   i: 1
+[2025-10-29 23:35:24,656]   type: INT
+[2025-10-29 23:35:24,656] }
+[2025-10-29 23:35:24,656] attribute {
+[2025-10-29 23:35:24,656]   name: "kernel_shape"
+[2025-10-29 23:35:24,656]   ints: 3
+[2025-10-29 23:35:24,656]   ints: 3
+[2025-10-29 23:35:24,656]   type: INTS
+[2025-10-29 23:35:24,656] }
+[2025-10-29 23:35:24,657] attribute {
+[2025-10-29 23:35:24,657]   name: "pads"
+[2025-10-29 23:35:24,657]   ints: 1
+[2025-10-29 23:35:24,657]   ints: 1
+[2025-10-29 23:35:24,657]   ints: 1
+[2025-10-29 23:35:24,657]   ints: 1
+[2025-10-29 23:35:24,657]   type: INTS
+[2025-10-29 23:35:24,657] }
+[2025-10-29 23:35:24,657] attribute {
+[2025-10-29 23:35:24,657]   name: "strides"
+[2025-10-29 23:35:24,657]   ints: 1
+[2025-10-29 23:35:24,657]   ints: 1
+[2025-10-29 23:35:24,657]   type: INTS
+[2025-10-29 23:35:24,657] }
+[2025-10-29 23:35:24,657] 
+[2025-10-29 23:35:24,657]   warnings.warn(f"Could not extract bias from node {n}")
+[2025-10-29 23:35:24,659] /finn_repo/deps/qonnx/src/qonnx/transformation/gemm_to_matmul.py:57: UserWarning: The GemmToMatMul transformation only offers explicit support for version 9 of the Gemm node, but the ONNX version of the supplied model is 17. Thus the transformation may fail or return incomplete results.
+[2025-10-29 23:35:24,659]   warnings.warn(
+[2025-10-29 23:40:20,697] Running step: step_qonnx_to_finn [1/19]
+[2025-10-29 23:40:20,769] /finn_repo/deps/qonnx/src/qonnx/transformation/extract_conv_bias.py:52: UserWarning: Could not extract bias from node input: "Quant_0_out0"
+[2025-10-29 23:40:20,769] input: "Quant_1_out0"
+[2025-10-29 23:40:20,769] input: "Quant_2_out0"
+[2025-10-29 23:40:20,769] output: "Conv_0_out0"
+[2025-10-29 23:40:20,769] name: "Conv_0"
+[2025-10-29 23:40:20,769] op_type: "Conv"
+[2025-10-29 23:40:20,769] attribute {
+[2025-10-29 23:40:20,769]   name: "dilations"
+[2025-10-29 23:40:20,769]   ints: 1
+[2025-10-29 23:40:20,769]   ints: 1
+[2025-10-29 23:40:20,769]   type: INTS
+[2025-10-29 23:40:20,769] }
+[2025-10-29 23:40:20,769] attribute {
+[2025-10-29 23:40:20,769]   name: "group"
+[2025-10-29 23:40:20,769]   i: 1
+[2025-10-29 23:40:20,769]   type: INT
+[2025-10-29 23:40:20,769] }
+[2025-10-29 23:40:20,769] attribute {
+[2025-10-29 23:40:20,769]   name: "kernel_shape"
+[2025-10-29 23:40:20,769]   ints: 3
+[2025-10-29 23:40:20,769]   ints: 3
+[2025-10-29 23:40:20,769]   type: INTS
+[2025-10-29 23:40:20,769] }
+[2025-10-29 23:40:20,769] attribute {
+[2025-10-29 23:40:20,769]   name: "pads"
+[2025-10-29 23:40:20,769]   ints: 1
+[2025-10-29 23:40:20,769]   ints: 1
+[2025-10-29 23:40:20,769]   ints: 1
+[2025-10-29 23:40:20,769]   ints: 1
+[2025-10-29 23:40:20,769]   type: INTS
+[2025-10-29 23:40:20,769] }
+[2025-10-29 23:40:20,769] attribute {
+[2025-10-29 23:40:20,769]   name: "strides"
+[2025-10-29 23:40:20,770]   ints: 1
+[2025-10-29 23:40:20,770]   ints: 1
+[2025-10-29 23:40:20,770]   type: INTS
+[2025-10-29 23:40:20,770] }
+[2025-10-29 23:40:20,770] 
+[2025-10-29 23:40:20,770]   warnings.warn(f"Could not extract bias from node {n}")
+[2025-10-29 23:40:20,770] /finn_repo/deps/qonnx/src/qonnx/transformation/extract_conv_bias.py:52: UserWarning: Could not extract bias from node input: "MaxPool_0_out0"
+[2025-10-29 23:40:20,770] input: "Quant_3_out0"
+[2025-10-29 23:40:20,770] input: "Quant_4_out0"
+[2025-10-29 23:40:20,770] output: "Conv_1_out0"
+[2025-10-29 23:40:20,770] name: "Conv_1"
+[2025-10-29 23:40:20,770] op_type: "Conv"
+[2025-10-29 23:40:20,770] attribute {
+[2025-10-29 23:40:20,770]   name: "dilations"
+[2025-10-29 23:40:20,770]   ints: 1
+[2025-10-29 23:40:20,770]   ints: 1
+[2025-10-29 23:40:20,770]   type: INTS
+[2025-10-29 23:40:20,770] }
+[2025-10-29 23:40:20,770] attribute {
+[2025-10-29 23:40:20,770]   name: "group"
+[2025-10-29 23:40:20,770]   i: 1
+[2025-10-29 23:40:20,770]   type: INT
+[2025-10-29 23:40:20,770] }
+[2025-10-29 23:40:20,770] attribute {
+[2025-10-29 23:40:20,770]   name: "kernel_shape"
+[2025-10-29 23:40:20,770]   ints: 3
+[2025-10-29 23:40:20,770]   ints: 3
+[2025-10-29 23:40:20,770]   type: INTS
+[2025-10-29 23:40:20,770] }
+[2025-10-29 23:40:20,770] attribute {
+[2025-10-29 23:40:20,770]   name: "pads"
+[2025-10-29 23:40:20,770]   ints: 1
+[2025-10-29 23:40:20,770]   ints: 1
+[2025-10-29 23:40:20,770]   ints: 1
+[2025-10-29 23:40:20,770]   ints: 1
+[2025-10-29 23:40:20,770]   type: INTS
+[2025-10-29 23:40:20,770] }
+[2025-10-29 23:40:20,770] attribute {
+[2025-10-29 23:40:20,770]   name: "strides"
+[2025-10-29 23:40:20,771]   ints: 1
+[2025-10-29 23:40:20,771]   ints: 1
+[2025-10-29 23:40:20,771]   type: INTS
+[2025-10-29 23:40:20,771] }
+[2025-10-29 23:40:20,771] 
+[2025-10-29 23:40:20,771]   warnings.warn(f"Could not extract bias from node {n}")
+[2025-10-29 23:40:20,773] /finn_repo/deps/qonnx/src/qonnx/transformation/gemm_to_matmul.py:57: UserWarning: The GemmToMatMul transformation only offers explicit support for version 9 of the Gemm node, but the ONNX version of the supplied model is 17. Thus the transformation may fail or return incomplete results.
+[2025-10-29 23:40:20,773]   warnings.warn(
+[2025-10-29 23:40:21,028] Running step: step_tidy_up [2/19]
+[2025-10-29 23:40:21,080] Running step: step_streamline [3/19]
+[2025-10-29 23:40:22,791] /finn_repo/deps/qonnx/src/qonnx/transformation/infer_data_layouts.py:127: UserWarning: Assuming 4D input is NCHW
+[2025-10-29 23:40:22,791]   warnings.warn("Assuming 4D input is NCHW")
+[2025-10-29 23:40:22,800] Running step: step_convert_to_hw [4/19]
+[2025-10-29 23:40:22,873] Running step: step_create_dataflow_partition [5/19]
+[2025-10-29 23:44:45,142] Running step: step_qonnx_to_finn [1/19]
+[2025-10-29 23:44:45,216] /finn_repo/deps/qonnx/src/qonnx/transformation/extract_conv_bias.py:52: UserWarning: Could not extract bias from node input: "Quant_0_out0"
+[2025-10-29 23:44:45,216] input: "Quant_1_out0"
+[2025-10-29 23:44:45,216] input: "Quant_2_out0"
+[2025-10-29 23:44:45,216] output: "Conv_0_out0"
+[2025-10-29 23:44:45,216] name: "Conv_0"
+[2025-10-29 23:44:45,216] op_type: "Conv"
+[2025-10-29 23:44:45,216] attribute {
+[2025-10-29 23:44:45,216]   name: "dilations"
+[2025-10-29 23:44:45,216]   ints: 1
+[2025-10-29 23:44:45,216]   ints: 1
+[2025-10-29 23:44:45,216]   type: INTS
+[2025-10-29 23:44:45,216] }
+[2025-10-29 23:44:45,216] attribute {
+[2025-10-29 23:44:45,216]   name: "group"
+[2025-10-29 23:44:45,216]   i: 1
+[2025-10-29 23:44:45,216]   type: INT
+[2025-10-29 23:44:45,216] }
+[2025-10-29 23:44:45,216] attribute {
+[2025-10-29 23:44:45,216]   name: "kernel_shape"
+[2025-10-29 23:44:45,216]   ints: 3
+[2025-10-29 23:44:45,216]   ints: 3
+[2025-10-29 23:44:45,216]   type: INTS
+[2025-10-29 23:44:45,216] }
+[2025-10-29 23:44:45,216] attribute {
+[2025-10-29 23:44:45,216]   name: "pads"
+[2025-10-29 23:44:45,216]   ints: 1
+[2025-10-29 23:44:45,216]   ints: 1
+[2025-10-29 23:44:45,216]   ints: 1
+[2025-10-29 23:44:45,216]   ints: 1
+[2025-10-29 23:44:45,217]   type: INTS
+[2025-10-29 23:44:45,217] }
+[2025-10-29 23:44:45,217] attribute {
+[2025-10-29 23:44:45,217]   name: "strides"
+[2025-10-29 23:44:45,217]   ints: 1
+[2025-10-29 23:44:45,217]   ints: 1
+[2025-10-29 23:44:45,217]   type: INTS
+[2025-10-29 23:44:45,217] }
+[2025-10-29 23:44:45,217] 
+[2025-10-29 23:44:45,217]   warnings.warn(f"Could not extract bias from node {n}")
+[2025-10-29 23:44:45,217] /finn_repo/deps/qonnx/src/qonnx/transformation/extract_conv_bias.py:52: UserWarning: Could not extract bias from node input: "MaxPool_0_out0"
+[2025-10-29 23:44:45,217] input: "Quant_3_out0"
+[2025-10-29 23:44:45,217] input: "Quant_4_out0"
+[2025-10-29 23:44:45,217] output: "Conv_1_out0"
+[2025-10-29 23:44:45,217] name: "Conv_1"
+[2025-10-29 23:44:45,217] op_type: "Conv"
+[2025-10-29 23:44:45,217] attribute {
+[2025-10-29 23:44:45,217]   name: "dilations"
+[2025-10-29 23:44:45,217]   ints: 1
+[2025-10-29 23:44:45,217]   ints: 1
+[2025-10-29 23:44:45,217]   type: INTS
+[2025-10-29 23:44:45,217] }
+[2025-10-29 23:44:45,217] attribute {
+[2025-10-29 23:44:45,217]   name: "group"
+[2025-10-29 23:44:45,217]   i: 1
+[2025-10-29 23:44:45,217]   type: INT
+[2025-10-29 23:44:45,217] }
+[2025-10-29 23:44:45,217] attribute {
+[2025-10-29 23:44:45,217]   name: "kernel_shape"
+[2025-10-29 23:44:45,217]   ints: 3
+[2025-10-29 23:44:45,217]   ints: 3
+[2025-10-29 23:44:45,217]   type: INTS
+[2025-10-29 23:44:45,217] }
+[2025-10-29 23:44:45,217] attribute {
+[2025-10-29 23:44:45,217]   name: "pads"
+[2025-10-29 23:44:45,217]   ints: 1
+[2025-10-29 23:44:45,217]   ints: 1
+[2025-10-29 23:44:45,217]   ints: 1
+[2025-10-29 23:44:45,217]   ints: 1
+[2025-10-29 23:44:45,217]   type: INTS
+[2025-10-29 23:44:45,218] }
+[2025-10-29 23:44:45,218] attribute {
+[2025-10-29 23:44:45,218]   name: "strides"
+[2025-10-29 23:44:45,218]   ints: 1
+[2025-10-29 23:44:45,218]   ints: 1
+[2025-10-29 23:44:45,218]   type: INTS
+[2025-10-29 23:44:45,218] }
+[2025-10-29 23:44:45,218] 
+[2025-10-29 23:44:45,218]   warnings.warn(f"Could not extract bias from node {n}")
+[2025-10-29 23:44:45,220] /finn_repo/deps/qonnx/src/qonnx/transformation/gemm_to_matmul.py:57: UserWarning: The GemmToMatMul transformation only offers explicit support for version 9 of the Gemm node, but the ONNX version of the supplied model is 17. Thus the transformation may fail or return incomplete results.
+[2025-10-29 23:44:45,220]   warnings.warn(
+[2025-10-29 23:44:45,486] Running step: step_tidy_up [2/19]
+[2025-10-29 23:44:45,538] Running step: step_streamline [3/19]
+[2025-10-29 23:44:47,138] /finn_repo/deps/qonnx/src/qonnx/transformation/infer_data_layouts.py:127: UserWarning: Assuming 4D input is NCHW
+[2025-10-29 23:44:47,138]   warnings.warn("Assuming 4D input is NCHW")
+[2025-10-29 23:44:47,147] Running step: step_convert_to_hw [4/19]
+[2025-10-29 23:44:47,219] Running step: step_create_dataflow_partition [5/19]
