@@ -3,8 +3,8 @@
 """
 infer_test.py - Run inference on trained gesture recognition model.
 Usage:
-  python scripts/infer_test.py --model models/cnn_gesture_v1.pt --source cam
-  python scripts/infer_test.py --model models/cnn_gesture_v1.pt --source data/test/open_hand.jpg
+  python scripts/infer_test.py --model models/py_models/cnn_gesture_v1.pt --source cam
+  python scripts/infer_test.py --model models/py_models/cnn_gesture_v1.pt --source data/test/open_hand.jpg
 """
 
 import argparse
@@ -14,8 +14,13 @@ import time
 from torchvision import transforms
 from PIL import Image
 import numpy as np
+import mediapipe as mp
 
-from models.cnn_gesture_v1 import GestureNet
+# Optional: load label names
+import json
+import os
+
+from models.py_models.cnn_gesture_v1 import GestureNet
 
 # -------------------------------
 # Argument parsing
@@ -33,12 +38,8 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print(f"Using device: {device}")
 
 
-# Optional: load label names
-import json
-import os
-
 # --- Determine number of classes ---
-num_classes = 24 # Default for SignMNIST (A-Y, excluding J, Z)
+num_classes = 5 # Default for SignMNIST (A-Y, excluding J, Z)
 label_map = None # Initialize label_map
 
 if os.path.exists(args.labels):
@@ -55,15 +56,18 @@ if os.path.exists(args.labels):
 
 # --- Create Fallback Label Map IF NOT loaded from file ---
 if label_map is None:
-    print("Using default SignMNIST labels (A-Y, excluding J/Z).")
-    # Labels 0-8 are A-I
-    label_map = {str(i): chr(ord('A') + i) for i in range(9)}
-    # Labels 9-23 map to K-Y (skip J)
-    for i in range(9, 24):
-        label_map[str(i)] = chr(ord('A') + i + 1) # +1 to skip 'J'
-    # num_classes should ideally be derived dynamically earlier if possible,
-    # but for fallback, 24 is assumed for SignMNIST.
-    num_classes = 24
+    print("Using default 5-class labels (A, I, L, O, V).")
+    # Define the specific mapping for your chosen classes
+    label_map = {
+        '0': 'A',
+        '1': 'L',
+        '2': 'O',
+        '3': 'V',
+        '4': 'I'
+    }
+    num_classes = 5
+
+print(f"Model configured for {num_classes} classes.")
 
 # Load model
 model = GestureNet(num_classes=num_classes)
@@ -84,26 +88,47 @@ model.to(device)
 # -------------------------------
 transform = transforms.Compose([
     transforms.Resize((64, 64)),
-    transforms.Grayscale(),
     transforms.ToTensor(),
     transforms.Normalize((0.5,), (0.5,))
 ])
 
 # -------------------------------
+# Initialize CLAHE object
+# Parameters: clipLimit (contrast limit), tileGridSize (size of subregions)
+# Experiment with these values. Common values are clipLimit=2.0-4.0, tileGridSize=(8,8)
+clahe = cv2.createCLAHE(clipLimit=2.0, tileGridSize=(4,4))
+
+# -------------------------------
+# Initialize MediaPipe Hands
+# -------------------------------
+mp_hands = mp.solutions.hands
+hands = mp_hands.Hands(
+    static_image_mode=False,      # Traite un flux vidéo
+    max_num_hands=1,             # Détecte une seule main
+    min_detection_confidence=0.6, # Seuil de confiance pour détecter une main
+    min_tracking_confidence=0.5) # Seuil pour suivre la main détectée
+mp_drawing = mp.solutions.drawing_utils # Pour dessiner les points/boîtes
+
+# -------------------------------
 # Inference functions
 # -------------------------------
-def predict_image(img_pil):
-    img_pil_gray = img_pil.convert("L")
-    # Apply transform but DON'T add batch dimension yet
-    img_tensor_transformed = transform(img_pil_gray) 
-    
-    # Add batch dimension for inference
+def predict_image(img_pil_gray):
+    """Performs inference on a single grayscale PIL image."""
+    img_tensor_transformed = transform(img_pil_gray)
     img_tensor_batch = img_tensor_transformed.unsqueeze(0).to(device)
+
     with torch.no_grad():
         outputs = model(img_tensor_batch)
-        _, predicted = torch.max(outputs, 1)
-    label = label_map.get(str(predicted.item()), str(predicted.item()))
-    return label, img_tensor_transformed
+        probabilities = torch.softmax(outputs, dim=1)
+        confidence, predicted_idx = torch.max(probabilities, 1)
+        
+    # Convertit l'index prédit (un tenseur/nombre) en chaîne de caractères AVANT la recherche
+    predicted_label_str = str(predicted_idx.item()) 
+    
+    # Utilise .get() pour chercher la lettre; retourne l'index si non trouvé
+    label = label_map.get(predicted_label_str, f"Unknown({predicted_label_str})")
+    
+    return label, confidence.item(), img_tensor_transformed
 
 # --- Function to convert tensor back to displayable image ---
 def tensor_to_cv2_image(tensor):
@@ -133,32 +158,92 @@ def predict_camera():
         print("❌ Cannot open camera.")
         return
 
-    print("🎥 Camera started. Press 'q' to quit.")
+    print("🎥 Camera started. Press 'CTRL + C' to quit.")
+    start_time = time.time()
+    frame_count = 0
+    label, confidence = "N/A", 0.0 # Initial values
+
     while True:
         ret, frame = cap.read()
         if not ret:
             print("⚠️ Failed to grab frame.")
             break
 
-        # Convert frame for inference
-        img_pil = Image.fromarray(cv2.cvtColor(frame, cv2.COLOR_BGR2RGB))
-        label, transformed_tensor = predict_image(img_pil)
+        frame_count += 1
+        frame_rgb = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB) # MediaPipe a besoin de RGB
+        frame_height, frame_width, _ = frame.shape
+        
+        # --- Détection MediaPipe ---
+        results = hands.process(frame_rgb)
+        
+        hand_crop_for_inference = None # Image recadrée à envoyer au CNN
+        
+        if results.multi_hand_landmarks:
+            for hand_landmarks in results.multi_hand_landmarks:
+                # --- Calculer la Bounding Box ---
+                x_coords = [landmark.x for landmark in hand_landmarks.landmark]
+                y_coords = [landmark.y for landmark in hand_landmarks.landmark]
+                x_min, x_max = min(x_coords), max(x_coords)
+                y_min, y_max = min(y_coords), max(y_coords)
 
-        # Convert transformed tensor to displayable image
-        transformed_img_display = tensor_to_cv2_image(transformed_tensor)
+                # Convertir coordonnées normalisées en pixels (avec marge)
+                padding = 0.1 # Ajoute 10% de marge
+                box_x_min = max(0, int((x_min - padding) * frame_width))
+                box_y_min = max(0, int((y_min - padding) * frame_height))
+                box_x_max = min(frame_width, int((x_max + padding) * frame_width))
+                box_y_max = min(frame_height, int((y_max + padding) * frame_height))
 
-        # Display result
-        cv2.putText(frame, f"Gesture: {label}", (30, 50), cv2.FONT_HERSHEY_SIMPLEX, 1.2, (0, 255, 0), 3)
-        cv2.imshow("Camera Feed", frame)
+                # Dessiner la boite sur l'image originale (optionnel)
+                cv2.rectangle(frame, (box_x_min, box_y_min), (box_x_max, box_y_max), (0, 255, 0), 2)
+                # mp_drawing.draw_landmarks(frame, hand_landmarks, mp_hands.HAND_CONNECTIONS) # Dessine les points clés
 
-        # Show transformed image in a separate window
-        cv2.imshow("Transformed Input", transformed_img_display)
+                # --- Recadrer l'image ---
+                # Recadre l'image N&B prétraitée avec CLAHE
+                gray_frame = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+                clahe_frame = clahe.apply(gray_frame)
+                
+                # S'assurer que les coordonnées sont valides
+                if box_y_min < box_y_max and box_x_min < box_x_max:
+                     hand_crop_for_inference = clahe_frame[box_y_min:box_y_max, box_x_min:box_x_max] # Recadrer la version CLAHE
+                
+                break # Traite une seule main
+
+        # --- Inférence sur l'image recadrée (si une main est détectée) ---
+        transformed_img_display = np.zeros((64, 64), dtype=np.uint8) # Image noire si pas de main
+        if hand_crop_for_inference is not None and hand_crop_for_inference.size > 0:
+            try:
+                # Convertir le crop NumPy en PIL pour les transformations
+                hand_crop_pil = Image.fromarray(hand_crop_for_inference) 
+                
+                # Inférence
+                label, confidence, transformed_tensor = predict_image(hand_crop_pil)
+                
+                # Préparer la visualisation du tenseur transformé
+                transformed_img_display = tensor_to_cv2_image(transformed_tensor)
+            except Exception as e:
+                print(f"Erreur pendant l'inférence sur le crop: {e}")
+                label, confidence = "Error", 0.0
+        else:
+            label, confidence = "No Hand", 0.0 # Pas de main détectée
+
+        # Calculate FPS
+        elapsed_time = time.time() - start_time
+        fps = frame_count / elapsed_time if elapsed_time > 0 else 0
+
+        # Display results
+        display_text = f"Gesture: {label} ({confidence*100:.1f}%) FPS: {fps:.1f}"
+        cv2.putText(frame, display_text, (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 0.9, (0, 255, 0), 2)
+        
+        cv2.imshow("Camera Feed + Detection", frame) 
+        cv2.imshow("Input to CNN (Cropped & Transformed)", transformed_img_display) 
 
         if cv2.waitKey(1) & 0xFF == ord('q'):
             break
 
     cap.release()
+    hands.close() # Libérer les ressources MediaPipe
     cv2.destroyAllWindows()
+    print(f"Average FPS: {frame_count / (time.time() - start_time):.1f}")
 
 # -------------------------------
 # Run inference
@@ -167,7 +252,30 @@ if args.source == "cam":
     predict_camera()
 else:
     if not os.path.exists(args.source):
-        raise FileNotFoundError(f"Image file not found: {args.source}")
-    img_pil = Image.open(args.source).convert("RGB")
-    label = predict_image(img_pil)
-    print(f"Predicted gesture: {label}")
+        print(f"❌ Image file not found: {args.source}")
+        exit(1)
+    try:
+        print("Inference on single image not yet updated for MediaPipe cropping.")
+        img_pil = Image.open(args.source)
+        # Convert to grayscale NumPy array for CLAHE
+        img_np_rgb = np.array(img_pil)
+        img_np_gray = cv2.cvtColor(img_np_rgb, cv2.COLOR_RGB2GRAY)
+        
+        # Apply CLAHE
+        clahe_processed_img = clahe.apply(img_np_gray)
+
+        label, confidence, transformed_tensor = predict_image(clahe_processed_img) 
+        print(f"Predicted gesture: {label} (Confidence: {confidence*100:.1f}%)")
+        
+        transformed_img_display = tensor_to_cv2_image(transformed_tensor)
+        
+        # Original (colored if was) and CLAHE versions
+        cv2.imshow("Original Image", img_np_rgb) 
+        cv2.imshow("CLAHE Preprocessed", clahe_processed_img) # <--- NEW WINDOW
+        cv2.imshow("Transformed Input (to Model)", transformed_img_display)
+        print("Press any key in an image window to exit.")
+        cv2.waitKey(0) 
+        cv2.destroyAllWindows()
+        
+    except Exception as e:
+        print(f"Error processing image file {args.source}: {e}")

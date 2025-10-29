@@ -12,7 +12,7 @@ TRAIN_CSV = os.path.join(RAW_DATA_DIR, "sign_mnist_train.csv")
 TEST_CSV = os.path.join(RAW_DATA_DIR, "sign_mnist_test.csv")
 
 # Output directories for ImageFolder structure
-DATA_DIR = "data/processed"
+DATA_DIR = "data/processed/"
 TRAIN_DIR = os.path.join(DATA_DIR, "train")
 VAL_DIR = os.path.join(DATA_DIR, "val")
 TEST_DIR = os.path.join(DATA_DIR, "test")
@@ -21,9 +21,12 @@ TEST_DIR = os.path.join(DATA_DIR, "test")
 VAL_SPLIT_RATIO = 0.2 
 RANDOM_SEED = 42 # for reproducibility
 
+TARGET_CLASSES = [0, 8, 11, 14, 21] # Keep only labels for A (fist), I (pinkie), L (thumb index), O (grip), V (peace)
+TARGET_CLASS_STR = [str(c) for c in TARGET_CLASSES] # String versions for paths
+
 # --- Function to process CSV and save images ---
-def csv_to_image_folders(csv_path, base_output_dir):
-    """Reads SignMNIST CSV and saves images into class folders."""
+def csv_to_image_folders(csv_path, base_output_dir, target_labels):
+    """Reads SignMNIST CSV, filters for target labels, and saves images."""
     print(f"Processing {csv_path}...")
     try:
         df = pd.read_csv(csv_path)
@@ -31,10 +34,14 @@ def csv_to_image_folders(csv_path, base_output_dir):
         print(f"Error: CSV file not found at {csv_path}")
         print("Please ensure the CSV files are in the RAW_DATA_DIR.")
         return None, None # Return None to indicate failure
+    
+    # *** Filter the DataFrame FIRST ***
+    df_filtered = df[df['label'].isin(target_labels)]
+    print(f"  Filtered down to {len(df_filtered)} samples for classes {target_labels}")
 
-    labels = df['label'].values
+    labels = df_filtered['label'].values
     # Drop the label column to get pixel data
-    pixels = df.drop('label', axis=1).values 
+    pixels = df_filtered.drop('label', axis=1).values 
 
     # Create base output directory if it doesn't exist
     os.makedirs(base_output_dir, exist_ok=True)
@@ -64,7 +71,7 @@ def csv_to_image_folders(csv_path, base_output_dir):
         image_labels.append(label)
 
         # Optional: Print progress
-        if (i + 1) % 5000 == 0:
+        if (i + 1) % 1000 == 0:
             print(f"  Saved {i + 1}/{num_images} images...")
 
     print(f"Finished saving images to {base_output_dir}")
@@ -85,14 +92,14 @@ if not os.path.isdir(RAW_DATA_DIR):
 
 # 2. Process the test set first (no splitting needed)
 print("\n--- Processing Test Set ---")
-test_paths, _ = csv_to_image_folders(TEST_CSV, TEST_DIR)
+test_paths, _ = csv_to_image_folders(TEST_CSV, TEST_DIR, TARGET_CLASSES)
 if test_paths is None:
     exit() # Stop if test CSV processing failed
 
 # 3. Process the training set (to a temporary directory initially)
 print("\n--- Processing Training Set ---")
 TEMP_TRAIN_DIR = os.path.join(DATA_DIR, "temp_train") # Temporary holding place
-train_val_paths, train_val_labels = csv_to_image_folders(TRAIN_CSV, TEMP_TRAIN_DIR)
+train_val_paths, train_val_labels = csv_to_image_folders(TRAIN_CSV, TEMP_TRAIN_DIR, TARGET_CLASSES)
 if train_val_paths is None:
     exit() # Stop if train CSV processing failed
 

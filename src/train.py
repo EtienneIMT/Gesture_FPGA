@@ -7,7 +7,7 @@ from torchvision import datasets, transforms
 import os
 
 # Importe la définition du modèle depuis le fichier models/cnn_model.py
-from models.cnn_gesture_v1 import GestureNet 
+from models.py_models.cnn_gesture_v1 import GestureNet 
 
 # --- Configuration ---
 DATA_DIR = "data/processed"
@@ -19,13 +19,26 @@ MODEL_SAVE_PATH_ONNX = "models/cnn_gesture_v1.onnx" # Pour le modèle ONNX
 IMG_SIZE = 64 # Doit correspondre à la Resize et au calcul Linear
 N_CHANNELS = 1 # Car on utilise Grayscale
 BATCH_SIZE = 64
-EPOCHS = 10 # Augmente si nécessaire
+EPOCHS = 6 # Augmente si nécessaire
 LEARNING_RATE = 1e-3
 ONNX_OPSET = 18 # Utilise une version récente compatible FINN
 
 # --- 1. Préparation du Dataset ---
 print("--- Préparation du Dataset ---")
-transform = transforms.Compose([
+
+# Define separate transforms for training (with augmentation) and validation (without)
+train_transform = transforms.Compose([
+    transforms.Resize((IMG_SIZE, IMG_SIZE)),
+    transforms.ColorJitter(brightness=0.3, contrast=0.3), # add if you temporarily convert to RGB then back
+    transforms.Grayscale(num_output_channels=N_CHANNELS),
+    transforms.RandomRotation(15),  # Rotate +/- 15 degrees
+    transforms.RandomAffine(degrees=0, translate=(0.1, 0.1), scale=(0.9, 1.1)), # Shift and zoom slightly
+    transforms.RandomPerspective(distortion_scale=0.2, p=0.4), # Add slight perspective shifts
+    transforms.ToTensor(),
+    transforms.Normalize((0.5,), (0.5,)) 
+])
+
+val_transform = transforms.Compose([
     transforms.Resize((IMG_SIZE, IMG_SIZE)),
     transforms.Grayscale(num_output_channels=N_CHANNELS), # Assure 1 canal
     transforms.ToTensor(),
@@ -33,8 +46,8 @@ transform = transforms.Compose([
 ])
 
 try:
-    train_data = datasets.ImageFolder(TRAIN_DIR, transform=transform)
-    val_data = datasets.ImageFolder(VAL_DIR, transform=transform)
+    train_data = datasets.ImageFolder(TRAIN_DIR, transform=train_transform)
+    val_data = datasets.ImageFolder(VAL_DIR, transform=val_transform)
 
     # Détermine le nombre de classes dynamiquement
     num_classes = len(train_data.classes)
