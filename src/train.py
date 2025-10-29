@@ -19,7 +19,7 @@ MODEL_SAVE_PATH_ONNX = "models/cnn_gesture_v1.onnx" # Pour le modèle ONNX
 IMG_SIZE = 64 # Doit correspondre à la Resize et au calcul Linear
 N_CHANNELS = 1 # Car on utilise Grayscale
 BATCH_SIZE = 64
-EPOCHS = 6 # Augmente si nécessaire
+EPOCHS = 8 # Augmente si nécessaire
 LEARNING_RATE = 1e-3
 ONNX_OPSET = 18 # Utilise une version récente compatible FINN
 
