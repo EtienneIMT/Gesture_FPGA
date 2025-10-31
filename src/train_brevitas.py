@@ -33,8 +33,8 @@ MODEL_SAVE_PATH_PT = "models/cnn_gesture_brevitas_int8.pt"
 MODEL_SAVE_PATH_ONNX = "models/cnn_gesture_brevitas_int8.onnx"  # C'est le fichier QONNX
 
 IMG_SIZE, N_CHANNELS = 64, 1
-BATCH_SIZE, EPOCHS, LR = 64, 2, 1e-3  # Entraîne un peu plus longtemps
-ONNX_OPSET = 17
+BATCH_SIZE, EPOCHS, LR = 64, 8, 1e-3  # Entraîne un peu plus longtemps
+ONNX_OPSET = 13
 
 # --- 1. Préparation du Dataset ---
 print("--- Préparation du Dataset ---")

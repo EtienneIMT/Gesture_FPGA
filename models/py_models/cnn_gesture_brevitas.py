@@ -1,90 +1,72 @@
 import torch.nn as nn
 import torch.nn.functional as F
-# Importer Brevitas
 import brevitas.nn as qnn 
-from brevitas.quant import Int8WeightPerTensorFloat, Int8ActPerTensorFloat, Int8Bias, Uint8ActPerTensorFloat
+from brevitas.quant import (
+    Int8WeightPerTensorFloat, 
+    Int8ActPerTensorFloat, 
+    Int8Bias, 
+    Uint8ActPerTensorFloat
+)
 
 class GestureNet(nn.Module):
     def __init__(self, num_classes=5):
         super(GestureNet, self).__init__()
 
-        # 1. Couche de quantification d'entrée
         self.quant_inp = qnn.QuantIdentity(
-            act_quant=Int8ActPerTensorFloat, # Quantifie l'entrée en INT8
+            act_quant=Int8ActPerTensorFloat, # Entrée signée (-1 à 1)
             return_quant_tensor=True
         )
         
-        # --- Couches Quantifiées (INT8) ---
+        # --- Bloc Conv 1 ---
         self.conv1 = qnn.QuantConv2d(
-            in_channels=1, 
-            out_channels=16, 
-            kernel_size=3, 
-            padding=1,
-            weight_quant=Int8WeightPerTensorFloat, # Poids INT8
-            bias=True,
-            bias_quant=Int8Bias # Biais INT8
-        )
+            in_channels=1, out_channels=16, kernel_size=3, padding=1,
+            weight_quant=Int8WeightPerTensorFloat, bias=True, bias_quant=Int8Bias)
         self.relu1 = qnn.QuantReLU(
-            act_quant=Uint8ActPerTensorFloat, # Activation UINT8 (car INT8 pas optimisé avec ReLU)
-            return_quant_tensor=True # Important pour passer au suivant
-        )
-        self.pool1 = nn.MaxPool2d(2, 2)
-        
-        self.conv2 = qnn.QuantConv2d(
-            in_channels=16, 
-            out_channels=32, 
-            kernel_size=3, 
-            padding=1,
-            weight_quant=Int8WeightPerTensorFloat,
-            bias=True,
-            bias_quant=Int8Bias
-        )
-        self.relu2 = qnn.QuantReLU(
-            act_quant=Uint8ActPerTensorFloat,
-            return_quant_tensor=True
-        )
-        self.pool2 = nn.MaxPool2d(2, 2)
+            act_quant=Uint8ActPerTensorFloat, # Sortie NON SIGNÉE
+            return_quant_tensor=True)
+        self.pool1 = nn.MaxPool2d(kernel_size=2, stride=2) # Couche standard, transmet UINT8
 
+        # --- Bloc Conv 2 ---
+        # L'entrée de conv2 est la sortie de pool1 (donc UINT8)
+        # Brevitas gère cela automatiquement
+        self.conv2 = qnn.QuantConv2d(
+            in_channels=16, out_channels=32, kernel_size=3, padding=1,
+            weight_quant=Int8WeightPerTensorFloat, bias=True, bias_quant=Int8Bias)
+        self.relu2 = qnn.QuantReLU(
+            act_quant=Uint8ActPerTensorFloat, # Sortie NON SIGNÉE
+            return_quant_tensor=True)
+        self.pool2 = nn.MaxPool2d(kernel_size=2, stride=2) # Couche standard, transmet UINT8
+
+        # --- Couche Flatten ---
         self.flatten = nn.Flatten()
-        
-        # Taille après 2 poolings sur du 64x64 -> 16x16
+
+        # --- Couches FC ---
+        # L'entrée de fc1 est la sortie de pool2 (donc UINT8)
         self.fc1 = qnn.QuantLinear(
-            32 * 16 * 16, 
-            128,
-            weight_quant=Int8WeightPerTensorFloat,
-            bias=True,
-            bias_quant=Int8Bias
-        )
+            32 * 16 * 16, 128,
+            weight_quant=Int8WeightPerTensorFloat, bias=True, bias_quant=Int8Bias)
         self.relu3 = qnn.QuantReLU(
-            act_quant=Uint8ActPerTensorFloat,
-            return_quant_tensor=True
-        )
-        
-        # Couche finale (souvent non quantifiée ou quantifiée différemment)
+            act_quant=Uint8ActPerTensorFloat, # Sortie NON SIGNÉE
+            return_quant_tensor=True)
+
+        # Couche de sortie
         self.fc2 = qnn.QuantLinear(
-            128, 
-            num_classes,
-            weight_quant=Int8WeightPerTensorFloat,
-            bias=True,
-            bias_quant=Int8Bias
-        )
+            128, num_classes,
+            weight_quant=Int8WeightPerTensorFloat, bias=True, bias_quant=Int8Bias)
 
     def forward(self, x):
-        # L'activation d'entrée doit aussi être quantifiée
-        # (On peut ajouter un qnn.QuantIdentity() ici, 
-        # mais Brevitas peut le gérer à l'export)
-
-        # Applique la quantification d'entrée D'ABORD
         x = self.quant_inp(x)
         
         x = self.conv1(x)
         x = self.relu1(x)
         x = self.pool1(x)
-        
+        # Pas besoin de quant_ident1
+
         x = self.conv2(x)
         x = self.relu2(x)
         x = self.pool2(x)
-        
+        # Pas besoin de quant_ident2
+
         x = self.flatten(x)
         
         x = self.fc1(x)

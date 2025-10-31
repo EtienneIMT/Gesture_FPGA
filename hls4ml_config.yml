@@ -1,0 +1,19 @@
+# --- Fichier de Configuration HLS4ML ---
+
+# 1. Configuration du Modèle
+ModelType: QONNX  
+OnnxModel: models/cnn_gesture_brevitas_int8.onnx # Chemin corrigé
+OutputDir: hls4ml_build/ 
+
+# 2. Configuration Matérielle (Ta carte UltraZed)
+Backend: Vivado 
+Part: xczu7ev-ffvc1156-2-e 
+ClockPeriod: 10 
+
+# 3. Configuration des E/S
+IOType: io_stream 
+InputShape: [1, 1, 64, 64] # (Batch=1, C=1, H=64, W=64)
+
+# 4. Stratégie de Build
+# Commençons par 64 pour garantir que le build passe
+DefaultReuseFactor: 64
