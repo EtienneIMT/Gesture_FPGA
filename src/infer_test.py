@@ -3,8 +3,8 @@
 """
 infer_test.py - Run inference on trained gesture recognition model.
 Usage:
-  python scripts/infer_test.py --model models/py_models/cnn_gesture_v1.pt --source cam
-  python scripts/infer_test.py --model models/py_models/cnn_gesture_v1.pt --source data/test/open_hand.jpg
+  python scripts/infer_test.py --model models/py_models/cnn_gesture_brevitas_int8.pt --source cam
+  python scripts/infer_test.py --model models/py_models/cnn_gesture_brevitas_int8.pt --source data/test/open_hand.jpg
 """
 
 import argparse
@@ -20,7 +20,7 @@ import mediapipe as mp
 import json
 import os
 
-from models.py_models.cnn_gesture_v1 import GestureNet
+from models.py_models.cnn_gesture_brevitas import GestureNet
 
 # -------------------------------
 # Argument parsing
