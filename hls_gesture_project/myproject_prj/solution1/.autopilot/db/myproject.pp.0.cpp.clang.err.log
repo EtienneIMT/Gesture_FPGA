@@ -1,0 +1,1123 @@
+In file included from firmware/myproject.cpp:3:
+In file included from firmware/myproject.h:8:
+In file included from firmware/defines.h:6:
+firmware/nnet_utils/nnet_types.h:28:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=operator=_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+In file included from firmware/myproject.cpp:4:
+In file included from firmware/parameters.h:7:
+In file included from firmware/nnet_utils/nnet_code_gen.h:4:
+firmware/nnet_utils/nnet_helpers.h:285:99: warning: unused parameter 'keep' [-Wunused-parameter]
+template <class res_T, size_t SIZE> void print_result(res_T result[SIZE], std::ostream &out, bool keep = false) {
+                                                                                                  ^
+In file included from firmware/myproject.cpp:4:
+In file included from firmware/parameters.h:7:
+firmware/nnet_utils/nnet_code_gen.h:11:36: warning: unused parameter 'data' [-Wunused-parameter]
+    static void fill_buffer(data_T data[CONFIG_T::in_width * CONFIG_T::n_chan],
+                                   ^
+firmware/nnet_utils/nnet_code_gen.h:12:36: warning: unused parameter 'buffer' [-Wunused-parameter]
+                            data_T buffer[CONFIG_T::n_pixels][CONFIG_T::filt_width * CONFIG_T::n_chan],
+                                   ^
+firmware/nnet_utils/nnet_code_gen.h:13:44: warning: unused parameter 'partition' [-Wunused-parameter]
+                            const unsigned partition) {
+                                           ^
+firmware/nnet_utils/nnet_code_gen.h:21:24: warning: unused parameter 'data' [-Wunused-parameter]
+    fill_buffer(data_T data[CONFIG_T::in_height * CONFIG_T::in_width * CONFIG_T::n_chan],
+                       ^
+firmware/nnet_utils/nnet_code_gen.h:22:24: warning: unused parameter 'buffer' [-Wunused-parameter]
+                data_T buffer[CONFIG_T::n_pixels][CONFIG_T::filt_height * CONFIG_T::filt_width * CONFIG_T::n_chan],
+                       ^
+firmware/nnet_utils/nnet_code_gen.h:23:32: warning: unused parameter 'partition' [-Wunused-parameter]
+                const unsigned partition) {
+                               ^
+In file included from firmware/myproject.cpp:4:
+In file included from firmware/parameters.h:10:
+firmware/nnet_utils/nnet_activation.h:29:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=linear_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE
+        ^
+firmware/nnet_utils/nnet_activation.h:40:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=relu_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE
+        ^
+firmware/nnet_utils/nnet_activation.h:54:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=relu_max_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE
+        ^
+firmware/nnet_utils/nnet_activation.h:109:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=sigmoid_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE
+        ^
+firmware/nnet_utils/nnet_activation.h:171:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=softmax_latency_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS pipeline
+        ^
+firmware/nnet_utils/nnet_activation.h:193:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=softmax_latency_XLX_SEP_ PragmaOptions=variable=exp_res complete_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS array_partition variable=exp_res complete
+        ^
+firmware/nnet_utils/nnet_activation.h:196:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=softmax_latency_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+firmware/nnet_utils/nnet_activation.h:210:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=softmax_latency_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+firmware/nnet_utils/nnet_activation.h:217:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=softmax_stable_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS pipeline
+        ^
+firmware/nnet_utils/nnet_activation.h:244:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=softmax_stable_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+firmware/nnet_utils/nnet_activation.h:250:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=softmax_stable_XLX_SEP_ PragmaOptions=variable=exp_res complete_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS array_partition variable=exp_res complete
+        ^
+firmware/nnet_utils/nnet_activation.h:253:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=softmax_stable_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+firmware/nnet_utils/nnet_activation.h:267:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=softmax_stable_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+firmware/nnet_utils/nnet_activation.h:315:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=softmax_legacy_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE
+        ^
+firmware/nnet_utils/nnet_activation.h:360:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=softmax_argmax_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+firmware/nnet_utils/nnet_activation.h:368:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=softmax_argmax_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE
+        ^
+firmware/nnet_utils/nnet_activation.h:380:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=softmax_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+firmware/nnet_utils/nnet_activation.h:427:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=tanh_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE
+        ^
+firmware/nnet_utils/nnet_activation.h:449:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=hard_sigmoid_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE
+        ^
+firmware/nnet_utils/nnet_activation.h:464:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=hard_tanh_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE
+        ^
+firmware/nnet_utils/nnet_activation.h:482:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=leaky_relu_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE
+        ^
+firmware/nnet_utils/nnet_activation.h:499:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=thresholded_relu_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE
+        ^
+firmware/nnet_utils/nnet_activation.h:544:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=softplus_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE
+        ^
+firmware/nnet_utils/nnet_activation.h:593:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=softsign_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE
+        ^
+firmware/nnet_utils/nnet_activation.h:642:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=elu_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE
+        ^
+firmware/nnet_utils/nnet_activation.h:698:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=selu_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE
+        ^
+firmware/nnet_utils/nnet_activation.h:721:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=prelu_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE
+        ^
+firmware/nnet_utils/nnet_activation.h:738:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=binary_tanh_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE
+        ^
+firmware/nnet_utils/nnet_activation.h:758:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=ternary_tanh_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE
+        ^
+In file included from firmware/myproject.cpp:4:
+In file included from firmware/parameters.h:11:
+In file included from firmware/nnet_utils/nnet_activation_stream.h:8:
+firmware/nnet_utils/nnet_stream.h:23:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=clone_stream_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE
+        ^
+firmware/nnet_utils/nnet_stream.h:33:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=clone_stream_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+firmware/nnet_utils/nnet_stream.h:47:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=clone_stream_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE
+        ^
+firmware/nnet_utils/nnet_stream.h:59:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=clone_stream_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+firmware/nnet_utils/nnet_stream.h:74:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=repack_stream_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE
+        ^
+firmware/nnet_utils/nnet_stream.h:81:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=repack_stream_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+firmware/nnet_utils/nnet_stream.h:91:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=repack_stream_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE
+        ^
+firmware/nnet_utils/nnet_stream.h:99:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=repack_stream_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE
+        ^
+firmware/nnet_utils/nnet_stream.h:103:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=repack_stream_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+firmware/nnet_utils/nnet_stream.h:114:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=repack_stream_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE
+        ^
+firmware/nnet_utils/nnet_stream.h:118:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=repack_stream_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+firmware/nnet_utils/nnet_stream.h:139:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=broadcast_stream_1x1xC_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE
+        ^
+firmware/nnet_utils/nnet_stream.h:142:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=broadcast_stream_1x1xC_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE
+        ^
+firmware/nnet_utils/nnet_stream.h:146:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=broadcast_stream_1x1xC_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+firmware/nnet_utils/nnet_stream.h:160:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=broadcast_stream_HxWx1_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE
+        ^
+firmware/nnet_utils/nnet_stream.h:165:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=broadcast_stream_HxWx1_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+firmware/nnet_utils/nnet_stream.h:185:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=transpose_2d_XLX_SEP_ PragmaOptions=variable=data_array complete_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=data_array complete
+        ^
+firmware/nnet_utils/nnet_stream.h:188:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=transpose_2d_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE
+        ^
+firmware/nnet_utils/nnet_stream.h:196:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=transpose_2d_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE
+        ^
+In file included from firmware/myproject.cpp:4:
+In file included from firmware/parameters.h:11:
+firmware/nnet_utils/nnet_activation_stream.h:20:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=linear_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE
+        ^
+firmware/nnet_utils/nnet_activation_stream.h:28:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=linear_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+firmware/nnet_utils/nnet_activation_stream.h:42:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=relu_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE
+        ^
+firmware/nnet_utils/nnet_activation_stream.h:50:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=relu_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+firmware/nnet_utils/nnet_activation_stream.h:81:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=sigmoid_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE
+        ^
+firmware/nnet_utils/nnet_activation_stream.h:89:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=sigmoid_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+firmware/nnet_utils/nnet_activation_stream.h:133:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=softmax_latency_XLX_SEP_ PragmaOptions=variable=exp_res complete_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS array_partition variable=exp_res complete
+        ^
+firmware/nnet_utils/nnet_activation_stream.h:137:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=softmax_latency_XLX_SEP_ PragmaOptions=II=ii_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE II=ii
+        ^
+firmware/nnet_utils/nnet_activation_stream.h:142:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=softmax_latency_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+firmware/nnet_utils/nnet_activation_stream.h:161:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=softmax_latency_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+firmware/nnet_utils/nnet_activation_stream.h:162:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=allocation_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=softmax_latency_XLX_SEP_ PragmaOptions=operation instances=mul limit=multiplier_limit_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ALLOCATION operation instances=mul limit=multiplier_limit
+        ^
+firmware/nnet_utils/nnet_activation_stream.h:194:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=softmax_stable_XLX_SEP_ PragmaOptions=variable=data_array complete_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=data_array complete
+        ^
+firmware/nnet_utils/nnet_activation_stream.h:197:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=softmax_stable_XLX_SEP_ PragmaOptions=II=ii_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE II=ii
+        ^
+firmware/nnet_utils/nnet_activation_stream.h:202:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=softmax_stable_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+firmware/nnet_utils/nnet_activation_stream.h:214:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=softmax_stable_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+firmware/nnet_utils/nnet_activation_stream.h:220:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=softmax_stable_XLX_SEP_ PragmaOptions=variable=exp_res complete_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=exp_res complete
+        ^
+firmware/nnet_utils/nnet_activation_stream.h:223:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=softmax_stable_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+firmware/nnet_utils/nnet_activation_stream.h:242:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=softmax_stable_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+firmware/nnet_utils/nnet_activation_stream.h:243:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=allocation_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=softmax_stable_XLX_SEP_ PragmaOptions=operation instances=mul limit=multiplier_limit_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ALLOCATION operation instances=mul limit=multiplier_limit
+        ^
+firmware/nnet_utils/nnet_activation_stream.h:275:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=softmax_legacy_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE
+        ^
+firmware/nnet_utils/nnet_activation_stream.h:279:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=softmax_legacy_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+firmware/nnet_utils/nnet_activation_stream.h:286:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=softmax_legacy_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+firmware/nnet_utils/nnet_activation_stream.h:289:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=softmax_legacy_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+firmware/nnet_utils/nnet_activation_stream.h:312:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=softmax_legacy_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+firmware/nnet_utils/nnet_activation_stream.h:329:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=softmax_argmax_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE
+        ^
+firmware/nnet_utils/nnet_activation_stream.h:334:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=softmax_argmax_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+firmware/nnet_utils/nnet_activation_stream.h:342:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=softmax_argmax_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE
+        ^
+firmware/nnet_utils/nnet_activation_stream.h:393:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=tanh_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE
+        ^
+firmware/nnet_utils/nnet_activation_stream.h:401:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=tanh_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+firmware/nnet_utils/nnet_activation_stream.h:424:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=hard_sigmoid_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE
+        ^
+firmware/nnet_utils/nnet_activation_stream.h:432:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=hard_sigmoid_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+firmware/nnet_utils/nnet_activation_stream.h:449:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=hard_tanh_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE
+        ^
+firmware/nnet_utils/nnet_activation_stream.h:457:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=hard_tanh_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+firmware/nnet_utils/nnet_activation_stream.h:478:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=leaky_relu_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE
+        ^
+firmware/nnet_utils/nnet_activation_stream.h:486:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=leaky_relu_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+firmware/nnet_utils/nnet_activation_stream.h:504:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=thresholded_relu_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE
+        ^
+firmware/nnet_utils/nnet_activation_stream.h:512:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=thresholded_relu_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+firmware/nnet_utils/nnet_activation_stream.h:543:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=softplus_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE
+        ^
+firmware/nnet_utils/nnet_activation_stream.h:551:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=softplus_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+firmware/nnet_utils/nnet_activation_stream.h:584:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=softsign_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE
+        ^
+firmware/nnet_utils/nnet_activation_stream.h:592:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=softsign_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+firmware/nnet_utils/nnet_activation_stream.h:625:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=elu_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE
+        ^
+firmware/nnet_utils/nnet_activation_stream.h:633:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=elu_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+firmware/nnet_utils/nnet_activation_stream.h:673:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=selu_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE
+        ^
+firmware/nnet_utils/nnet_activation_stream.h:681:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=selu_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+firmware/nnet_utils/nnet_activation_stream.h:705:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=prelu_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE
+        ^
+firmware/nnet_utils/nnet_activation_stream.h:713:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=prelu_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+firmware/nnet_utils/nnet_activation_stream.h:730:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=binary_tanh_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE
+        ^
+firmware/nnet_utils/nnet_activation_stream.h:738:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=binary_tanh_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+firmware/nnet_utils/nnet_activation_stream.h:755:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=ternary_tanh_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE
+        ^
+firmware/nnet_utils/nnet_activation_stream.h:763:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=ternary_tanh_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+In file included from firmware/myproject.cpp:4:
+In file included from firmware/parameters.h:12:
+In file included from firmware/nnet_utils/nnet_conv2d.h:5:
+In file included from firmware/nnet_utils/nnet_conv2d_latency.h:5:
+firmware/nnet_utils/nnet_mult.h:25:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=product_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INLINE
+        ^
+firmware/nnet_utils/nnet_mult.h:34:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=product_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INLINE
+        ^
+firmware/nnet_utils/nnet_mult.h:46:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=product_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INLINE
+        ^
+firmware/nnet_utils/nnet_mult.h:58:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=product_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INLINE
+        ^
+firmware/nnet_utils/nnet_mult.h:72:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=product_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INLINE
+        ^
+firmware/nnet_utils/nnet_mult.h:82:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=product_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INLINE
+        ^
+In file included from firmware/myproject.cpp:4:
+In file included from firmware/parameters.h:12:
+In file included from firmware/nnet_utils/nnet_conv2d.h:5:
+firmware/nnet_utils/nnet_conv2d_latency.h:20:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=conv_2d_latency_cl_XLX_SEP_ PragmaOptions=variable=data_buf complete dim=0_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=data_buf complete dim=0
+        ^
+firmware/nnet_utils/nnet_conv2d_latency.h:23:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=conv_2d_latency_cl_XLX_SEP_ PragmaOptions=variable=mult complete_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=mult complete
+        ^
+firmware/nnet_utils/nnet_conv2d_latency.h:26:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=conv_2d_latency_cl_XLX_SEP_ PragmaOptions=variable=acc complete_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=acc complete
+        ^
+firmware/nnet_utils/nnet_conv2d_latency.h:28:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=conv_2d_latency_cl_XLX_SEP_ PragmaOptions=variable=weights complete_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=weights complete
+        ^
+firmware/nnet_utils/nnet_conv2d_latency.h:29:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=conv_2d_latency_cl_XLX_SEP_ PragmaOptions=variable=biases complete_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=biases complete
+        ^
+firmware/nnet_utils/nnet_conv2d_latency.h:32:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=allocation_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=conv_2d_latency_cl_XLX_SEP_ PragmaOptions=operation instances=mul limit=CONFIG_T::mult_config::multiplier_limit_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ALLOCATION operation instances=mul limit=CONFIG_T::mult_config::multiplier_limit
+        ^
+firmware/nnet_utils/nnet_conv2d_latency.h:36:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=conv_2d_latency_cl_XLX_SEP_ PragmaOptions=II=CONFIG_T::reuse_factor rewind_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE II=CONFIG_T::reuse_factor rewind
+        ^
+firmware/nnet_utils/nnet_conv2d_latency.h:42:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=conv_2d_latency_cl_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+firmware/nnet_utils/nnet_conv2d_latency.h:49:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=conv_2d_latency_cl_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+firmware/nnet_utils/nnet_conv2d_latency.h:53:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=conv_2d_latency_cl_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+firmware/nnet_utils/nnet_conv2d_latency.h:63:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=conv_2d_latency_cl_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+firmware/nnet_utils/nnet_conv2d_latency.h:70:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=conv_2d_latency_cl_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+firmware/nnet_utils/nnet_conv2d_latency.h:73:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=conv_2d_latency_cl_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+firmware/nnet_utils/nnet_conv2d_latency.h:81:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=conv_2d_latency_cl_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+In file included from firmware/myproject.cpp:4:
+In file included from firmware/parameters.h:12:
+In file included from firmware/nnet_utils/nnet_conv2d.h:6:
+In file included from firmware/nnet_utils/nnet_conv2d_resource.h:5:
+In file included from firmware/nnet_utils/nnet_dense.h:6:
+firmware/nnet_utils/nnet_dense_latency.h:21:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=function_instantiate_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=dense_latency_XLX_SEP_ PragmaOptions=variable=weights,biases_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS function_instantiate variable=weights,biases
+        ^
+firmware/nnet_utils/nnet_dense_latency.h:26:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=dense_latency_XLX_SEP_ PragmaOptions=II=CONFIG_T::reuse_factor_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE II=CONFIG_T::reuse_factor
+        ^
+firmware/nnet_utils/nnet_dense_latency.h:29:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=dense_latency_XLX_SEP_ PragmaOptions=variable=biases complete_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=biases complete
+        ^
+firmware/nnet_utils/nnet_dense_latency.h:30:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=dense_latency_XLX_SEP_ PragmaOptions=variable=mult complete_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=mult complete
+        ^
+firmware/nnet_utils/nnet_dense_latency.h:31:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=dense_latency_XLX_SEP_ PragmaOptions=variable=acc complete_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=acc complete
+        ^
+firmware/nnet_utils/nnet_dense_latency.h:33:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=allocation_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=dense_latency_XLX_SEP_ PragmaOptions=operation instances=mul limit=CONFIG_T::multiplier_limit_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ALLOCATION operation instances=mul limit=CONFIG_T::multiplier_limit
+        ^
+In file included from firmware/myproject.cpp:4:
+In file included from firmware/parameters.h:12:
+In file included from firmware/nnet_utils/nnet_conv2d.h:6:
+In file included from firmware/nnet_utils/nnet_conv2d_resource.h:5:
+In file included from firmware/nnet_utils/nnet_dense.h:7:
+firmware/nnet_utils/nnet_dense_resource.h:28:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=function_instantiate_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=dense_resource_rf_leq_nin_XLX_SEP_ PragmaOptions=variable=weights,biases_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS function_instantiate variable=weights,biases
+        ^
+firmware/nnet_utils/nnet_dense_resource.h:30:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_reshape_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=dense_resource_rf_leq_nin_XLX_SEP_ PragmaOptions=variable=weights block factor=block_factor_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_RESHAPE variable=weights block factor=block_factor
+        ^
+firmware/nnet_utils/nnet_dense_resource.h:31:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=dense_resource_rf_leq_nin_XLX_SEP_ PragmaOptions=variable=biases complete_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=biases complete
+        ^
+firmware/nnet_utils/nnet_dense_resource.h:34:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=dense_resource_rf_leq_nin_XLX_SEP_ PragmaOptions=variable=acc complete_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=acc complete
+        ^
+firmware/nnet_utils/nnet_dense_resource.h:38:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=dense_resource_rf_leq_nin_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+firmware/nnet_utils/nnet_dense_resource.h:44:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=dense_resource_rf_leq_nin_XLX_SEP_ PragmaOptions=II=1 rewind_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE II=1 rewind
+        ^
+firmware/nnet_utils/nnet_dense_resource.h:53:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=dense_resource_rf_leq_nin_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+firmware/nnet_utils/nnet_dense_resource.h:78:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=dense_resource_rf_leq_nin_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+firmware/nnet_utils/nnet_dense_resource.h:99:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=function_instantiate_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=dense_resource_rf_gt_nin_rem0_XLX_SEP_ PragmaOptions=variable=weights,biases_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS function_instantiate variable=weights,biases
+        ^
+firmware/nnet_utils/nnet_dense_resource.h:101:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_reshape_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=dense_resource_rf_gt_nin_rem0_XLX_SEP_ PragmaOptions=variable=weights block factor=block_factor_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_RESHAPE variable=weights block factor=block_factor
+        ^
+firmware/nnet_utils/nnet_dense_resource.h:102:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=dense_resource_rf_gt_nin_rem0_XLX_SEP_ PragmaOptions=variable=biases complete_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=biases complete
+        ^
+firmware/nnet_utils/nnet_dense_resource.h:105:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=dense_resource_rf_gt_nin_rem0_XLX_SEP_ PragmaOptions=variable=acc complete_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=acc complete
+        ^
+firmware/nnet_utils/nnet_dense_resource.h:109:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=dense_resource_rf_gt_nin_rem0_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+firmware/nnet_utils/nnet_dense_resource.h:130:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=dense_resource_rf_gt_nin_rem0_XLX_SEP_ PragmaOptions=II=1 rewind_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE II=1 rewind
+        ^
+firmware/nnet_utils/nnet_dense_resource.h:137:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=dense_resource_rf_gt_nin_rem0_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+firmware/nnet_utils/nnet_dense_resource.h:157:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=dense_resource_rf_gt_nin_rem0_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+firmware/nnet_utils/nnet_dense_resource.h:178:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=function_instantiate_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=dense_resource_rf_gt_nin_XLX_SEP_ PragmaOptions=variable=weights,biases_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS function_instantiate variable=weights,biases
+        ^
+firmware/nnet_utils/nnet_dense_resource.h:180:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_reshape_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=dense_resource_rf_gt_nin_XLX_SEP_ PragmaOptions=variable=weights block factor=block_factor_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_RESHAPE variable=weights block factor=block_factor
+        ^
+firmware/nnet_utils/nnet_dense_resource.h:181:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=dense_resource_rf_gt_nin_XLX_SEP_ PragmaOptions=variable=biases complete_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=biases complete
+        ^
+firmware/nnet_utils/nnet_dense_resource.h:184:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=dense_resource_rf_gt_nin_XLX_SEP_ PragmaOptions=variable=acc complete_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=acc complete
+        ^
+firmware/nnet_utils/nnet_dense_resource.h:188:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=dense_resource_rf_gt_nin_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+firmware/nnet_utils/nnet_dense_resource.h:194:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=dense_resource_rf_gt_nin_XLX_SEP_ PragmaOptions=II=1 rewind_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE II=1 rewind
+        ^
+firmware/nnet_utils/nnet_dense_resource.h:196:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=dense_resource_rf_gt_nin_XLX_SEP_ PragmaOptions=variable=tmpmult complete_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=tmpmult complete
+        ^
+firmware/nnet_utils/nnet_dense_resource.h:200:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=dense_resource_rf_gt_nin_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+firmware/nnet_utils/nnet_dense_resource.h:210:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=dense_resource_rf_gt_nin_XLX_SEP_ PragmaOptions=variable=mult complete_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=mult complete
+        ^
+firmware/nnet_utils/nnet_dense_resource.h:214:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=dense_resource_rf_gt_nin_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+firmware/nnet_utils/nnet_dense_resource.h:220:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=dense_resource_rf_gt_nin_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+firmware/nnet_utils/nnet_dense_resource.h:230:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=dense_resource_rf_gt_nin_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+firmware/nnet_utils/nnet_dense_resource.h:240:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=dense_resource_rf_gt_nin_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+firmware/nnet_utils/nnet_dense_resource.h:250:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=dense_resource_XLX_SEP_ PragmaOptions=recursive_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INLINE recursive
+        ^
+In file included from firmware/myproject.cpp:4:
+In file included from firmware/parameters.h:12:
+In file included from firmware/nnet_utils/nnet_conv2d.h:6:
+In file included from firmware/nnet_utils/nnet_conv2d_resource.h:5:
+firmware/nnet_utils/nnet_dense.h:39:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=dense_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+In file included from firmware/myproject.cpp:4:
+In file included from firmware/parameters.h:12:
+In file included from firmware/nnet_utils/nnet_conv2d.h:6:
+firmware/nnet_utils/nnet_conv2d_resource.h:27:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=conv_2d_resource_cl_XLX_SEP_ PragmaOptions=variable=data_buf complete dim=0_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=data_buf complete dim=0
+        ^
+firmware/nnet_utils/nnet_conv2d_resource.h:29:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_reshape_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=conv_2d_resource_cl_XLX_SEP_ PragmaOptions=variable=weights block factor=block_factor_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_RESHAPE variable=weights block factor=block_factor
+        ^
+firmware/nnet_utils/nnet_conv2d_resource.h:30:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=conv_2d_resource_cl_XLX_SEP_ PragmaOptions=variable=biases complete_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=biases complete
+        ^
+firmware/nnet_utils/nnet_conv2d_resource.h:33:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=conv_2d_resource_cl_XLX_SEP_ PragmaOptions=variable=acc complete dim=0_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=acc complete dim=0
+        ^
+firmware/nnet_utils/nnet_conv2d_resource.h:43:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=conv_2d_resource_cl_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+firmware/nnet_utils/nnet_conv2d_resource.h:47:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=conv_2d_resource_cl_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+firmware/nnet_utils/nnet_conv2d_resource.h:54:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=conv_2d_resource_cl_XLX_SEP_ PragmaOptions=II=1 rewind_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE II=1 rewind
+        ^
+firmware/nnet_utils/nnet_conv2d_resource.h:63:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=conv_2d_resource_cl_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+firmware/nnet_utils/nnet_conv2d_resource.h:67:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=conv_2d_resource_cl_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+firmware/nnet_utils/nnet_conv2d_resource.h:93:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=conv_2d_resource_cl_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+firmware/nnet_utils/nnet_conv2d_resource.h:97:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=conv_2d_resource_cl_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+In file included from firmware/myproject.cpp:4:
+In file included from firmware/parameters.h:12:
+firmware/nnet_utils/nnet_conv2d.h:47:26: warning: 'region' in '#pragma HLS Inline' is deprecated, use 'Inline Pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS INLINE region
+                         ^
+firmware/nnet_utils/nnet_conv2d.h:47:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=conv_2d_cl_XLX_SEP_ PragmaOptions=region_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INLINE region
+        ^
+firmware/nnet_utils/nnet_conv2d.h:63:26: warning: 'region' in '#pragma HLS Inline' is deprecated, use 'Inline Pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS INLINE region
+                         ^
+firmware/nnet_utils/nnet_conv2d.h:63:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=pointwise_conv_2d_cl_XLX_SEP_ PragmaOptions=region_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INLINE region
+        ^
+In file included from firmware/myproject.cpp:4:
+In file included from firmware/parameters.h:13:
+In file included from firmware/nnet_utils/nnet_conv2d_stream.h:7:
+firmware/nnet_utils/nnet_conv_stream.h:17:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=scale_index_K_gte_S_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INLINE
+        ^
+firmware/nnet_utils/nnet_conv_stream.h:38:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=scale_index_K_lt_S_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INLINE
+        ^
+firmware/nnet_utils/nnet_conv_stream.h:61:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=scale_index_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INLINE
+        ^
+firmware/nnet_utils/nnet_conv_stream.h:74:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=scale_index_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INLINE
+        ^
+firmware/nnet_utils/nnet_conv_stream.h:84:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=mult_buffer_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INLINE
+        ^
+firmware/nnet_utils/nnet_conv_stream.h:87:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=mult_buffer_XLX_SEP_ PragmaOptions=variable = data complete_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable = data complete
+        ^
+firmware/nnet_utils/nnet_conv_stream.h:89:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=mult_buffer_XLX_SEP_ PragmaOptions=variable = res complete_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable = res complete
+        ^
+firmware/nnet_utils/nnet_conv_stream.h:93:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=mult_buffer_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+firmware/nnet_utils/nnet_conv_stream.h:97:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=mult_buffer_XLX_SEP_ PragmaOptions=recursive_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INLINE recursive
+        ^
+firmware/nnet_utils/nnet_conv_stream.h:108:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=mult_buffer_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+firmware/nnet_utils/nnet_conv_stream.h:134:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=compute_output_encoded_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INLINE
+        ^
+firmware/nnet_utils/nnet_conv_stream.h:138:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=compute_output_encoded_XLX_SEP_ PragmaOptions=II = CONFIG_T::reuse_factor_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE II = CONFIG_T::reuse_factor
+        ^
+firmware/nnet_utils/nnet_conv_stream.h:141:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=compute_output_encoded_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+firmware/nnet_utils/nnet_conv_stream.h:144:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=compute_output_encoded_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+firmware/nnet_utils/nnet_conv_stream.h:161:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=kernel_shift_1d_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+firmware/nnet_utils/nnet_conv_stream.h:167:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=kernel_shift_1d_XLX_SEP_ PragmaOptions=II = 1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE II = 1
+        ^
+firmware/nnet_utils/nnet_conv_stream.h:170:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=kernel_shift_1d_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+firmware/nnet_utils/nnet_conv_stream.h:180:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=kernel_shift_1d_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+firmware/nnet_utils/nnet_conv_stream.h:189:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=kernel_shift_2d_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+firmware/nnet_utils/nnet_conv_stream.h:195:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=kernel_shift_2d_XLX_SEP_ PragmaOptions=II = 1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE II = 1
+        ^
+firmware/nnet_utils/nnet_conv_stream.h:211:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=kernel_shift_2d_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+firmware/nnet_utils/nnet_conv_stream.h:226:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=shift_line_buffer_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE
+        ^
+firmware/nnet_utils/nnet_conv_stream.h:230:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=shift_line_buffer_XLX_SEP_ PragmaOptions=variable = shift_buffer complete dim = 0_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable = shift_buffer complete dim = 0
+        ^
+firmware/nnet_utils/nnet_conv_stream.h:234:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=shift_line_buffer_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+firmware/nnet_utils/nnet_conv_stream.h:245:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=shift_line_buffer_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+firmware/nnet_utils/nnet_conv_stream.h:263:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=compute_output_buffer_2d_XLX_SEP_ PragmaOptions=OFF_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INLINE OFF
+        ^
+firmware/nnet_utils/nnet_conv_stream.h:277:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=compute_output_buffer_2d_XLX_SEP_ PragmaOptions=variable = kernel_data complete_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable = kernel_data complete
+        ^
+firmware/nnet_utils/nnet_conv_stream.h:280:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=compute_output_buffer_2d_XLX_SEP_ PragmaOptions=variable = res_out complete dim = 0_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable = res_out complete dim = 0
+        ^
+firmware/nnet_utils/nnet_conv_stream.h:304:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=compute_output_buffer_2d_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+firmware/nnet_utils/nnet_conv_stream.h:338:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=compute_output_buffer_1d_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INLINE
+        ^
+firmware/nnet_utils/nnet_conv_stream.h:348:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=compute_output_buffer_1d_XLX_SEP_ PragmaOptions=variable = kernel_data complete_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable = kernel_data complete
+        ^
+firmware/nnet_utils/nnet_conv_stream.h:351:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=compute_output_buffer_1d_XLX_SEP_ PragmaOptions=variable = res_out complete dim = 0_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable = res_out complete dim = 0
+        ^
+firmware/nnet_utils/nnet_conv_stream.h:363:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=compute_output_buffer_1d_XLX_SEP_ PragmaOptions=recursive_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INLINE recursive
+        ^
+firmware/nnet_utils/nnet_conv_stream.h:375:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=compute_output_buffer_1d_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+In file included from firmware/myproject.cpp:4:
+In file included from firmware/parameters.h:13:
+firmware/nnet_utils/nnet_conv2d_stream.h:20:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=compute_scaled_indices_2d_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+firmware/nnet_utils/nnet_conv2d_stream.h:39:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=stream_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=conv_2d_encoded_cl_XLX_SEP_ PragmaOptions=variable=data_window[i_out] depth=win_depth_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS STREAM variable=data_window[i_out] depth=win_depth
+        ^
+firmware/nnet_utils/nnet_conv2d_stream.h:42:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=conv_2d_encoded_cl_XLX_SEP_ PragmaOptions=variable=CONFIG_T::pixels complete_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=CONFIG_T::pixels complete
+        ^
+firmware/nnet_utils/nnet_conv2d_stream.h:49:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=conv_2d_encoded_cl_XLX_SEP_ PragmaOptions=variable=pixel_idx complete_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=pixel_idx complete
+        ^
+firmware/nnet_utils/nnet_conv2d_stream.h:55:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_flatten_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=conv_2d_encoded_cl_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS LOOP_FLATTEN
+        ^
+firmware/nnet_utils/nnet_conv2d_stream.h:57:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=conv_2d_encoded_cl_XLX_SEP_ PragmaOptions=II=CONFIG_T::reuse_factor_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE II=CONFIG_T::reuse_factor
+        ^
+firmware/nnet_utils/nnet_conv2d_stream.h:76:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=conv_2d_buffer_cl_XLX_SEP_ PragmaOptions=variable = line_buffer complete dim = 2_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable = line_buffer complete dim = 2
+        ^
+firmware/nnet_utils/nnet_conv2d_stream.h:82:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_flatten_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=conv_2d_buffer_cl_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS LOOP_FLATTEN
+        ^
+firmware/nnet_utils/nnet_conv2d_stream.h:84:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=conv_2d_buffer_cl_XLX_SEP_ PragmaOptions=II=CONFIG_T::reuse_factor_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE II=CONFIG_T::reuse_factor
+        ^
+firmware/nnet_utils/nnet_conv2d_stream.h:100:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=conv_2d_cl_XLX_SEP_ PragmaOptions=recursive_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline recursive
+        ^
+In file included from firmware/myproject.cpp:4:
+In file included from firmware/parameters.h:15:
+firmware/nnet_utils/nnet_dense_compressed.h:15:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=fill_mult_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+firmware/nnet_utils/nnet_dense_compressed.h:29:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=dense_compressed_XLX_SEP_ PragmaOptions=variable=acc complete_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=acc complete
+        ^
+firmware/nnet_utils/nnet_dense_compressed.h:30:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=dense_compressed_XLX_SEP_ PragmaOptions=variable=biases complete_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=biases complete
+        ^
+firmware/nnet_utils/nnet_dense_compressed.h:31:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_reshape_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=dense_compressed_XLX_SEP_ PragmaOptions=variable=weights block factor=multiplier_limit_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_RESHAPE variable=weights block factor=multiplier_limit
+        ^
+firmware/nnet_utils/nnet_dense_compressed.h:34:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=aggregate_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=dense_compressed_XLX_SEP_ PragmaOptions=variable=weights_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS AGGREGATE variable=weights
+        ^
+firmware/nnet_utils/nnet_dense_compressed.h:41:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=dense_compressed_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+firmware/nnet_utils/nnet_dense_compressed.h:49:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=dense_compressed_XLX_SEP_ PragmaOptions=II=1 rewind_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE II=1 rewind
+        ^
+firmware/nnet_utils/nnet_dense_compressed.h:52:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=dense_compressed_XLX_SEP_ PragmaOptions=variable=mult complete_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=mult complete
+        ^
+firmware/nnet_utils/nnet_dense_compressed.h:56:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=dense_compressed_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+firmware/nnet_utils/nnet_dense_compressed.h:62:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=dense_compressed_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+firmware/nnet_utils/nnet_dense_compressed.h:82:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=dense_compressed_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+In file included from firmware/myproject.cpp:4:
+In file included from firmware/parameters.h:16:
+firmware/nnet_utils/nnet_dense_stream.h:16:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=dense_wrapper_XLX_SEP_ PragmaOptions=recursive_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INLINE recursive
+        ^
+firmware/nnet_utils/nnet_dense_stream.h:18:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=dense_wrapper_XLX_SEP_ PragmaOptions=II=CONFIG_T::reuse_factor_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE II=CONFIG_T::reuse_factor
+        ^
+firmware/nnet_utils/nnet_dense_stream.h:30:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=dense_XLX_SEP_ PragmaOptions=variable=data complete_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=data complete
+        ^
+firmware/nnet_utils/nnet_dense_stream.h:33:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=dense_XLX_SEP_ PragmaOptions=variable=res complete_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=res complete
+        ^
+firmware/nnet_utils/nnet_dense_stream.h:38:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=dense_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE
+        ^
+firmware/nnet_utils/nnet_dense_stream.h:43:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=dense_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+firmware/nnet_utils/nnet_dense_stream.h:53:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=dense_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE
+        ^
+firmware/nnet_utils/nnet_dense_stream.h:59:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=dense_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+In file included from firmware/myproject.cpp:4:
+In file included from firmware/parameters.h:17:
+firmware/nnet_utils/nnet_padding.h:18:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=zeropad1d_cf_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE
+        ^
+firmware/nnet_utils/nnet_padding.h:37:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=zeropad1d_cl_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE
+        ^
+firmware/nnet_utils/nnet_padding.h:73:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=zeropad2d_cf_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE
+        ^
+firmware/nnet_utils/nnet_padding.h:106:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=zeropad2d_cl_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE
+        ^
+In file included from firmware/myproject.cpp:4:
+In file included from firmware/parameters.h:18:
+firmware/nnet_utils/nnet_padding_stream.h:9:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=fill_zero_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INLINE
+        ^
+firmware/nnet_utils/nnet_padding_stream.h:12:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=fill_zero_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+firmware/nnet_utils/nnet_padding_stream.h:19:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=fill_data_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INLINE
+        ^
+firmware/nnet_utils/nnet_padding_stream.h:23:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=fill_data_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+In file included from firmware/myproject.cpp:4:
+In file included from firmware/parameters.h:19:
+firmware/nnet_utils/nnet_pooling.h:103:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=pooling1d_cl_XLX_SEP_ PragmaOptions=II=CONFIG_T::reuse_factor_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE II=CONFIG_T::reuse_factor
+        ^
+firmware/nnet_utils/nnet_pooling.h:107:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=allocation_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=pooling1d_cl_XLX_SEP_ PragmaOptions=function instances=CONFIG_T::pool_op limit=limit_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ALLOCATION function instances=CONFIG_T::pool_op limit=limit
+        ^
+firmware/nnet_utils/nnet_pooling.h:118:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=pooling1d_cl_XLX_SEP_ PragmaOptions=variable=pool complete dim=0_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=pool complete dim=0
+        ^
+firmware/nnet_utils/nnet_pooling.h:149:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=global_pooling1d_cl_XLX_SEP_ PragmaOptions=II=CONFIG_T::reuse_factor_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE II=CONFIG_T::reuse_factor
+        ^
+firmware/nnet_utils/nnet_pooling.h:156:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=allocation_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=global_pooling1d_cl_XLX_SEP_ PragmaOptions=function instances=CONFIG_T::pool_op limit=limit_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ALLOCATION function instances=CONFIG_T::pool_op limit=limit
+        ^
+firmware/nnet_utils/nnet_pooling.h:160:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=global_pooling1d_cl_XLX_SEP_ PragmaOptions=variable=pool complete dim=0_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=pool complete dim=0
+        ^
+firmware/nnet_utils/nnet_pooling.h:202:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=pooling2d_cl_XLX_SEP_ PragmaOptions=II=CONFIG_T::reuse_factor_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE II=CONFIG_T::reuse_factor
+        ^
+firmware/nnet_utils/nnet_pooling.h:206:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=allocation_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=pooling2d_cl_XLX_SEP_ PragmaOptions=function instances=CONFIG_T::pool_op limit=limit_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ALLOCATION function instances=CONFIG_T::pool_op limit=limit
+        ^
+firmware/nnet_utils/nnet_pooling.h:221:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=pooling2d_cl_XLX_SEP_ PragmaOptions=variable=pool complete dim=0_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=pool complete dim=0
+        ^
+firmware/nnet_utils/nnet_pooling.h:263:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=pooling2d_cf_XLX_SEP_ PragmaOptions=II=CONFIG_T::reuse_factor_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE II=CONFIG_T::reuse_factor
+        ^
+firmware/nnet_utils/nnet_pooling.h:267:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=allocation_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=pooling2d_cf_XLX_SEP_ PragmaOptions=function instances=CONFIG_T::pool_op limit=limit_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ALLOCATION function instances=CONFIG_T::pool_op limit=limit
+        ^
+firmware/nnet_utils/nnet_pooling.h:282:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=pooling2d_cf_XLX_SEP_ PragmaOptions=variable=pool complete dim=0_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=pool complete dim=0
+        ^
+firmware/nnet_utils/nnet_pooling.h:329:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=global_pooling2d_cl_XLX_SEP_ PragmaOptions=II=CONFIG_T::reuse_factor_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE II=CONFIG_T::reuse_factor
+        ^
+firmware/nnet_utils/nnet_pooling.h:332:34: warning: unexpected pragma argument 'pool_op', expects function/operation [-Winvalid-hls-pragmas]
+#pragma HLS ALLOCATION instances=pool_op limit=limit function
+                                 ^
+firmware/nnet_utils/nnet_pooling.h:332:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=0_XLX_SEP_ PragmaType=allocation_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=global_pooling2d_cl_XLX_SEP_ PragmaOptions=instances=pool_op_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ALLOCATION instances=pool_op limit=limit function
+        ^
+In file included from firmware/myproject.cpp:4:
+In file included from firmware/parameters.h:20:
+In file included from firmware/nnet_utils/nnet_pooling_stream.h:9:
+/opt/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/utils/x_hls_utils.h:224:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=reg_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE II=1
+        ^
+/opt/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/utils/x_hls_utils.h:225:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=latency_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=reg_XLX_SEP_ PragmaOptions=min=1 max=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS LATENCY min=1 max=1
+        ^
+/opt/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/utils/x_hls_utils.h:226:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=reg_XLX_SEP_ PragmaOptions=off_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INLINE off
+        ^
+In file included from firmware/myproject.cpp:4:
+In file included from firmware/parameters.h:20:
+firmware/nnet_utils/nnet_pooling_stream.h:18:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=reduce_pool_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INLINE
+        ^
+firmware/nnet_utils/nnet_pooling_stream.h:69:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=compute_pool_encoded_2d_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INLINE
+        ^
+firmware/nnet_utils/nnet_pooling_stream.h:72:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=compute_pool_encoded_2d_XLX_SEP_ PragmaOptions=variable=pool_table_height complete_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=pool_table_height complete
+        ^
+firmware/nnet_utils/nnet_pooling_stream.h:73:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=compute_pool_encoded_2d_XLX_SEP_ PragmaOptions=variable=pool_table_width complete_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=pool_table_width complete
+        ^
+firmware/nnet_utils/nnet_pooling_stream.h:77:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=compute_pool_encoded_2d_XLX_SEP_ PragmaOptions=variable=pool_window complete_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=pool_window complete
+        ^
+firmware/nnet_utils/nnet_pooling_stream.h:84:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=compute_pool_encoded_2d_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE
+        ^
+firmware/nnet_utils/nnet_pooling_stream.h:143:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=stream_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=pooling2d_encoded_cl_XLX_SEP_ PragmaOptions=variable=data_window[i_out] depth=win_depth_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS STREAM variable=data_window[i_out] depth=win_depth
+        ^
+firmware/nnet_utils/nnet_pooling_stream.h:152:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_flatten_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=pooling2d_encoded_cl_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS LOOP_FLATTEN
+        ^
+firmware/nnet_utils/nnet_pooling_stream.h:154:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=pooling2d_encoded_cl_XLX_SEP_ PragmaOptions=II=pack_factor_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE II=pack_factor
+        ^
+firmware/nnet_utils/nnet_pooling_stream.h:170:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=compute_pool_buffer_2d_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INLINE
+        ^
+firmware/nnet_utils/nnet_pooling_stream.h:179:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=compute_pool_buffer_2d_XLX_SEP_ PragmaOptions=variable=pool_window complete_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=pool_window complete
+        ^
+firmware/nnet_utils/nnet_pooling_stream.h:182:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=compute_pool_buffer_2d_XLX_SEP_ PragmaOptions=variable = kernel_data complete dim = 0_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable = kernel_data complete dim = 0
+        ^
+firmware/nnet_utils/nnet_pooling_stream.h:194:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=compute_pool_buffer_2d_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE
+        ^
+firmware/nnet_utils/nnet_pooling_stream.h:238:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=pooling2d_buffer_cl_XLX_SEP_ PragmaOptions=variable = line_buffer complete dim = 2_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable = line_buffer complete dim = 2
+        ^
+firmware/nnet_utils/nnet_pooling_stream.h:244:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_flatten_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=pooling2d_buffer_cl_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS LOOP_FLATTEN
+        ^
+firmware/nnet_utils/nnet_pooling_stream.h:245:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=pooling2d_buffer_cl_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE
+        ^
+firmware/nnet_utils/nnet_pooling_stream.h:254:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=pooling2d_cl_XLX_SEP_ PragmaOptions=recursive_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline recursive
+        ^
+firmware/nnet_utils/nnet_pooling_stream.h:292:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=compute_pool_encoded_1d_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INLINE
+        ^
+firmware/nnet_utils/nnet_pooling_stream.h:295:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=compute_pool_encoded_1d_XLX_SEP_ PragmaOptions=variable=pool_table_width complete_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=pool_table_width complete
+        ^
+firmware/nnet_utils/nnet_pooling_stream.h:299:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=compute_pool_encoded_1d_XLX_SEP_ PragmaOptions=variable=pool_window complete_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=pool_window complete
+        ^
+firmware/nnet_utils/nnet_pooling_stream.h:305:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=compute_pool_encoded_1d_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE
+        ^
+firmware/nnet_utils/nnet_pooling_stream.h:360:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=stream_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=pooling1d_encoded_cl_XLX_SEP_ PragmaOptions=variable=data_window[i_out] depth=win_depth_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS STREAM variable=data_window[i_out] depth=win_depth
+        ^
+firmware/nnet_utils/nnet_pooling_stream.h:367:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_flatten_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=pooling1d_encoded_cl_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS LOOP_FLATTEN
+        ^
+firmware/nnet_utils/nnet_pooling_stream.h:369:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=pooling1d_encoded_cl_XLX_SEP_ PragmaOptions=II=pack_factor_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE II=pack_factor
+        ^
+firmware/nnet_utils/nnet_pooling_stream.h:380:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=compute_pool_buffer_1d_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INLINE
+        ^
+firmware/nnet_utils/nnet_pooling_stream.h:387:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=compute_pool_buffer_1d_XLX_SEP_ PragmaOptions=variable=pool_window complete_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=pool_window complete
+        ^
+firmware/nnet_utils/nnet_pooling_stream.h:390:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=compute_pool_buffer_1d_XLX_SEP_ PragmaOptions=variable = kernel_data complete dim = 0_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable = kernel_data complete dim = 0
+        ^
+firmware/nnet_utils/nnet_pooling_stream.h:403:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=compute_pool_buffer_1d_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE
+        ^
+firmware/nnet_utils/nnet_pooling_stream.h:437:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_flatten_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=pooling1d_buffer_cl_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS LOOP_FLATTEN
+        ^
+firmware/nnet_utils/nnet_pooling_stream.h:438:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=pooling1d_buffer_cl_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE
+        ^
+firmware/nnet_utils/nnet_pooling_stream.h:445:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=pooling1d_cl_XLX_SEP_ PragmaOptions=recursive_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline recursive
+        ^
+firmware/nnet_utils/nnet_pooling_stream.h:461:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=reduce_global_pool_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INLINE
+        ^
+firmware/nnet_utils/nnet_pooling_stream.h:477:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=compute_global_pool_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+firmware/nnet_utils/nnet_pooling_stream.h:480:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=compute_global_pool_XLX_SEP_ PragmaOptions=variable=data_pack complete dim=0_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=data_pack complete dim=0
+        ^
+firmware/nnet_utils/nnet_pooling_stream.h:484:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=compute_global_pool_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+firmware/nnet_utils/nnet_pooling_stream.h:498:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=global_pooling2d_cl_XLX_SEP_ PragmaOptions=variable=data_window complete_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=data_window complete
+        ^
+firmware/nnet_utils/nnet_pooling_stream.h:507:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=global_pooling2d_cl_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+firmware/nnet_utils/nnet_pooling_stream.h:515:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_flatten_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=global_pooling2d_cl_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS LOOP_FLATTEN
+        ^
+firmware/nnet_utils/nnet_pooling_stream.h:523:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=global_pooling2d_cl_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE
+        ^
+firmware/nnet_utils/nnet_pooling_stream.h:529:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=global_pooling2d_cl_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+firmware/nnet_utils/nnet_pooling_stream.h:537:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=global_pooling2d_cl_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE
+        ^
+firmware/nnet_utils/nnet_pooling_stream.h:543:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=global_pooling2d_cl_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+firmware/nnet_utils/nnet_pooling_stream.h:557:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=global_pooling1d_cl_XLX_SEP_ PragmaOptions=variable=data_window complete_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=data_window complete
+        ^
+firmware/nnet_utils/nnet_pooling_stream.h:566:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=global_pooling1d_cl_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+firmware/nnet_utils/nnet_pooling_stream.h:572:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_flatten_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=global_pooling1d_cl_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS LOOP_FLATTEN
+        ^
+firmware/nnet_utils/nnet_pooling_stream.h:579:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=global_pooling1d_cl_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE
+        ^
+firmware/nnet_utils/nnet_pooling_stream.h:585:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=global_pooling1d_cl_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+firmware/nnet_utils/nnet_pooling_stream.h:593:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=global_pooling1d_cl_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE
+        ^
+firmware/nnet_utils/nnet_pooling_stream.h:599:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=global_pooling1d_cl_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+        ^
+/home/Etienne/Gesture_FPGA/hls_gesture_project/build_prj.tcl:183:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=top_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=myproject_XLX_SEP_ PragmaOptions=name=myproject_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE TOP name=myproject
+        ^
+firmware/myproject.cpp:12:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=myproject_XLX_SEP_ PragmaOptions=axis port=input_1,layer18_out_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE axis port=input_1,layer18_out
+        ^
+firmware/myproject.cpp:13:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=dataflow_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=myproject_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS DATAFLOW
+        ^
+firmware/myproject.cpp:40:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=stream_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=myproject_XLX_SEP_ PragmaOptions=variable=layer20_out depth=4356_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS STREAM variable=layer20_out depth=4356
+        ^
+firmware/myproject.cpp:44:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=stream_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=myproject_XLX_SEP_ PragmaOptions=variable=layer2_out depth=4096_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS STREAM variable=layer2_out depth=4096
+        ^
+firmware/myproject.cpp:48:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=stream_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=myproject_XLX_SEP_ PragmaOptions=variable=layer4_out depth=4096_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS STREAM variable=layer4_out depth=4096
+        ^
+firmware/myproject.cpp:52:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=stream_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=myproject_XLX_SEP_ PragmaOptions=variable=layer5_out depth=1024_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS STREAM variable=layer5_out depth=1024
+        ^
+firmware/myproject.cpp:56:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=stream_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=myproject_XLX_SEP_ PragmaOptions=variable=layer21_out depth=1156_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS STREAM variable=layer21_out depth=1156
+        ^
+firmware/myproject.cpp:60:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=stream_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=myproject_XLX_SEP_ PragmaOptions=variable=layer6_out depth=1024_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS STREAM variable=layer6_out depth=1024
+        ^
+firmware/myproject.cpp:64:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=stream_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=myproject_XLX_SEP_ PragmaOptions=variable=layer8_out depth=1024_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS STREAM variable=layer8_out depth=1024
+        ^
+firmware/myproject.cpp:68:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=stream_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=myproject_XLX_SEP_ PragmaOptions=variable=layer9_out depth=256_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS STREAM variable=layer9_out depth=256
+        ^
+firmware/myproject.cpp:72:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=stream_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=myproject_XLX_SEP_ PragmaOptions=variable=layer22_out depth=324_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS STREAM variable=layer22_out depth=324
+        ^
+firmware/myproject.cpp:76:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=stream_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=myproject_XLX_SEP_ PragmaOptions=variable=layer10_out depth=256_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS STREAM variable=layer10_out depth=256
+        ^
+firmware/myproject.cpp:80:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=stream_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=myproject_XLX_SEP_ PragmaOptions=variable=layer12_out depth=256_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS STREAM variable=layer12_out depth=256
+        ^
+firmware/myproject.cpp:84:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=stream_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=myproject_XLX_SEP_ PragmaOptions=variable=layer13_out depth=64_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS STREAM variable=layer13_out depth=64
+        ^
+firmware/myproject.cpp:89:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=stream_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=myproject_XLX_SEP_ PragmaOptions=variable=layer15_out depth=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS STREAM variable=layer15_out depth=1
+        ^
+firmware/myproject.cpp:93:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=stream_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=myproject_XLX_SEP_ PragmaOptions=variable=layer17_out depth=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS STREAM variable=layer17_out depth=1
+        ^
+In file included from firmware/myproject.cpp:4:
+In file included from firmware/parameters.h:13:
+firmware/nnet_utils/nnet_conv2d_stream.h:84:9: warning: Only for/while/do loop or function body support the pipeline pragma [-Wignored-hls-attributes]
+#pragma HLS PIPELINE II=CONFIG_T::reuse_factor
+        ^~~~
+firmware/nnet_utils/nnet_conv2d_stream.h:57:9: warning: Only for/while/do loop or function body support the pipeline pragma [-Wignored-hls-attributes]
+#pragma HLS PIPELINE II=CONFIG_T::reuse_factor
+        ^~~~
+In file included from firmware/myproject.cpp:4:
+In file included from firmware/parameters.h:20:
+firmware/nnet_utils/nnet_pooling_stream.h:154:9: warning: Only for/while/do loop or function body support the pipeline pragma [-Wignored-hls-attributes]
+#pragma HLS PIPELINE II=pack_factor
+        ^~~~
+In file included from firmware/myproject.cpp:4:
+In file included from firmware/parameters.h:13:
+firmware/nnet_utils/nnet_conv2d_stream.h:84:9: warning: Only for/while/do loop or function body support the pipeline pragma [-Wignored-hls-attributes]
+#pragma HLS PIPELINE II=CONFIG_T::reuse_factor
+        ^~~~
+firmware/nnet_utils/nnet_conv2d_stream.h:57:9: warning: Only for/while/do loop or function body support the pipeline pragma [-Wignored-hls-attributes]
+#pragma HLS PIPELINE II=CONFIG_T::reuse_factor
+        ^~~~
+In file included from firmware/myproject.cpp:4:
+In file included from firmware/parameters.h:20:
+firmware/nnet_utils/nnet_pooling_stream.h:154:9: warning: Only for/while/do loop or function body support the pipeline pragma [-Wignored-hls-attributes]
+#pragma HLS PIPELINE II=pack_factor
+        ^~~~
+In file included from firmware/myproject.cpp:4:
+In file included from firmware/parameters.h:13:
+firmware/nnet_utils/nnet_conv2d_stream.h:84:9: warning: Only for/while/do loop or function body support the pipeline pragma [-Wignored-hls-attributes]
+#pragma HLS PIPELINE II=CONFIG_T::reuse_factor
+        ^~~~
+firmware/nnet_utils/nnet_conv2d_stream.h:57:9: warning: Only for/while/do loop or function body support the pipeline pragma [-Wignored-hls-attributes]
+#pragma HLS PIPELINE II=CONFIG_T::reuse_factor
+        ^~~~
+In file included from firmware/myproject.cpp:4:
+In file included from firmware/parameters.h:20:
+firmware/nnet_utils/nnet_pooling_stream.h:154:9: warning: Only for/while/do loop or function body support the pipeline pragma [-Wignored-hls-attributes]
+#pragma HLS PIPELINE II=pack_factor
+        ^~~~
+In file included from firmware/myproject.cpp:4:
+In file included from firmware/parameters.h:16:
+firmware/nnet_utils/nnet_dense_stream.h:38:9: warning: Only for/while/do loop or function body support the pipeline pragma [-Wignored-hls-attributes]
+#pragma HLS PIPELINE
+        ^~~~
+firmware/nnet_utils/nnet_dense_stream.h:53:9: warning: Only for/while/do loop or function body support the pipeline pragma [-Wignored-hls-attributes]
+#pragma HLS PIPELINE
+        ^~~~
+firmware/nnet_utils/nnet_dense_stream.h:18:9: warning: Only for/while/do loop or function body support the pipeline pragma [-Wignored-hls-attributes]
+#pragma HLS PIPELINE II=CONFIG_T::reuse_factor
+        ^~~~
+firmware/nnet_utils/nnet_dense_stream.h:38:9: warning: Only for/while/do loop or function body support the pipeline pragma [-Wignored-hls-attributes]
+#pragma HLS PIPELINE
+        ^~~~
+firmware/nnet_utils/nnet_dense_stream.h:53:9: warning: Only for/while/do loop or function body support the pipeline pragma [-Wignored-hls-attributes]
+#pragma HLS PIPELINE
+        ^~~~
+firmware/nnet_utils/nnet_dense_stream.h:18:9: warning: Only for/while/do loop or function body support the pipeline pragma [-Wignored-hls-attributes]
+#pragma HLS PIPELINE II=CONFIG_T::reuse_factor
+        ^~~~
+349 warnings generated.

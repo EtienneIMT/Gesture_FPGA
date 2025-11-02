@@ -1,0 +1,680 @@
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:28807:7: warning: Added loop label VITIS_LOOP_1207_1:   [xilinx-label-all-loops]
+      for (i = 0; i < __N - 1; ++i) {
+      ^~~
+      VITIS_LOOP_1207_1: 
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:28807:7: note: FIX-IT applied suggested code changes
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:29781:5: warning: Added loop label VITIS_LOOP_676_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_676_1: 
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:29781:5: note: FIX-IT applied suggested code changes
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:29795:5: warning: Added loop label VITIS_LOOP_690_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_690_1: 
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:29795:5: note: FIX-IT applied suggested code changes
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:29809:5: warning: Added loop label VITIS_LOOP_704_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_704_1: 
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:29809:5: note: FIX-IT applied suggested code changes
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:31426:7: warning: Added loop label VITIS_LOOP_1247_1:   [xilinx-label-all-loops]
+      for (i = 0; i < __N - 1; ++i) {
+      ^~~
+      VITIS_LOOP_1247_1: 
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:31426:7: note: FIX-IT applied suggested code changes
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:33409:9: warning: Added loop label VITIS_LOOP_27_1:   [xilinx-label-all-loops]
+        for (unsigned i = 0; i < N; i++) {
+        ^~~
+        VITIS_LOOP_27_1: 
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:33409:9: note: FIX-IT applied suggested code changes
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:33422:9: warning: Added loop label VITIS_LOOP_40_1:   [xilinx-label-all-loops]
+        for (size_t i = 0; i < N; i++) {
+        ^~~
+        VITIS_LOOP_40_1: 
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:33422:9: note: FIX-IT applied suggested code changes
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:57501:5: warning: Added loop label VITIS_LOOP_265_1:   [xilinx-label-all-loops]
+    for (typename std::vector<src_T>::const_iterator i = in_begin; i != in_end; ++i) {
+    ^~~
+    VITIS_LOOP_265_1: 
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:57501:5: note: FIX-IT applied suggested code changes
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:57511:5: warning: Added loop label VITIS_LOOP_275_1:   [xilinx-label-all-loops]
+    for (auto i = 0; i < SIZE; i++)
+    ^~~
+    VITIS_LOOP_275_1: 
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:57511:5: note: FIX-IT applied suggested code changes
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:57522:5: warning: Added loop label VITIS_LOOP_286_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < SIZE; i++) {
+    ^~~
+    VITIS_LOOP_286_1: 
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:57522:5: note: FIX-IT applied suggested code changes
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:57529:5: warning: Added loop label VITIS_LOOP_293_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < SIZE / res_T::size; i++) {
+    ^~~
+    VITIS_LOOP_293_1: 
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:57529:5: note: FIX-IT applied suggested code changes
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:57531:9: warning: Added loop label VITIS_LOOP_295_2:   [xilinx-label-all-loops]
+        for (int j = 0; j < res_T::size; j++) {
+        ^~~
+        VITIS_LOOP_295_2: 
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:57531:9: note: FIX-IT applied suggested code changes
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:57543:5: warning: Added loop label VITIS_LOOP_307_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < SIZE / data_T::size; i++) {
+    ^~~
+    VITIS_LOOP_307_1: 
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:57543:5: note: FIX-IT applied suggested code changes
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:57545:9: warning: Added loop label VITIS_LOOP_309_2:   [xilinx-label-all-loops]
+        for (int j = 0; j < data_T::size; j++) {
+        ^~~
+        VITIS_LOOP_309_2: 
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:57545:9: note: FIX-IT applied suggested code changes
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:57560:5: warning: Added loop label VITIS_LOOP_324_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < nrows; ii++) {
+    ^~~
+    VITIS_LOOP_324_1: 
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:57560:5: note: FIX-IT applied suggested code changes
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:57580:5: warning: Added loop label VITIS_LOOP_344_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < nrows; ii++) {
+    ^~~
+    VITIS_LOOP_344_1: 
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:57580:5: note: FIX-IT applied suggested code changes
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:57581:9: warning: Added loop label VITIS_LOOP_345_2:   [xilinx-label-all-loops]
+        for (int jj = 0; jj < ncols; jj++) {
+        ^~~
+        VITIS_LOOP_345_2: 
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:57581:9: note: FIX-IT applied suggested code changes
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:57596:5: warning: Added loop label VITIS_LOOP_360_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < N_IN; ii++) {
+    ^~~
+    VITIS_LOOP_360_1: 
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:57596:5: note: FIX-IT applied suggested code changes
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:57603:5: warning: Added loop label VITIS_LOOP_367_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < N_IN; ii++) {
+    ^~~
+    VITIS_LOOP_367_1: 
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:57603:5: note: FIX-IT applied suggested code changes
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:57726:2: warning: Added loop label VITIS_LOOP_31_1:   [xilinx-label-all-loops]
+ for (int ii = 0; ii < CONFIG_T::n_in; ii++) {
+ ^~~
+ VITIS_LOOP_31_1: 
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:57726:2: note: FIX-IT applied suggested code changes
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:57738:5: warning: Added loop label VITIS_LOOP_43_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < CONFIG_T::n_in; ii++) {
+    ^~~
+    VITIS_LOOP_43_1: 
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:57738:5: note: FIX-IT applied suggested code changes
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:57752:5: warning: Added loop label VITIS_LOOP_57_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < CONFIG_T::n_in; ii++) {
+    ^~~
+    VITIS_LOOP_57_1: 
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:57752:5: note: FIX-IT applied suggested code changes
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:57779:5: warning: Added loop label VITIS_LOOP_84_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < N_TABLE; ii++) {
+    ^~~
+    VITIS_LOOP_84_1: 
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:57779:5: note: FIX-IT applied suggested code changes
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:57809:5: warning: Added loop label VITIS_LOOP_114_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < CONFIG_T::n_in; ii++) {
+    ^~~
+    VITIS_LOOP_114_1: 
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:57809:5: note: FIX-IT applied suggested code changes
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:57846:5: warning: Added loop label VITIS_LOOP_151_1:   [xilinx-label-all-loops]
+    for (unsigned i = 0; i < CONFIG_T::table_size; i++) {
+    ^~~
+    VITIS_LOOP_151_1: 
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:57846:5: note: FIX-IT applied suggested code changes
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:57857:5: warning: Added loop label VITIS_LOOP_162_1:   [xilinx-label-all-loops]
+    for (unsigned i = 0; i < CONFIG_T::table_size; i++) {
+    ^~~
+    VITIS_LOOP_162_1: 
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:57857:5: note: FIX-IT applied suggested code changes
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:57890:5: warning: Added loop label VITIS_LOOP_195_1:   [xilinx-label-all-loops]
+    for (unsigned i = 0; i < CONFIG_T::n_in; i++) {
+    ^~~
+    VITIS_LOOP_195_1: 
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:57890:5: note: FIX-IT applied suggested code changes
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:57904:5: warning: Added loop label VITIS_LOOP_209_2:   [xilinx-label-all-loops]
+    for (unsigned i = 0; i < CONFIG_T::n_in; i++) {
+    ^~~
+    VITIS_LOOP_209_2: 
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:57904:5: note: FIX-IT applied suggested code changes
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:57938:5: warning: Added loop label VITIS_LOOP_243_1:   [xilinx-label-all-loops]
+    for (unsigned i = 0; i < CONFIG_T::n_in; i++) {
+    ^~~
+    VITIS_LOOP_243_1: 
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:57938:5: note: FIX-IT applied suggested code changes
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:57947:5: warning: Added loop label VITIS_LOOP_252_2:   [xilinx-label-all-loops]
+    for (unsigned i = 0; i < CONFIG_T::n_in; i++) {
+    ^~~
+    VITIS_LOOP_252_2: 
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:57947:5: note: FIX-IT applied suggested code changes
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:57961:5: warning: Added loop label VITIS_LOOP_266_3:   [xilinx-label-all-loops]
+    for (unsigned i = 0; i < CONFIG_T::n_in; i++) {
+    ^~~
+    VITIS_LOOP_266_3: 
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:57961:5: note: FIX-IT applied suggested code changes
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:57968:5: warning: Added loop label VITIS_LOOP_273_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < N_TABLE; ii++) {
+    ^~~
+    VITIS_LOOP_273_1: 
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:57968:5: note: FIX-IT applied suggested code changes
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:57981:5: warning: Added loop label VITIS_LOOP_286_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < N_TABLE; ii++) {
+    ^~~
+    VITIS_LOOP_286_1: 
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:57981:5: note: FIX-IT applied suggested code changes
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:58018:5: warning: Added loop label VITIS_LOOP_323_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < CONFIG_T::n_in; ii++) {
+    ^~~
+    VITIS_LOOP_323_1: 
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:58018:5: note: FIX-IT applied suggested code changes
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:58023:5: warning: Added loop label VITIS_LOOP_328_2:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < CONFIG_T::n_in; ii++) {
+    ^~~
+    VITIS_LOOP_328_2: 
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:58023:5: note: FIX-IT applied suggested code changes
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:58024:9: warning: Added loop label VITIS_LOOP_329_3:   [xilinx-label-all-loops]
+        for (int jj = 0; jj < CONFIG_T::n_in; jj++) {
+        ^~~
+        VITIS_LOOP_329_3: 
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:58024:9: note: FIX-IT applied suggested code changes
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:58041:5: warning: Added loop label VITIS_LOOP_346_4:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < CONFIG_T::n_in; ii++) {
+    ^~~
+    VITIS_LOOP_346_4: 
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:58041:5: note: FIX-IT applied suggested code changes
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:58054:5: warning: Added loop label VITIS_LOOP_359_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < CONFIG_T::n_in; i++) {
+    ^~~
+    VITIS_LOOP_359_1: 
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:58054:5: note: FIX-IT applied suggested code changes
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:58062:5: warning: Added loop label VITIS_LOOP_367_2:   [xilinx-label-all-loops]
+    for (int i = 1; i < CONFIG_T::n_in; i++) {
+    ^~~
+    VITIS_LOOP_367_2: 
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:58062:5: note: FIX-IT applied suggested code changes
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:58097:5: warning: Added loop label VITIS_LOOP_402_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < N_TABLE; ii++) {
+    ^~~
+    VITIS_LOOP_402_1: 
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:58097:5: note: FIX-IT applied suggested code changes
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:58127:5: warning: Added loop label VITIS_LOOP_432_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < CONFIG_T::n_in; ii++) {
+    ^~~
+    VITIS_LOOP_432_1: 
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:58127:5: note: FIX-IT applied suggested code changes
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:58146:2: warning: Added loop label VITIS_LOOP_451_1:   [xilinx-label-all-loops]
+ for (int ii = 0; ii < CONFIG_T::n_in; ii++) {
+ ^~~
+ VITIS_LOOP_451_1: 
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:58146:2: note: FIX-IT applied suggested code changes
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:58162:5: warning: Added loop label VITIS_LOOP_467_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < CONFIG_T::n_in; ii++) {
+    ^~~
+    VITIS_LOOP_467_1: 
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:58162:5: note: FIX-IT applied suggested code changes
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:58180:5: warning: Added loop label VITIS_LOOP_485_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < CONFIG_T::n_in; ii++) {
+    ^~~
+    VITIS_LOOP_485_1: 
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:58180:5: note: FIX-IT applied suggested code changes
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:58197:5: warning: Added loop label VITIS_LOOP_502_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < CONFIG_T::n_in; ii++) {
+    ^~~
+    VITIS_LOOP_502_1: 
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:58197:5: note: FIX-IT applied suggested code changes
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:58214:5: warning: Added loop label VITIS_LOOP_519_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < N_TABLE; ii++) {
+    ^~~
+    VITIS_LOOP_519_1: 
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:58214:5: note: FIX-IT applied suggested code changes
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:58244:5: warning: Added loop label VITIS_LOOP_549_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < CONFIG_T::n_in; ii++) {
+    ^~~
+    VITIS_LOOP_549_1: 
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:58244:5: note: FIX-IT applied suggested code changes
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:58263:5: warning: Added loop label VITIS_LOOP_568_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < N_TABLE; ii++) {
+    ^~~
+    VITIS_LOOP_568_1: 
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:58263:5: note: FIX-IT applied suggested code changes
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:58293:5: warning: Added loop label VITIS_LOOP_598_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < CONFIG_T::n_in; ii++) {
+    ^~~
+    VITIS_LOOP_598_1: 
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:58293:5: note: FIX-IT applied suggested code changes
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:58312:5: warning: Added loop label VITIS_LOOP_617_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < N_TABLE; ii++) {
+    ^~~
+    VITIS_LOOP_617_1: 
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:58312:5: note: FIX-IT applied suggested code changes
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:58342:5: warning: Added loop label VITIS_LOOP_647_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < CONFIG_T::n_in; ii++) {
+    ^~~
+    VITIS_LOOP_647_1: 
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:58342:5: note: FIX-IT applied suggested code changes
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:58369:5: warning: Added loop label VITIS_LOOP_674_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < N_TABLE; ii++) {
+    ^~~
+    VITIS_LOOP_674_1: 
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:58369:5: note: FIX-IT applied suggested code changes
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:58398:5: warning: Added loop label VITIS_LOOP_703_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < CONFIG_T::n_in; ii++) {
+    ^~~
+    VITIS_LOOP_703_1: 
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:58398:5: note: FIX-IT applied suggested code changes
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:58419:5: warning: Added loop label VITIS_LOOP_724_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < CONFIG_T::n_in; ii++) {
+    ^~~
+    VITIS_LOOP_724_1: 
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:58419:5: note: FIX-IT applied suggested code changes
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:58437:5: warning: Added loop label VITIS_LOOP_742_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < CONFIG_T::n_in; ii++) {
+    ^~~
+    VITIS_LOOP_742_1: 
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:58437:5: note: FIX-IT applied suggested code changes
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:58457:5: warning: Added loop label VITIS_LOOP_762_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < CONFIG_T::n_in; ii++) {
+    ^~~
+    VITIS_LOOP_762_1: 
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:58457:5: note: FIX-IT applied suggested code changes
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:58553:9: warning: Added loop label VITIS_LOOP_73_1:   [xilinx-label-all-loops]
+        for (int i = 0; i < N / data_T::size; i++) {
+        ^~~
+        VITIS_LOOP_73_1: 
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:58553:9: note: FIX-IT applied suggested code changes
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:58560:13: warning: Added loop label VITIS_LOOP_80_2:   [xilinx-label-all-loops]
+            for (int j = 0; j < data_T::size; j++) {
+            ^~~
+            VITIS_LOOP_80_2: 
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:58560:13: note: FIX-IT applied suggested code changes
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:58569:9: warning: Added loop label VITIS_LOOP_89_3:   [xilinx-label-all-loops]
+        for (int i = 0; i < N / data_T::size; i++) {
+        ^~~
+        VITIS_LOOP_89_3: 
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:58569:9: note: FIX-IT applied suggested code changes
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:58578:13: warning: Added loop label VITIS_LOOP_98_4:   [xilinx-label-all-loops]
+            for (int j = 0; j < pack_diff; j++) {
+            ^~~
+            VITIS_LOOP_98_4: 
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:58578:13: note: FIX-IT applied suggested code changes
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:58582:17: warning: Added loop label VITIS_LOOP_102_5:   [xilinx-label-all-loops]
+                for (int k = 0; k < res_T::size; k++) {
+                ^~~
+                VITIS_LOOP_102_5: 
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:58582:17: note: FIX-IT applied suggested code changes
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:58593:9: warning: Added loop label VITIS_LOOP_113_6:   [xilinx-label-all-loops]
+        for (int i = 0; i < N / data_T::size; i++) {
+        ^~~
+        VITIS_LOOP_113_6: 
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:58593:9: note: FIX-IT applied suggested code changes
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:58597:13: warning: Added loop label VITIS_LOOP_117_7:   [xilinx-label-all-loops]
+            for (int j = 0; j < data_T::size; j++) {
+            ^~~
+            VITIS_LOOP_117_7: 
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:58597:13: note: FIX-IT applied suggested code changes
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:58621:9: warning: Added loop label VITIS_LOOP_141_1:   [xilinx-label-all-loops]
+        for (int j = 0; j < n_dupl; j++) {
+        ^~~
+        VITIS_LOOP_141_1: 
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:58621:9: note: FIX-IT applied suggested code changes
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:58625:13: warning: Added loop label VITIS_LOOP_145_2:   [xilinx-label-all-loops]
+            for (int k = 0; k < res_T::size; k++) {
+            ^~~
+            VITIS_LOOP_145_2: 
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:58625:13: note: FIX-IT applied suggested code changes
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:58644:9: warning: Added loop label VITIS_LOOP_164_1:   [xilinx-label-all-loops]
+        for (int k = 0; k < res_T::size; k++) {
+        ^~~
+        VITIS_LOOP_164_1: 
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:58644:9: note: FIX-IT applied suggested code changes
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:58667:2: warning: Added loop label VITIS_LOOP_187_1:   [xilinx-label-all-loops]
+ for (int i = 0; i < CONFIG_T::height * CONFIG_T::width / data_T::size; i++) {
+ ^~~
+ VITIS_LOOP_187_1: 
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:58667:2: note: FIX-IT applied suggested code changes
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:58670:9: warning: Added loop label VITIS_LOOP_190_2:   [xilinx-label-all-loops]
+        for (int j = 0; j < data_T::size; j++) {
+        ^~~
+        VITIS_LOOP_190_2: 
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:58670:9: note: FIX-IT applied suggested code changes
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:58675:5: warning: Added loop label VITIS_LOOP_195_3:   [xilinx-label-all-loops]
+    for (int i = 0; i < CONFIG_T::height * CONFIG_T::width / res_T::size; i++) {
+    ^~~
+    VITIS_LOOP_195_3: 
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:58675:5: note: FIX-IT applied suggested code changes
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:58679:9: warning: Added loop label VITIS_LOOP_199_4:   [xilinx-label-all-loops]
+        for (int j = 0; j < res_T::size; j++) {
+        ^~~
+        VITIS_LOOP_199_4: 
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:58679:9: note: FIX-IT applied suggested code changes
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:58893:9: warning: Added loop label VITIS_LOOP_213_1:   [xilinx-label-all-loops]
+        for (unsigned j = 0; j < data_T::size; j++) {
+        ^~~
+        VITIS_LOOP_213_1: 
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:58893:9: note: FIX-IT applied suggested code changes
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:58902:9: warning: Added loop label VITIS_LOOP_222_2:   [xilinx-label-all-loops]
+        for (unsigned j = 0; j < data_T::size; j++) {
+        ^~~
+        VITIS_LOOP_222_2: 
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:58902:9: note: FIX-IT applied suggested code changes
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:59008:5: warning: Added loop label VITIS_LOOP_328_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < CONFIG_T::n_in / res_T::size; i++) {
+    ^~~
+    VITIS_LOOP_328_1: 
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:59008:5: note: FIX-IT applied suggested code changes
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:59013:9: warning: Added loop label VITIS_LOOP_333_2:   [xilinx-label-all-loops]
+        for (int i = 0; i < res_T::size; i++) {
+        ^~~
+        VITIS_LOOP_333_2: 
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:59013:9: note: FIX-IT applied suggested code changes
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:59021:9: warning: Added loop label VITIS_LOOP_341_3:   [xilinx-label-all-loops]
+        for (int i = 1; i < res_T::size; i++) {
+        ^~~
+        VITIS_LOOP_341_3: 
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:59021:9: note: FIX-IT applied suggested code changes
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:60281:9: warning: Added loop label VITIS_LOOP_64_1:   [xilinx-label-all-loops]
+        for (unsigned i = 0; i < __SHIFT_DEPTH__; ++i)
+        ^~~
+        VITIS_LOOP_64_1: 
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:60281:9: note: FIX-IT applied suggested code changes
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:60288:9: warning: Added loop label VITIS_LOOP_71_1:   [xilinx-label-all-loops]
+        for (unsigned i = 0; i < __SHIFT_DEPTH__; ++i)
+        ^~~
+        VITIS_LOOP_71_1: 
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:60288:9: note: FIX-IT applied suggested code changes
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:60755:5: warning: Added loop label VITIS_LOOP_38_1:   [xilinx-label-all-loops]
+    for (unsigned i_out = 0; i_out < CONFIG_T::filt_height * CONFIG_T::filt_width * CONFIG_T::n_chan; i_out++) {
+    ^~~
+    VITIS_LOOP_38_1: 
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:60755:5: note: FIX-IT applied suggested code changes
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:60846:5: warning: Added loop label VITIS_LOOP_14_1:   [xilinx-label-all-loops]
+    for (unsigned k = 0; k < CONFIG_T::n_out; k++) {
+    ^~~
+    VITIS_LOOP_14_1: 
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:60846:5: note: FIX-IT applied suggested code changes
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:60906:9: warning: Added loop label VITIS_LOOP_74_1:   [xilinx-label-all-loops]
+        for (int im = 0; im < CONFIG_T::n_out; im++) {
+        ^~~
+        VITIS_LOOP_74_1: 
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:60906:9: note: FIX-IT applied suggested code changes
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61034:2: warning: Added loop label VITIS_LOOP_20_1:   [xilinx-label-all-loops]
+ for (int j = 0; j < CONFIG_T::n_chan; j++) {
+ ^~~
+ VITIS_LOOP_20_1: 
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61034:2: note: FIX-IT applied suggested code changes
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61035:9: warning: Added loop label VITIS_LOOP_21_2:   [xilinx-label-all-loops]
+        for (int i = 0; i < CONFIG_T::pad_left; i++) {
+        ^~~
+        VITIS_LOOP_21_2: 
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61035:9: note: FIX-IT applied suggested code changes
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61039:9: warning: Added loop label VITIS_LOOP_25_3:   [xilinx-label-all-loops]
+        for (int i = 0; i < CONFIG_T::in_width; i++) {
+        ^~~
+        VITIS_LOOP_25_3: 
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61039:9: note: FIX-IT applied suggested code changes
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61043:9: warning: Added loop label VITIS_LOOP_29_4:   [xilinx-label-all-loops]
+        for (int i = 0; i < CONFIG_T::pad_right; i++) {
+        ^~~
+        VITIS_LOOP_29_4: 
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61043:9: note: FIX-IT applied suggested code changes
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61053:2: warning: Added loop label VITIS_LOOP_39_1:   [xilinx-label-all-loops]
+ for (int i = 0; i < CONFIG_T::pad_left; i++) {
+ ^~~
+ VITIS_LOOP_39_1: 
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61053:2: note: FIX-IT applied suggested code changes
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61054:9: warning: Added loop label VITIS_LOOP_40_2:   [xilinx-label-all-loops]
+        for (int j = 0; j < CONFIG_T::n_chan; j++) {
+        ^~~
+        VITIS_LOOP_40_2: 
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61054:9: note: FIX-IT applied suggested code changes
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61059:5: warning: Added loop label VITIS_LOOP_45_3:   [xilinx-label-all-loops]
+    for (int i = 0; i < CONFIG_T::in_width; i++) {
+    ^~~
+    VITIS_LOOP_45_3: 
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61059:5: note: FIX-IT applied suggested code changes
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61060:9: warning: Added loop label VITIS_LOOP_46_4:   [xilinx-label-all-loops]
+        for (int j = 0; j < CONFIG_T::n_chan; j++) {
+        ^~~
+        VITIS_LOOP_46_4: 
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61060:9: note: FIX-IT applied suggested code changes
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61065:5: warning: Added loop label VITIS_LOOP_51_5:   [xilinx-label-all-loops]
+    for (int i = 0; i < CONFIG_T::pad_right; i++) {
+    ^~~
+    VITIS_LOOP_51_5: 
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61065:5: note: FIX-IT applied suggested code changes
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61066:9: warning: Added loop label VITIS_LOOP_52_6:   [xilinx-label-all-loops]
+        for (int j = 0; j < CONFIG_T::n_chan; j++) {
+        ^~~
+        VITIS_LOOP_52_6: 
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61066:9: note: FIX-IT applied suggested code changes
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61089:2: warning: Added loop label VITIS_LOOP_75_1:   [xilinx-label-all-loops]
+ for (int k = 0; k < CONFIG_T::n_chan; k++) {
+ ^~~
+ VITIS_LOOP_75_1: 
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61089:2: note: FIX-IT applied suggested code changes
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61091:9: warning: Added loop label VITIS_LOOP_77_2:   [xilinx-label-all-loops]
+        for (int i = 0; i < CONFIG_T::pad_top; i++) {
+        ^~~
+        VITIS_LOOP_77_2: 
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61091:9: note: FIX-IT applied suggested code changes
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61092:13: warning: Added loop label VITIS_LOOP_78_3:   [xilinx-label-all-loops]
+            for (int j = 0; j < CONFIG_T::out_width; j++) {
+            ^~~
+            VITIS_LOOP_78_3: 
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61092:13: note: FIX-IT applied suggested code changes
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61097:9: warning: Added loop label VITIS_LOOP_83_4:   [xilinx-label-all-loops]
+        for (int i = 0; i < CONFIG_T::in_height; i++) {
+        ^~~
+        VITIS_LOOP_83_4: 
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61097:9: note: FIX-IT applied suggested code changes
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61098:13: warning: Added loop label VITIS_LOOP_84_5:   [xilinx-label-all-loops]
+            for (int j = 0; j < CONFIG_T::pad_left; j++) {
+            ^~~
+            VITIS_LOOP_84_5: 
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61098:13: note: FIX-IT applied suggested code changes
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61101:13: warning: Added loop label VITIS_LOOP_87_6:   [xilinx-label-all-loops]
+            for (int j = 0; j < CONFIG_T::in_width; j++) {
+            ^~~
+            VITIS_LOOP_87_6: 
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61101:13: note: FIX-IT applied suggested code changes
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61104:13: warning: Added loop label VITIS_LOOP_90_7:   [xilinx-label-all-loops]
+            for (int j = 0; j < CONFIG_T::pad_right; j++) {
+            ^~~
+            VITIS_LOOP_90_7: 
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61104:13: note: FIX-IT applied suggested code changes
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61109:9: warning: Added loop label VITIS_LOOP_95_8:   [xilinx-label-all-loops]
+        for (int i = 0; i < CONFIG_T::pad_bottom; i++) {
+        ^~~
+        VITIS_LOOP_95_8: 
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61109:9: note: FIX-IT applied suggested code changes
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61110:13: warning: Added loop label VITIS_LOOP_96_9:   [xilinx-label-all-loops]
+            for (int j = 0; j < CONFIG_T::out_width; j++) {
+            ^~~
+            VITIS_LOOP_96_9: 
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61110:13: note: FIX-IT applied suggested code changes
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61122:2: warning: Added loop label VITIS_LOOP_108_1:   [xilinx-label-all-loops]
+ for (int i = 0; i < CONFIG_T::pad_top; i++) {
+ ^~~
+ VITIS_LOOP_108_1: 
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61122:2: note: FIX-IT applied suggested code changes
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61123:9: warning: Added loop label VITIS_LOOP_109_2:   [xilinx-label-all-loops]
+        for (int j = 0; j < CONFIG_T::out_width; j++) {
+        ^~~
+        VITIS_LOOP_109_2: 
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61123:9: note: FIX-IT applied suggested code changes
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61124:13: warning: Added loop label VITIS_LOOP_110_3:   [xilinx-label-all-loops]
+            for (int k = 0; k < CONFIG_T::n_chan; k++) {
+            ^~~
+            VITIS_LOOP_110_3: 
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61124:13: note: FIX-IT applied suggested code changes
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61130:5: warning: Added loop label VITIS_LOOP_116_4:   [xilinx-label-all-loops]
+    for (int i = 0; i < CONFIG_T::in_height; i++) {
+    ^~~
+    VITIS_LOOP_116_4: 
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61130:5: note: FIX-IT applied suggested code changes
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61131:9: warning: Added loop label VITIS_LOOP_117_5:   [xilinx-label-all-loops]
+        for (int j = 0; j < CONFIG_T::pad_left; j++) {
+        ^~~
+        VITIS_LOOP_117_5: 
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61131:9: note: FIX-IT applied suggested code changes
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61132:13: warning: Added loop label VITIS_LOOP_118_6:   [xilinx-label-all-loops]
+            for (int k = 0; k < CONFIG_T::n_chan; k++) {
+            ^~~
+            VITIS_LOOP_118_6: 
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61132:13: note: FIX-IT applied suggested code changes
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61136:9: warning: Added loop label VITIS_LOOP_122_7:   [xilinx-label-all-loops]
+        for (int j = 0; j < CONFIG_T::in_width; j++) {
+        ^~~
+        VITIS_LOOP_122_7: 
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61136:9: note: FIX-IT applied suggested code changes
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61137:13: warning: Added loop label VITIS_LOOP_123_8:   [xilinx-label-all-loops]
+            for (int k = 0; k < CONFIG_T::n_chan; k++) {
+            ^~~
+            VITIS_LOOP_123_8: 
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61137:13: note: FIX-IT applied suggested code changes
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61141:9: warning: Added loop label VITIS_LOOP_127_9:   [xilinx-label-all-loops]
+        for (int j = 0; j < CONFIG_T::pad_right; j++) {
+        ^~~
+        VITIS_LOOP_127_9: 
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61141:9: note: FIX-IT applied suggested code changes
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61142:13: warning: Added loop label VITIS_LOOP_128_10:   [xilinx-label-all-loops]
+            for (int k = 0; k < CONFIG_T::n_chan; k++) {
+            ^~~
+            VITIS_LOOP_128_10: 
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61142:13: note: FIX-IT applied suggested code changes
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61148:5: warning: Added loop label VITIS_LOOP_134_11:   [xilinx-label-all-loops]
+    for (int i = 0; i < CONFIG_T::pad_bottom; i++) {
+    ^~~
+    VITIS_LOOP_134_11: 
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61148:5: note: FIX-IT applied suggested code changes
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61149:9: warning: Added loop label VITIS_LOOP_135_12:   [xilinx-label-all-loops]
+        for (int j = 0; j < CONFIG_T::out_width; j++) {
+        ^~~
+        VITIS_LOOP_135_12: 
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61149:9: note: FIX-IT applied suggested code changes
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61150:13: warning: Added loop label VITIS_LOOP_136_13:   [xilinx-label-all-loops]
+            for (int k = 0; k < CONFIG_T::n_chan; k++) {
+            ^~~
+            VITIS_LOOP_136_13: 
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61150:13: note: FIX-IT applied suggested code changes
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61171:5: warning: Added loop label VITIS_LOOP_11_1:   [xilinx-label-all-loops]
+    for (int c = 0; c < CONFIG_T::n_chan; c++) {
+    ^~~
+    VITIS_LOOP_11_1: 
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61171:5: note: FIX-IT applied suggested code changes
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61182:5: warning: Added loop label VITIS_LOOP_22_1:   [xilinx-label-all-loops]
+    for (int c = 0; c < CONFIG_T::n_chan; c++) {
+    ^~~
+    VITIS_LOOP_22_1: 
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61182:5: note: FIX-IT applied suggested code changes
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61257:5: warning: Added loop label VITIS_LOOP_12_1:   [xilinx-label-all-loops]
+    for (int i = 1; i < N; i++) {
+    ^~~
+    VITIS_LOOP_12_1: 
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61257:5: note: FIX-IT applied suggested code changes
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61266:5: warning: Added loop label VITIS_LOOP_21_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < N; i++) {
+    ^~~
+    VITIS_LOOP_21_1: 
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61266:5: note: FIX-IT applied suggested code changes
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61278:5: warning: Added loop label VITIS_LOOP_33_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < N; i++) {
+    ^~~
+    VITIS_LOOP_33_1: 
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61278:5: note: FIX-IT applied suggested code changes
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61290:5: warning: Added loop label VITIS_LOOP_45_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < N; i++) {
+    ^~~
+    VITIS_LOOP_45_1: 
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61290:5: note: FIX-IT applied suggested code changes
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61359:5: warning: Added loop label VITIS_LOOP_114_1:   [xilinx-label-all-loops]
+    for (int ff = 0; ff < CONFIG_T::n_filt; ff++) {
+    ^~~
+    VITIS_LOOP_114_1: 
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61359:5: note: FIX-IT applied suggested code changes
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61361:9: warning: Added loop label VITIS_LOOP_116_2:   [xilinx-label-all-loops]
+        for (int ii = 0; ii < padded_width; ii += CONFIG_T::stride_width) {
+        ^~~
+        VITIS_LOOP_116_2: 
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61361:9: note: FIX-IT applied suggested code changes
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61367:13: warning: Added loop label VITIS_LOOP_122_3:   [xilinx-label-all-loops]
+            for (int jj = 0; jj < CONFIG_T::stride_width; jj++) {
+            ^~~
+            VITIS_LOOP_122_3: 
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61367:13: note: FIX-IT applied suggested code changes
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61403:2: warning: Added loop label VITIS_LOOP_158_1:   [xilinx-label-all-loops]
+ for (int ff = 0; ff < CONFIG_T::n_filt; ff++) {
+ ^~~
+ VITIS_LOOP_158_1: 
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61403:2: note: FIX-IT applied suggested code changes
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61406:2: warning: Added loop label VITIS_LOOP_161_2:   [xilinx-label-all-loops]
+ for (int jj = 0; jj < CONFIG_T::n_in; jj++) {
+ ^~~
+ VITIS_LOOP_161_2: 
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61406:2: note: FIX-IT applied suggested code changes
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61460:5: warning: Added loop label VITIS_LOOP_215_1:   [xilinx-label-all-loops]
+    for (int ff = 0; ff < CONFIG_T::n_filt; ff++) {
+    ^~~
+    VITIS_LOOP_215_1: 
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61460:5: note: FIX-IT applied suggested code changes
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61462:9: warning: Added loop label VITIS_LOOP_217_2:   [xilinx-label-all-loops]
+        for (int ii = 0; ii < padded_height; ii += CONFIG_T::stride_height) {
+        ^~~
+        VITIS_LOOP_217_2: 
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61462:9: note: FIX-IT applied suggested code changes
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61464:13: warning: Added loop label VITIS_LOOP_219_3:   [xilinx-label-all-loops]
+            for (int jj = 0; jj < padded_width; jj += CONFIG_T::stride_width) {
+            ^~~
+            VITIS_LOOP_219_3: 
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61464:13: note: FIX-IT applied suggested code changes
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61470:17: warning: Added loop label VITIS_LOOP_225_4:   [xilinx-label-all-loops]
+                for (int kk = 0; kk < CONFIG_T::stride_height; kk++) {
+                ^~~
+                VITIS_LOOP_225_4: 
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61470:17: note: FIX-IT applied suggested code changes
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61472:21: warning: Added loop label VITIS_LOOP_227_5:   [xilinx-label-all-loops]
+                    for (int ll = 0; ll < CONFIG_T::stride_width; ll++) {
+                    ^~~
+                    VITIS_LOOP_227_5: 
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61472:21: note: FIX-IT applied suggested code changes
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61521:5: warning: Added loop label VITIS_LOOP_276_1:   [xilinx-label-all-loops]
+    for (int ff = 0; ff < CONFIG_T::n_filt; ff++) {
+    ^~~
+    VITIS_LOOP_276_1: 
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61521:5: note: FIX-IT applied suggested code changes
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61523:9: warning: Added loop label VITIS_LOOP_278_2:   [xilinx-label-all-loops]
+        for (int ii = 0; ii < padded_height; ii += CONFIG_T::stride_height) {
+        ^~~
+        VITIS_LOOP_278_2: 
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61523:9: note: FIX-IT applied suggested code changes
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61525:13: warning: Added loop label VITIS_LOOP_280_3:   [xilinx-label-all-loops]
+            for (int jj = 0; jj < padded_width; jj += CONFIG_T::stride_width) {
+            ^~~
+            VITIS_LOOP_280_3: 
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61525:13: note: FIX-IT applied suggested code changes
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61531:17: warning: Added loop label VITIS_LOOP_286_4:   [xilinx-label-all-loops]
+                for (int kk = 0; kk < CONFIG_T::stride_height; kk++) {
+                ^~~
+                VITIS_LOOP_286_4: 
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61531:17: note: FIX-IT applied suggested code changes
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61533:21: warning: Added loop label VITIS_LOOP_288_5:   [xilinx-label-all-loops]
+                    for (int ll = 0; ll < CONFIG_T::stride_width; ll++) {
+                    ^~~
+                    VITIS_LOOP_288_5: 
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:61533:21: note: FIX-IT applied suggested code changes
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:62435:5: warning: Added loop label VITIS_LOOP_30_1:   [xilinx-label-all-loops]
+    for (unsigned ii = 0; ii < TABLE_SIZE; ii++) {
+    ^~~
+    VITIS_LOOP_30_1: 
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:62435:5: note: FIX-IT applied suggested code changes
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:62547:5: warning: Added loop label VITIS_LOOP_142_1:   [xilinx-label-all-loops]
+    for (unsigned i_out = 0; i_out < CONFIG_T::pool_height * CONFIG_T::pool_width * CONFIG_T::n_filt; i_out++) {
+    ^~~
+    VITIS_LOOP_142_1: 
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:62547:5: note: FIX-IT applied suggested code changes
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:62764:5: warning: Added loop label VITIS_LOOP_359_1:   [xilinx-label-all-loops]
+    for (unsigned i_out = 0; i_out < CONFIG_T::pool_width * CONFIG_T::n_filt; i_out++) {
+    ^~~
+    VITIS_LOOP_359_1: 
+/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp:62764:5: note: FIX-IT applied suggested code changes

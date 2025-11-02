@@ -1,0 +1,16 @@
+Backend: Vivado
+ClockPeriod: 10
+HLSConfig:
+  Model:
+    Precision: ap_fixed<8,3>
+    ReuseFactor: 1
+    Strategy: Latency
+IOType: io_stream
+InputData: null
+KerasModel: !keras_model 'hls_gesture_project/keras_model.h5'
+OutputDir: hls_gesture_project
+OutputPredictions: null
+Part: xczu3eg-sbva484-1-e
+ProjectName: myproject
+Stamp: deF9283D
+Version: 1.0.0

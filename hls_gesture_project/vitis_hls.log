@@ -1,0 +1,108 @@
+
+****** Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.2 (64-bit)
+  **** SW Build 4023990 on Oct 11 2023
+  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source /opt/Xilinx/Vitis_HLS/2023.2/scripts/vitis_hls/hls.tcl -notrace
+INFO: [HLS 200-10] Running '/opt/Xilinx/Vitis_HLS/2023.2/bin/unwrapped/lnx64.o/vitis_hls'
+INFO: [HLS 200-10] For user 'Etienne' on host 'OrdinArch' (Linux_x86_64 version 6.17.6-zen1-1-zen) on Sun Nov 02 17:16:50 CET 2025
+INFO: [HLS 200-10] On os "Arch Linux"
+INFO: [HLS 200-10] In directory '/home/Etienne/Gesture_FPGA/hls_gesture_project'
+INFO: [HLS 200-2053] The vitis_hls executable is being deprecated. Consider using vitis-run --mode hls --tcl
+Sourcing Tcl script 'build_prj.tcl'
+INFO: [HLS 200-1510] Running: open_project myproject_prj 
+INFO: [HLS 200-10] Creating and opening project '/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj'.
+INFO: [HLS 200-1510] Running: set_top myproject 
+INFO: [HLS 200-1510] Running: add_files firmware/myproject.cpp -cflags -std=c++0x 
+INFO: [HLS 200-10] Adding design file 'firmware/myproject.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files -tb myproject_test.cpp -cflags -std=c++0x 
+INFO: [HLS 200-10] Adding test bench file 'myproject_test.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files -tb firmware/weights 
+INFO: [HLS 200-10] Adding test bench file 'firmware/weights' to the project
+INFO: [HLS 200-1510] Running: add_files -tb tb_data 
+INFO: [HLS 200-10] Adding test bench file 'tb_data' to the project
+INFO: [HLS 200-1510] Running: open_solution solution1 
+INFO: [HLS 200-10] Creating and opening solution '/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1'.
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1510] Running: config_array_partition -maximum_size 4096 
+INFO: [XFORM 203-101] Allowed max sub elements number after partition is 4096.
+ERROR: [HLS 200-642] The 'config_array_partition -maximum_size' command is not supported.
+INFO: [HLS 200-1510] Running: config_compile -name_max_length 80 
+INFO: [XFORM 203-1161] The maximum of name length is set to 80.
+INFO: [HLS 200-1510] Running: set_part xczu3eg-sbva484-1-e 
+INFO: [HLS 200-1611] Setting target device to 'xczu3eg-sbva484-1-e'
+INFO: [XFORM 203-1161] The maximum of name length is set to 80.
+INFO: [HLS 200-1510] Running: config_schedule -enable_dsp_full_reg=false 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1510] Running: set_clock_uncertainty 12.5% default 
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 1.25ns.
+***** C SIMULATION *****
+INFO: [HLS 200-1510] Running: csim_design 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+   Compiling ../../../../myproject_test.cpp in debug mode
+   Compiling ../../../../firmware/myproject.cpp in debug mode
+   Generating csim.exe
+INFO: Unable to open input/predictions file, using default input.
+-0.03125 0 0.03125 -0.0625 0 
+INFO: Saved inference results to file: tb_data/csim_results.log
+INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 4356
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 9.34 seconds. CPU system time: 0.26 seconds. Elapsed time: 9.77 seconds; current allocated memory: 0.125 MB.
+***** C SIMULATION COMPLETED IN 0h0m9s *****
+***** C/RTL SYNTHESIS *****
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.08 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.09 seconds; current allocated memory: 241.922 MB.
+INFO: [HLS 200-10] Analyzing design file 'firmware/myproject.cpp' ... 
+WARNING: [HLS 207-5538] 'region' in '#pragma HLS Inline' is deprecated, use 'Inline Pragma' instead (firmware/nnet_utils/nnet_conv2d.h:47:26)
+WARNING: [HLS 207-5538] 'region' in '#pragma HLS Inline' is deprecated, use 'Inline Pragma' instead (firmware/nnet_utils/nnet_conv2d.h:63:26)
+WARNING: [HLS 207-5566] unexpected pragma argument 'pool_op', expects function/operation (firmware/nnet_utils/nnet_pooling.h:332:34)
+WARNING: [HLS 207-5571] Only for/while/do loop or function body support the pipeline pragma (firmware/nnet_utils/nnet_conv2d_stream.h:84:9)
+WARNING: [HLS 207-5571] Only for/while/do loop or function body support the pipeline pragma (firmware/nnet_utils/nnet_conv2d_stream.h:57:9)
+WARNING: [HLS 207-5571] Only for/while/do loop or function body support the pipeline pragma (firmware/nnet_utils/nnet_pooling_stream.h:154:9)
+WARNING: [HLS 207-5571] Only for/while/do loop or function body support the pipeline pragma (firmware/nnet_utils/nnet_dense_stream.h:38:9)
+WARNING: [HLS 207-5571] Only for/while/do loop or function body support the pipeline pragma (firmware/nnet_utils/nnet_dense_stream.h:53:9)
+WARNING: [HLS 207-5571] Only for/while/do loop or function body support the pipeline pragma (firmware/nnet_utils/nnet_dense_stream.h:18:9)
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body (firmware/myproject.cpp:45:74)
+Resolution: For help on HLS 214-113 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=214-113.html
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body (firmware/myproject.cpp:45:78)
+Resolution: For help on HLS 214-113 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=214-113.html
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body (firmware/myproject.cpp:61:74)
+Resolution: For help on HLS 214-113 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=214-113.html
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body (firmware/myproject.cpp:61:78)
+Resolution: For help on HLS 214-113 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=214-113.html
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body (firmware/myproject.cpp:77:77)
+Resolution: For help on HLS 214-113 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=214-113.html
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body (firmware/myproject.cpp:77:82)
+Resolution: For help on HLS 214-113 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=214-113.html
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body (firmware/myproject.cpp:90:72)
+Resolution: For help on HLS 214-113 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=214-113.html
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body (firmware/myproject.cpp:90:77)
+Resolution: For help on HLS 214-113 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=214-113.html
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body (firmware/myproject.cpp:96:74)
+Resolution: For help on HLS 214-113 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=214-113.html
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body (firmware/myproject.cpp:96:79)
+Resolution: For help on HLS 214-113 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=214-113.html
+WARNING: [HLS 200-471] Dataflow form checks found 10 issue(s) in file firmware/myproject.cpp
+Resolution: For help on HLS 200-471 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=200-471.html
+WARNING: [HLS 207-5292] unused parameter 'keep' (firmware/nnet_utils/nnet_helpers.h:285:99)
+WARNING: [HLS 207-5292] unused parameter 'data' (firmware/nnet_utils/nnet_code_gen.h:11:36)
+WARNING: [HLS 207-5292] unused parameter 'buffer' (firmware/nnet_utils/nnet_code_gen.h:12:36)
+WARNING: [HLS 207-5292] unused parameter 'partition' (firmware/nnet_utils/nnet_code_gen.h:13:44)
+WARNING: [HLS 207-5292] unused parameter 'data' (firmware/nnet_utils/nnet_code_gen.h:21:24)
+WARNING: [HLS 207-5292] unused parameter 'buffer' (firmware/nnet_utils/nnet_code_gen.h:22:24)
+WARNING: [HLS 207-5292] unused parameter 'partition' (firmware/nnet_utils/nnet_code_gen.h:23:32)
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 32.87 seconds. CPU system time: 1.09 seconds. Elapsed time: 34.64 seconds; current allocated memory: 250.664 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 7,832 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/syn/report/csynth_design_size.rpt
+WARNING: [HLS 200-1995] There were 4,565,337 instructions in the design after the 'Unroll/Inline' phase of compilation. See the Design Size Report for more details: /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/syn/report/csynth_design_size.rpt
+WARNING: [HLS 200-1995] There were 1,234,739 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details: /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/syn/report/csynth_design_size.rpt
+WARNING: [HLS 200-1995] There were 1,233,314 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details: /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/syn/report/csynth_design_size.rpt
+WARNING: [HLS 200-1995] There were 1,229,911 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details: /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/syn/report/csynth_design_size.rpt

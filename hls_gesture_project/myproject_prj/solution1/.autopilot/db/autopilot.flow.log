@@ -1,0 +1,173 @@
+INFO-FLOW: Workspace /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1 opened at Sun Nov 02 17:16:51 CET 2025
+Execute       send_msg_by_id INFO @200-1505@%s%s default  vivado 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Execute     config_array_partition -maximum_size 4096 
+INFO: [HLS 200-1510] Running: config_array_partition -maximum_size 4096 
+INFO: [XFORM 203-101] Allowed max sub elements number after partition is 4096.
+ERROR: [HLS 200-642] The 'config_array_partition -maximum_size' command is not supported.
+Command     config_array_partition done; error code: 1; 
+Execute     config_compile -name_max_length 80 
+INFO: [HLS 200-1510] Running: config_compile -name_max_length 80 
+INFO: [XFORM 203-1161] The maximum of name length is set to 80.
+Execute     set_part xczu3eg-sbva484-1-e 
+INFO: [HLS 200-1510] Running: set_part xczu3eg-sbva484-1-e 
+Execute       create_platform xczu3eg-sbva484-1-e -board  
+DBG:HLSDevice: Trying to load device library: /opt/Xilinx/Vitis_HLS/2023.2/lib/lnx64.o/libxv_hlsvwrap.so
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: /opt/Xilinx/Vivado/2023.2/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xczu3eg-sbva484-1-e'
+Command       create_platform done; 0.76 sec.
+Execute       source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/util.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfft.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command       ap_source done; 0.11 sec.
+Execute       ap_part_info -name xczu3eg-sbva484-1-e -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+INFO: [XFORM 203-1161] The maximum of name length is set to 80.
+Command     set_part done; 0.89 sec.
+Execute     config_schedule -enable_dsp_full_reg=false 
+INFO: [HLS 200-1510] Running: config_schedule -enable_dsp_full_reg=false 
+Execute     create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+Execute       ap_set_clock -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     set_clock_uncertainty 12.5% default 
+INFO: [HLS 200-1510] Running: set_clock_uncertainty 12.5% default 
+Execute       ap_set_clock -name default -uncertainty 1.25 -unit % 
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 1.25ns.
+Execute     csim_design 
+INFO: [HLS 200-1510] Running: csim_design 
+INFO-FLOW: Running SLX 'csim' proc: ::SLX::run_csim
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+Execute       send_msg_by_id INFO @200-2036@%s debug 
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+Execute       ap_part_info -name xczu3eg-sbva484-1-e -data info 
+Execute       source run_sim.tcl 
+Command       ap_source done; 2.09 sec.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+Command     csim_design done; 9.77 sec.
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 9.34 seconds. CPU system time: 0.26 seconds. Elapsed time: 9.77 seconds; current allocated memory: 0.125 MB.
+Execute     csynth_design 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO-FLOW: Running SLX 'csynth' proc: ::SLX::run_csynth
+Execute       elaborate -effort=medium -skip_syncheck=0 -keep_printf=0 -skip_cdt=0 -skip_transform=0 -ng=0 -g=0 -opt_fp=0 -from_csynth_design=1 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.08 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.09 seconds; current allocated memory: 241.922 MB.
+Execute         set_directive_top myproject -name=myproject 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/tps/tcl/tcllib1.11.1/yaml/huddle.tcl 
+Execute         source /opt/Xilinx/Vitis_HLS/2023.2/tps/tcl/tcllib1.11.1/yaml/json2huddle.tcl 
+Execute           source /opt/Xilinx/Vitis_HLS/2023.2/tps/tcl/tcllib1.11.1/try/try.tcl 
+INFO: [HLS 200-10] Analyzing design file 'firmware/myproject.cpp' ... 
+INFO-FLOW: Compiling one TU...
+INFO-FLOW: Handling firmware/myproject.cpp as C++
+Execute         ap_part_info -name xczu3eg-sbva484-1-e -data info 
+INFO-FLOW: Running: GCC PP 39
+INFO-FLOW: Source preprocessing
+INFO-FLOW: run_clang exec: /opt/Xilinx/Vitis_HLS/2023.2/lnx64/tools/clang-3.9-csynth/bin/clang firmware/myproject.cpp -foptimization-record-file=/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.cpp.clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fno-limit-debug-info -gcc-toolchain /opt/Xilinx/Vitis_HLS/2023.2/tps/lnx64/gcc-8.3.0 -fhls -fno-exceptions -insert-hls-directive=/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/all.directive.json -E -std=c++0x -fno-math-errno -c -emit-llvm -mllvm -disable-llvm-optzns -Werror=implicit-function-declaration -Werror=implicit-hls-streams -Werror=return-type -Wpragmas -Wunused-parameter -Wdump-hls-pragmas -Wno-error=dump-hls-pragmas -hls-clock-period=10 -fno-threadsafe-statics -fno-use-cxa-atexit -target fpga64-xilinx-linux-gnu -fno-threadsafe-statics -fno-use-cxa-atexit -D__VITIS_HLS__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /opt/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot -I /opt/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E2__ -I /usr/include/x86_64-linux-gnu -o /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp -hls-platform-db-name=/opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/common/platform.db -hls-platform-name=zynquplus_slow -device-resource-info=BRAM_432.000000_DSP_360.000000_FF_141120.000000_LUT_70560.000000_SLICE_8820.000000_URAM_0.000000 -device-name-info=xczu3eg-sbva484-1-e > /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.cpp.clang.out.log 2> /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.cpp.clang.err.log
+INFO-FLOW: Done: GCC PP 39 time: 0.3 seconds per iteration
+INFO-FLOW: Source syntax check for synthesis
+INFO-FLOW: run_clang exec: /opt/Xilinx/Vitis_HLS/2023.2/lnx64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fsyntax-only -fhls -target fpga64-xilinx-linux-gnu /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp -hls-platform-db-name=/opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/common/platform.db -hls-platform-name=zynquplus_slow -device-resource-info=BRAM_432.000000_DSP_360.000000_FF_141120.000000_LUT_70560.000000_SLICE_8820.000000_URAM_0.000000 -device-name-info=xczu3eg-sbva484-1-e > /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/clang.out.log 2> /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/clang.err.log
+WARNING: [HLS 207-5538] 'region' in '#pragma HLS Inline' is deprecated, use 'Inline Pragma' instead (firmware/nnet_utils/nnet_conv2d.h:47:26)
+WARNING: [HLS 207-5538] 'region' in '#pragma HLS Inline' is deprecated, use 'Inline Pragma' instead (firmware/nnet_utils/nnet_conv2d.h:63:26)
+WARNING: [HLS 207-5566] unexpected pragma argument 'pool_op', expects function/operation (firmware/nnet_utils/nnet_pooling.h:332:34)
+WARNING: [HLS 207-5571] Only for/while/do loop or function body support the pipeline pragma (firmware/nnet_utils/nnet_conv2d_stream.h:84:9)
+WARNING: [HLS 207-5571] Only for/while/do loop or function body support the pipeline pragma (firmware/nnet_utils/nnet_conv2d_stream.h:57:9)
+WARNING: [HLS 207-5571] Only for/while/do loop or function body support the pipeline pragma (firmware/nnet_utils/nnet_pooling_stream.h:154:9)
+WARNING: [HLS 207-5571] Only for/while/do loop or function body support the pipeline pragma (firmware/nnet_utils/nnet_dense_stream.h:38:9)
+WARNING: [HLS 207-5571] Only for/while/do loop or function body support the pipeline pragma (firmware/nnet_utils/nnet_dense_stream.h:53:9)
+WARNING: [HLS 207-5571] Only for/while/do loop or function body support the pipeline pragma (firmware/nnet_utils/nnet_dense_stream.h:18:9)
+Execute         clang_tidy xilinx-systemc-detector -desc systemc-detector /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp std=c++0x -target fpga  -directive=/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/.systemc_flag 
+INFO-FLOW: exec /opt/Xilinx/Vitis_HLS/2023.2/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-systemc-detector -import-directive=/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/.systemc_flag -fix-errors /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp -- -std=c++0x -target fpga -fhls -ferror-limit=0
+Command         clang_tidy done; 4.86 sec.
+INFO-FLOW: Running: clang-tidy CDT preprocess 39
+Execute         clang_tidy xilinx-directive2pragma -desc directive2pragma /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp std=c++0x -target fpga  -directive=/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/all.directive.json 
+INFO-FLOW: exec /opt/Xilinx/Vitis_HLS/2023.2/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-directive2pragma -import-directive=/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/all.directive.json -fix-errors /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp -- -std=c++0x -target fpga -fhls -ferror-limit=0
+Command         clang_tidy done; 5.38 sec.
+INFO-FLOW: Done: clang-tidy CDT preprocess 39 time: 5.4 seconds per iteration
+INFO-FLOW: Calling xilinx-label-all-loops ... 
+INFO-FLOW: Calling xilinx-aggregate-on-hls-vector ... 
+Execute         clang_tidy -errorcheck -desc loop-label xilinx-label-all-loops,xilinx-aggregate-on-hls-vector,,xilinx-warn-mayneed-no-ctor-attribute /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp std=c++0x -target fpga  
+INFO-FLOW: run_clang exec: /opt/Xilinx/Vitis_HLS/2023.2/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -export-fixes=/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp.clang-tidy.loop-label.diag.yml -header-filter=.* --checks=-*,xilinx-label-all-loops,xilinx-aggregate-on-hls-vector,,xilinx-warn-mayneed-no-ctor-attribute -fix-errors /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp -- -std=c++0x -target fpga -fhls -ferror-limit=0 > /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp.clang-tidy.loop-label.out.log 2> /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp.clang-tidy.loop-label.err.log
+Execute           source /opt/Xilinx/Vitis_HLS/2023.2/tps/tcl/tcllib1.11.1/yaml/yaml.tcl 
+Command         clang_tidy done; 7.93 sec.
+INFO-FLOW: run_clang exec: /opt/Xilinx/Vitis_HLS/2023.2/lnx64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp.xilinx-dataflow-lawyer.diag.yml /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp -- -std=c++0x -target fpga -fhls -ferror-limit=0 -fstrict-dataflow > /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp.xilinx-dataflow-lawyer.out.log 2> /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp.xilinx-dataflow-lawyer.err.log
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body (firmware/myproject.cpp:45:74)
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body (firmware/myproject.cpp:45:78)
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body (firmware/myproject.cpp:61:74)
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body (firmware/myproject.cpp:61:78)
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body (firmware/myproject.cpp:77:77)
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body (firmware/myproject.cpp:77:82)
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body (firmware/myproject.cpp:90:72)
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body (firmware/myproject.cpp:90:77)
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body (firmware/myproject.cpp:96:74)
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body (firmware/myproject.cpp:96:79)
+Execute         send_msg_by_id WARNING @200-471@%s%s 10 firmware/myproject.cpp 
+WARNING: [HLS 200-471] Dataflow form checks found 10 issue(s) in file firmware/myproject.cpp
+Execute         ap_part_info -name xczu3eg-sbva484-1-e -data info 
+INFO-FLOW: compiling source code to llvm bc
+INFO-FLOW: run_clang exec: /opt/Xilinx/Vitis_HLS/2023.2/lnx64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp.clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fno-limit-debug-info -fhls -flto -fno-exceptions -Wno-error=c++11-narrowing -hls-emit-hint-scope /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp -std=c++0x -fno-math-errno -c -emit-llvm -mllvm -disable-llvm-optzns -Werror=implicit-function-declaration -Werror=implicit-hls-streams -Werror=return-type -Wpragmas -Wunused-parameter -Wdump-hls-pragmas -Wno-error=dump-hls-pragmas -hls-clock-period=10 -fno-threadsafe-statics -fno-use-cxa-atexit -target fpga64-xilinx-linux-gnu -D__VITIS_HLS__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /opt/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot -I /opt/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E2__ -g -o /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.bc -hls-platform-db-name=/opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/common/platform.db -hls-platform-name=zynquplus_slow -device-resource-info=BRAM_432.000000_DSP_360.000000_FF_141120.000000_LUT_70560.000000_SLICE_8820.000000_URAM_0.000000 -device-name-info=xczu3eg-sbva484-1-e > /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp.clang.out.log 2> /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp.clang.err.log
+WARNING: [HLS 207-5292] unused parameter 'keep' (firmware/nnet_utils/nnet_helpers.h:285:99)
+WARNING: [HLS 207-5292] unused parameter 'data' (firmware/nnet_utils/nnet_code_gen.h:11:36)
+WARNING: [HLS 207-5292] unused parameter 'buffer' (firmware/nnet_utils/nnet_code_gen.h:12:36)
+WARNING: [HLS 207-5292] unused parameter 'partition' (firmware/nnet_utils/nnet_code_gen.h:13:44)
+WARNING: [HLS 207-5292] unused parameter 'data' (firmware/nnet_utils/nnet_code_gen.h:21:24)
+WARNING: [HLS 207-5292] unused parameter 'buffer' (firmware/nnet_utils/nnet_code_gen.h:22:24)
+WARNING: [HLS 207-5292] unused parameter 'partition' (firmware/nnet_utils/nnet_code_gen.h:23:32)
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 32.87 seconds. CPU system time: 1.09 seconds. Elapsed time: 34.64 seconds; current allocated memory: 250.664 MB.
+INFO-FLOW: Linking Debug ...
+INFO-FLOW: Linking dut bc code.
+Execute         run_link_or_opt -out /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/a.g.ld.0.bc -args  "/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.g.bc"  
+INFO-FLOW: run_clang exec: /opt/Xilinx/Vitis_HLS/2023.2/lnx64/tools/clang-3.9-csynth/bin/llvm-link /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.g.bc -o /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/a.g.ld.0.bc > /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/a.g.ld.0.bc.llvm-link.out.log 2> /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/a.g.ld.0.bc.llvm-link.err.log
+INFO-FLOW: 
+Command         run_link_or_opt done; 0.56 sec.
+Execute         run_link_or_opt -opt -out /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/a.g.ld.1.lower.bc -args /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/a.g.ld.0.bc -reflow-lower-math-intrinsics 
+INFO-FLOW: run_clang exec: /opt/Xilinx/Vitis_HLS/2023.2/lnx64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=reflow|pasta|unroll -pass-remarks=reflow|pasta|unroll|inline -pass-remarks-output=/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/a.g.ld.1.lower.bc.opt.diag.yml /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/a.g.ld.0.bc -reflow-lower-math-intrinsics -o /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/a.g.ld.1.lower.bc > /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/a.g.ld.1.lower.bc.opt.out.log 2> /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/a.g.ld.1.lower.bc.opt.err.log
+INFO-FLOW: 
+INFO-FLOW: Running: gen_design_size_report post-opt
+INFO-FLOW: Done: gen_design_size_report post-opt time: 0 seconds per iteration
+Command         run_link_or_opt done; 0.87 sec.
+INFO-FLOW: Linking math bc lib
+Execute         run_link_or_opt -out /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/a.g.ld.2.m1.bc -args /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/a.g.ld.1.lower.bc -only-needed /opt/Xilinx/Vitis_HLS/2023.2/lnx64/lib/libhlsm_39.bc /opt/Xilinx/Vitis_HLS/2023.2/lnx64/lib/libhlsmc++_39.bc 
+INFO-FLOW: run_clang exec: /opt/Xilinx/Vitis_HLS/2023.2/lnx64/tools/clang-3.9-csynth/bin/llvm-link /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/a.g.ld.1.lower.bc -only-needed /opt/Xilinx/Vitis_HLS/2023.2/lnx64/lib/libhlsm_39.bc /opt/Xilinx/Vitis_HLS/2023.2/lnx64/lib/libhlsmc++_39.bc -o /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/a.g.ld.2.m1.bc > /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/a.g.ld.2.m1.bc.llvm-link.out.log 2> /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/a.g.ld.2.m1.bc.llvm-link.err.log
+INFO-FLOW: 
+Command         run_link_or_opt done; 2.09 sec.
+Execute         run_link_or_opt -opt -out /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/a.g.ld.3.fpc.bc -args /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/a.g.ld.2.m1.bc -reflow-globaldce -hls-top-function-name=myproject -reflow-float-conversion 
+INFO-FLOW: run_clang exec: /opt/Xilinx/Vitis_HLS/2023.2/lnx64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=reflow|pasta|unroll -pass-remarks=reflow|pasta|unroll|inline -pass-remarks-output=/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/a.g.ld.3.fpc.bc.opt.diag.yml /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/a.g.ld.2.m1.bc -reflow-globaldce -hls-top-function-name=myproject -reflow-float-conversion -o /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/a.g.ld.3.fpc.bc > /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/a.g.ld.3.fpc.bc.opt.out.log 2> /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/a.g.ld.3.fpc.bc.opt.err.log
+INFO-FLOW: 
+INFO-FLOW: Running: gen_design_size_report post-opt
+INFO-FLOW: Done: gen_design_size_report post-opt time: 0 seconds per iteration
+Command         run_link_or_opt done; 1.24 sec.
+Execute         run_link_or_opt -out /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/a.g.ld.4.m2.bc -args /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/a.g.ld.3.fpc.bc -only-needed /opt/Xilinx/Vitis_HLS/2023.2/lnx64/lib/libfloatconversion_39.bc 
+INFO-FLOW: run_clang exec: /opt/Xilinx/Vitis_HLS/2023.2/lnx64/tools/clang-3.9-csynth/bin/llvm-link /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/a.g.ld.3.fpc.bc -only-needed /opt/Xilinx/Vitis_HLS/2023.2/lnx64/lib/libfloatconversion_39.bc -o /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/a.g.ld.4.m2.bc > /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/a.g.ld.4.m2.bc.llvm-link.out.log 2> /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/a.g.ld.4.m2.bc.llvm-link.err.log
+INFO-FLOW: 
+Command         run_link_or_opt done; 0.58 sec.
+Execute         run_link_or_opt -opt -out /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/a.g.ld.5.gdce.bc -args /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/a.g.ld.4.m2.bc -reflow-globaldce -hls-top-function-name=myproject 
+INFO-FLOW: run_clang exec: /opt/Xilinx/Vitis_HLS/2023.2/lnx64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=reflow|pasta|unroll -pass-remarks=reflow|pasta|unroll|inline -pass-remarks-output=/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/a.g.ld.5.gdce.bc.opt.diag.yml /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/a.g.ld.4.m2.bc -reflow-globaldce -hls-top-function-name=myproject -o /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/a.g.ld.5.gdce.bc > /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/a.g.ld.5.gdce.bc.opt.out.log 2> /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/a.g.ld.5.gdce.bc.opt.err.log
+INFO-FLOW: 
+INFO-FLOW: Running: gen_design_size_report post-opt
+INFO-FLOW: Done: gen_design_size_report post-opt time: 0 seconds per iteration
+Command         run_link_or_opt done; 0.57 sec.
+Execute         send_msg_by_id INFO @200-777@%s Vivado 
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+Execute         is_m_axi_addr64 
+INFO-FLOW: Doing LTO.
+INFO-FLOW: run_clang (background poll_ms 5000) exec: /opt/Xilinx/Vitis_HLS/2023.2/lnx64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/a.g.ld.0.bc.clang.reflow.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fhls -mllvm -hls-top-function-name=myproject -mllvm -hls-db-dir -mllvm /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db -emit-llvm -c -target fpga64-xilinx-none -mllvm -xcl-xmlinfo=/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/kernel.internal.xml -mllvm -top-io-mapping-info=/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/top-io-fe.xml -mllvm -hls-bitcode-version=3.1 -mllvm -reflow-enable-slave-interface-default-setting=true -mllvm -gen-kernel-xml=false -mllvm -default-maxi-offset=slave -mllvm -maxi-latency=0 -mllvm -hls-maxi-data-size-in-bits=8 -mllvm -hls-maxi-max-data-size-in-bits=1024 -mllvm -hls-max-widen-size-in-bits=0 -mllvm -xcl-kernel-max-mem-ports=0 -mllvm -maxi-read-trans=16 -mllvm -maxi-write-trans=16 -mllvm -maxi-read-burst-len=16 -mllvm -maxi-write-burst-len=16 -mllvm -reflow-enable-saxi-64bits=0 -mllvm -reflow-basic-block-instr-threshold=200000 -mllvm -reflow-auto-pipeline-threshold=64 -mllvm -reflow-enable-maxi-auto-id-channel=0 -mllvm -enable-fp-thr=0 -mllvm -reflow-bdd-simplify-threshold=1048576 -mllvm -reflow-fanout-threshold=16 -mllvm -assume-maxi-align=1 -mllvm -reflow-pipeline-style-llvm-setting=2 -mllvm -reflow-enable-dataflow-strict-mode-checking=1 -ftime-report -mllvm -time-passes -mllvm -reflow-auto-array-partition-mode=default -mllvm -reflow-enable-auto-array-partition=true -mllvm -reflow-enable-auto-parallel-performance-driven=true -mllvm -reflow-enable-partition-for-automation=true -mllvm -reflow-aggregate-bitwidth-threshold=4096 -mllvm -reflow-reserved-saxilite-registers=0 -mllvm -enable-reflow-auto-loop-pipeline -mllvm -reflow-max-unroll-threshold=409600 -mllvm -reflow-assume-no-address-wrap=true -mllvm -reflow-enable-occurrence-inference=true -mllvm -reflow-emit-hint-scope=true -mllvm -hls -mllvm -disable-inlined-alloca-merging=true -mllvm -default-clock-period=10 -x ir /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/a.g.ld.5.gdce.bc -o /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/a.g.lto.bc -hls-platform-db-name=/opt/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/common/platform.db -hls-platform-name=zynquplus_slow -device-resource-info=BRAM_432.000000_DSP_360.000000_FF_141120.000000_LUT_70560.000000_SLICE_8820.000000_URAM_0.000000 -device-name-info=xczu3eg-sbva484-1-e 2> /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/a.g.ld.0.bc.clang.reflow.err.log bg_poll_cmd: ::AP::poll_clang_39_closed_source
+Execute         send_msg_by_id INFO @200-1995@%s%s%s 7,832 Compile/Link /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 7,832 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/syn/report/csynth_design_size.rpt
+Execute         send_msg_by_id WARNING @200-1995@%s%s%s 4,565,337 Unroll/Inline /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/syn/report/csynth_design_size.rpt 
+WARNING: [HLS 200-1995] There were 4,565,337 instructions in the design after the 'Unroll/Inline' phase of compilation. See the Design Size Report for more details: /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/syn/report/csynth_design_size.rpt
+Execute         send_msg_by_id WARNING @200-1995@%s%s%s 1,234,739 Unroll/Inline (step 2) /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/syn/report/csynth_design_size.rpt 
+WARNING: [HLS 200-1995] There were 1,234,739 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details: /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/syn/report/csynth_design_size.rpt
+Execute         send_msg_by_id WARNING @200-1995@%s%s%s 1,233,314 Unroll/Inline (step 3) /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/syn/report/csynth_design_size.rpt 
+WARNING: [HLS 200-1995] There were 1,233,314 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details: /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/syn/report/csynth_design_size.rpt
+Execute         send_msg_by_id WARNING @200-1995@%s%s%s 1,229,911 Unroll/Inline (step 4) /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/syn/report/csynth_design_size.rpt 

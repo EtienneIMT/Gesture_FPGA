@@ -1,0 +1,73 @@
+In file included from firmware/myproject.cpp:4:
+In file included from firmware/parameters.h:12:
+firmware/nnet_utils/nnet_conv2d.h:47:26: warning: 'region' in '#pragma HLS Inline' is deprecated, use 'Inline Pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS INLINE region
+                         ^
+firmware/nnet_utils/nnet_conv2d.h:63:26: warning: 'region' in '#pragma HLS Inline' is deprecated, use 'Inline Pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS INLINE region
+                         ^
+In file included from firmware/myproject.cpp:4:
+In file included from firmware/parameters.h:19:
+firmware/nnet_utils/nnet_pooling.h:332:34: warning: unexpected pragma argument 'pool_op', expects function/operation [-Winvalid-hls-pragmas]
+#pragma HLS ALLOCATION instances=pool_op limit=limit function
+                                 ^
+In file included from firmware/myproject.cpp:4:
+In file included from firmware/parameters.h:13:
+firmware/nnet_utils/nnet_conv2d_stream.h:84:9: warning: Only for/while/do loop or function body support the pipeline pragma [-Wignored-hls-attributes]
+#pragma HLS PIPELINE II=CONFIG_T::reuse_factor
+        ^~~~
+firmware/nnet_utils/nnet_conv2d_stream.h:57:9: warning: Only for/while/do loop or function body support the pipeline pragma [-Wignored-hls-attributes]
+#pragma HLS PIPELINE II=CONFIG_T::reuse_factor
+        ^~~~
+In file included from firmware/myproject.cpp:4:
+In file included from firmware/parameters.h:20:
+firmware/nnet_utils/nnet_pooling_stream.h:154:9: warning: Only for/while/do loop or function body support the pipeline pragma [-Wignored-hls-attributes]
+#pragma HLS PIPELINE II=pack_factor
+        ^~~~
+In file included from firmware/myproject.cpp:4:
+In file included from firmware/parameters.h:13:
+firmware/nnet_utils/nnet_conv2d_stream.h:84:9: warning: Only for/while/do loop or function body support the pipeline pragma [-Wignored-hls-attributes]
+#pragma HLS PIPELINE II=CONFIG_T::reuse_factor
+        ^~~~
+firmware/nnet_utils/nnet_conv2d_stream.h:57:9: warning: Only for/while/do loop or function body support the pipeline pragma [-Wignored-hls-attributes]
+#pragma HLS PIPELINE II=CONFIG_T::reuse_factor
+        ^~~~
+In file included from firmware/myproject.cpp:4:
+In file included from firmware/parameters.h:20:
+firmware/nnet_utils/nnet_pooling_stream.h:154:9: warning: Only for/while/do loop or function body support the pipeline pragma [-Wignored-hls-attributes]
+#pragma HLS PIPELINE II=pack_factor
+        ^~~~
+In file included from firmware/myproject.cpp:4:
+In file included from firmware/parameters.h:13:
+firmware/nnet_utils/nnet_conv2d_stream.h:84:9: warning: Only for/while/do loop or function body support the pipeline pragma [-Wignored-hls-attributes]
+#pragma HLS PIPELINE II=CONFIG_T::reuse_factor
+        ^~~~
+firmware/nnet_utils/nnet_conv2d_stream.h:57:9: warning: Only for/while/do loop or function body support the pipeline pragma [-Wignored-hls-attributes]
+#pragma HLS PIPELINE II=CONFIG_T::reuse_factor
+        ^~~~
+In file included from firmware/myproject.cpp:4:
+In file included from firmware/parameters.h:20:
+firmware/nnet_utils/nnet_pooling_stream.h:154:9: warning: Only for/while/do loop or function body support the pipeline pragma [-Wignored-hls-attributes]
+#pragma HLS PIPELINE II=pack_factor
+        ^~~~
+In file included from firmware/myproject.cpp:4:
+In file included from firmware/parameters.h:16:
+firmware/nnet_utils/nnet_dense_stream.h:38:9: warning: Only for/while/do loop or function body support the pipeline pragma [-Wignored-hls-attributes]
+#pragma HLS PIPELINE
+        ^~~~
+firmware/nnet_utils/nnet_dense_stream.h:53:9: warning: Only for/while/do loop or function body support the pipeline pragma [-Wignored-hls-attributes]
+#pragma HLS PIPELINE
+        ^~~~
+firmware/nnet_utils/nnet_dense_stream.h:18:9: warning: Only for/while/do loop or function body support the pipeline pragma [-Wignored-hls-attributes]
+#pragma HLS PIPELINE II=CONFIG_T::reuse_factor
+        ^~~~
+firmware/nnet_utils/nnet_dense_stream.h:38:9: warning: Only for/while/do loop or function body support the pipeline pragma [-Wignored-hls-attributes]
+#pragma HLS PIPELINE
+        ^~~~
+firmware/nnet_utils/nnet_dense_stream.h:53:9: warning: Only for/while/do loop or function body support the pipeline pragma [-Wignored-hls-attributes]
+#pragma HLS PIPELINE
+        ^~~~
+firmware/nnet_utils/nnet_dense_stream.h:18:9: warning: Only for/while/do loop or function body support the pipeline pragma [-Wignored-hls-attributes]
+#pragma HLS PIPELINE II=CONFIG_T::reuse_factor
+        ^~~~
+18 warnings generated.
