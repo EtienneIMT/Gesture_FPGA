@@ -1,10 +1,13 @@
 # 3_convert_hls.py
 import hls4ml
+from hls4ml.model.profiling import types_hlsmodel
 import tensorflow as tf
 from tensorflow import keras
 import qkeras
 import numpy as np
 import yaml
+from qkeras import QConv2D, QDense, QActivation
+from qkeras.quantizers import quantized_bits, quantized_relu
 
 from settings import *
 
@@ -68,11 +71,19 @@ if __name__ == "__main__":
     # 5. Profiler le modèle (estimation des ressources et types)
     # C'est un script intermédiaire crucial !
     print("\n--- Profilage du modèle (estimation) ---")
-    profile = hls_model.profile()
+    profile = types_hlsmodel(hls_model)
     # Affichez le profil pour voir si vos types 'ap_fixed<...>' débordent
     print(profile)
     # hls4ml.utils.plot_model(hls_model, show_shapes=True, show_precision=True, to_file='model_hls.png')
 
     # 6. Sauvegarder le modèle hls4ml compilé (pour le script de build)
-    hls_model.save()
+    hls_model.write()
     print(f"Projet HLS généré dans {HLS_PROJECT_PATH}")
+
+# Lancement de la synthèse Vitis HLS
+hls_model.build(
+    csim=True, 
+    synth=True, 
+    export=True, 
+    vsynth=True # Utiliser Vitis HLS
+)

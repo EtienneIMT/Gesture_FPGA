@@ -1,13 +1,14 @@
 # 2_train_quantized.py
 import tensorflow as tf
 from tensorflow import keras
+from tensorflow.keras.optimizers import Adam
 from keras.models import Model, load_model
 from keras.layers import Input, MaxPooling2D, Flatten, Dropout
 
 # Importer QKeras
 import qkeras
 from qkeras.quantizers import quantized_bits, quantized_relu
-from qkeras.layers import QConv2D, QDense, QActivation
+from qkeras import QConv2D, QDense, QActivation
 
 # Importer vos fonctions et constantes
 from settings import *
