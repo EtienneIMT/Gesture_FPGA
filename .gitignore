@@ -1,23 +1,39 @@
+# Python cache
 __pycache__/
 *.py[cod]
 *.so
+
+# Environnements
 .venv/
 venv/
 env/
+
+# Build artifacts
 build/
 dist/
 *.egg-info/
+
+# Jupyter
 *.ipynb_checkpoints
+
+# OS specific
 .DS_Store
 
-# Données et modèles
+# === Données et Modèles (Trop lourds pour Git) ===
 data/raw/
 data/processed/
 models/*.h5
+models/*.pt
+models/*.onnx
+models/*.data
+onnx/*.onnx
+onnx/*.data
 
-# Artefacts HLS/Vivado
+# === Artefacts HLS/Vivado (Générés) ===
+hls4ml_prj/
+hls4ml_build/
 hls_gesture_project/
 hls_gesture_project.tar.gz
 
-# Installeurs/binaries
+# === Installeurs/Binaries ===
 Miniforge*-*.sh
