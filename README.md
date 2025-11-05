@@ -22,3 +22,15 @@ This project doesn't just train a model; it compiles it into hardware. The compl
     * Sending the image to the accelerator (PL) via DMA.
     * Receiving the results (logits) from the PL.
     * Post-processing (Softmax on the CPU) and displaying the recognized gesture.
+
+---
+
+## 🚧 Limitations & Future Work
+
+Dataset: This model is trained on SignMNIST. Performance on real-world camera feeds is poor due to the "domain gap".
+
+Roadmap:
+
+1. Fine-tune the model on a real-world dataset (like HaGRID) to improve camera inference.
+2. Complete the full PYNQ integration (scripts/5_run_inference_pynq.py).
+3. Benchmark power consumption on the UltraZed board.
