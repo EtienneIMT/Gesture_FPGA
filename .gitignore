@@ -1,0 +1,23 @@
+__pycache__/
+*.py[cod]
+*.so
+.venv/
+venv/
+env/
+build/
+dist/
+*.egg-info/
+*.ipynb_checkpoints
+.DS_Store
+
+# Données et modèles
+data/raw/
+data/processed/
+models/*.h5
+
+# Artefacts HLS/Vivado
+hls_gesture_project/
+hls_gesture_project.tar.gz
+
+# Installeurs/binaries
+Miniforge*-*.sh
