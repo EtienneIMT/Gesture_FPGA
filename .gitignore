@@ -34,6 +34,7 @@ hls4ml_prj/
 hls4ml_build/
 hls_gesture_project/
 hls_gesture_project.tar.gz
+.directory
 
 # === Installeurs/Binaries ===
 Miniforge*-*.sh
