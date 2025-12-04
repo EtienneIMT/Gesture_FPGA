@@ -1,29 +1,29 @@
 <xilinx:hls_fe_msgs>
-    <msg msg_groups="PRAGMA_INVALID" msg_id="207-5538" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_conv2d.h:47:26" msg_body="'region' in '#pragma HLS Inline' is deprecated, use 'Inline Pragma' instead">
+    <msg msg_groups="PRAGMA_INVALID" msg_id="207-5540" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_conv2d.h:47:26" msg_body="'region' in '#pragma HLS Inline' is deprecated, use 'Inline Pragma' instead">
         <args ClangWarningOption="ignored-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_INVALID" msg_id="207-5538" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_conv2d.h:63:26" msg_body="'region' in '#pragma HLS Inline' is deprecated, use 'Inline Pragma' instead">
+    <msg msg_groups="PRAGMA_INVALID" msg_id="207-5540" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_conv2d.h:63:26" msg_body="'region' in '#pragma HLS Inline' is deprecated, use 'Inline Pragma' instead">
         <args ClangWarningOption="ignored-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_INVALID" msg_id="207-5566" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_pooling.h:332:34" msg_body="unexpected pragma argument 'pool_op', expects function/operation">
+    <msg msg_groups="PRAGMA_INVALID" msg_id="207-5570" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_pooling.h:332:34" msg_body="unexpected pragma argument 'pool_op', expects function/operation">
         <args ClangWarningOption="invalid-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_INVALID" msg_id="207-5571" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_conv2d_stream.h:84:9" msg_body="Only for/while/do loop or function body support the pipeline pragma">
+    <msg msg_groups="PRAGMA_INVALID" msg_id="207-5575" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_conv2d_stream.h:84:9" msg_body="Only for/while/do loop or function body support the pipeline pragma">
         <args ClangWarningOption="ignored-hls-attributes"/>
     </msg>
-    <msg msg_groups="PRAGMA_INVALID" msg_id="207-5571" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_conv2d_stream.h:57:9" msg_body="Only for/while/do loop or function body support the pipeline pragma">
+    <msg msg_groups="PRAGMA_INVALID" msg_id="207-5575" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_conv2d_stream.h:57:9" msg_body="Only for/while/do loop or function body support the pipeline pragma">
         <args ClangWarningOption="ignored-hls-attributes"/>
     </msg>
-    <msg msg_groups="PRAGMA_INVALID" msg_id="207-5571" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_pooling_stream.h:154:9" msg_body="Only for/while/do loop or function body support the pipeline pragma">
+    <msg msg_groups="PRAGMA_INVALID" msg_id="207-5575" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_pooling_stream.h:154:9" msg_body="Only for/while/do loop or function body support the pipeline pragma">
         <args ClangWarningOption="ignored-hls-attributes"/>
     </msg>
-    <msg msg_groups="PRAGMA_INVALID" msg_id="207-5571" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_dense_stream.h:38:9" msg_body="Only for/while/do loop or function body support the pipeline pragma">
+    <msg msg_groups="PRAGMA_INVALID" msg_id="207-5575" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_dense_stream.h:38:9" msg_body="Only for/while/do loop or function body support the pipeline pragma">
         <args ClangWarningOption="ignored-hls-attributes"/>
     </msg>
-    <msg msg_groups="PRAGMA_INVALID" msg_id="207-5571" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_dense_stream.h:53:9" msg_body="Only for/while/do loop or function body support the pipeline pragma">
+    <msg msg_groups="PRAGMA_INVALID" msg_id="207-5575" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_dense_stream.h:53:9" msg_body="Only for/while/do loop or function body support the pipeline pragma">
         <args ClangWarningOption="ignored-hls-attributes"/>
     </msg>
-    <msg msg_groups="PRAGMA_INVALID" msg_id="207-5571" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_dense_stream.h:18:9" msg_body="Only for/while/do loop or function body support the pipeline pragma">
+    <msg msg_groups="PRAGMA_INVALID" msg_id="207-5575" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_dense_stream.h:18:9" msg_body="Only for/while/do loop or function body support the pipeline pragma">
         <args ClangWarningOption="ignored-hls-attributes"/>
     </msg>
     <msg msg_groups="PRAGMA_DATAFLOW" msg_id="214-113" msg_severity="WARNING" msg_loc="firmware/myproject.cpp:45:74" msg_body="Either use an argument of the function or declare the variable inside the dataflow loop body"/>
@@ -56,6 +56,9 @@
     </msg>
     <msg msg_groups="" msg_id="207-5292" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_code_gen.h:23:32" msg_body="unused parameter 'partition'">
         <args ClangWarningOption="unused-parameter"/>
+    </msg>
+    <msg msg_groups="" msg_id="207-5584" msg_severity="WARNING" msg_loc="/opt/img/Vivado2024.1/Vitis_HLS/2024.1/common/technology/autopilot/ap_shift_reg.h:47:9" msg_body="there are more than one pragma inline in the function scope, ignore the pragma">
+        <args/>
     </msg>
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_types.h:28:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="operator=" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
@@ -822,13 +825,13 @@
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_pooling.h:332:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="global_pooling2d_cl" ARG_PragmaIsValid="0" ARG_PragmaOptions="instances=pool_op" ARG_PragmaType="allocation" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/opt/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/utils/x_hls_utils.h:224:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/opt/img/Vivado2024.1/Vitis_HLS/2024.1/common/technology/autopilot/utils/x_hls_utils.h:224:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="reg" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/opt/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/utils/x_hls_utils.h:225:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/opt/img/Vivado2024.1/Vitis_HLS/2024.1/common/technology/autopilot/utils/x_hls_utils.h:225:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="reg" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=1 max=1" ARG_PragmaType="latency" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/opt/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/utils/x_hls_utils.h:226:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/opt/img/Vivado2024.1/Vitis_HLS/2024.1/common/technology/autopilot/utils/x_hls_utils.h:226:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="reg" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_pooling_stream.h:18:9" msg_body="HLS pragma dump">
@@ -978,7 +981,7 @@
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_pooling_stream.h:599:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="global_pooling1d_cl" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/Etienne/Gesture_FPGA/hls_gesture_project/build_prj.tcl:183:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/homes/e24berti/Gesture_FPGA/hls_gesture_project/build_prj.tcl:183:9" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="directive" ARG_PragmaFunction="myproject" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=myproject" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/myproject.cpp:12:9" msg_body="HLS pragma dump">

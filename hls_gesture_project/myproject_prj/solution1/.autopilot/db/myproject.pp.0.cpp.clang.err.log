@@ -852,13 +852,13 @@ firmware/nnet_utils/nnet_pooling.h:332:9: warning: HLS pragma dump _XLX_SEP_ Pra
 In file included from firmware/myproject.cpp:4:
 In file included from firmware/parameters.h:20:
 In file included from firmware/nnet_utils/nnet_pooling_stream.h:9:
-/opt/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/utils/x_hls_utils.h:224:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=reg_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
+/opt/img/Vivado2024.1/Vitis_HLS/2024.1/common/technology/autopilot/utils/x_hls_utils.h:224:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=reg_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
 #pragma HLS PIPELINE II=1
         ^
-/opt/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/utils/x_hls_utils.h:225:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=latency_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=reg_XLX_SEP_ PragmaOptions=min=1 max=1_XLX_SEP_ [-Wdump-hls-pragmas]
+/opt/img/Vivado2024.1/Vitis_HLS/2024.1/common/technology/autopilot/utils/x_hls_utils.h:225:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=latency_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=reg_XLX_SEP_ PragmaOptions=min=1 max=1_XLX_SEP_ [-Wdump-hls-pragmas]
 #pragma HLS LATENCY min=1 max=1
         ^
-/opt/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/utils/x_hls_utils.h:226:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=reg_XLX_SEP_ PragmaOptions=off_XLX_SEP_ [-Wdump-hls-pragmas]
+/opt/img/Vivado2024.1/Vitis_HLS/2024.1/common/technology/autopilot/utils/x_hls_utils.h:226:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=reg_XLX_SEP_ PragmaOptions=off_XLX_SEP_ [-Wdump-hls-pragmas]
 #pragma HLS INLINE off
         ^
 In file included from firmware/myproject.cpp:4:
@@ -1010,7 +1010,7 @@ firmware/nnet_utils/nnet_pooling_stream.h:593:9: warning: HLS pragma dump _XLX_S
 firmware/nnet_utils/nnet_pooling_stream.h:599:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=global_pooling1d_cl_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
 #pragma HLS UNROLL
         ^
-/home/Etienne/Gesture_FPGA/hls_gesture_project/build_prj.tcl:183:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=top_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=myproject_XLX_SEP_ PragmaOptions=name=myproject_XLX_SEP_ [-Wdump-hls-pragmas]
+/homes/e24berti/Gesture_FPGA/hls_gesture_project/build_prj.tcl:183:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=top_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=myproject_XLX_SEP_ PragmaOptions=name=myproject_XLX_SEP_ [-Wdump-hls-pragmas]
 #pragma HLSDIRECTIVE TOP name=myproject
         ^
 firmware/myproject.cpp:12:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=myproject_XLX_SEP_ PragmaOptions=axis port=input_1,layer18_out_XLX_SEP_ [-Wdump-hls-pragmas]
@@ -1120,4 +1120,15 @@ firmware/nnet_utils/nnet_dense_stream.h:53:9: warning: Only for/while/do loop or
 firmware/nnet_utils/nnet_dense_stream.h:18:9: warning: Only for/while/do loop or function body support the pipeline pragma [-Wignored-hls-attributes]
 #pragma HLS PIPELINE II=CONFIG_T::reuse_factor
         ^~~~
-349 warnings generated.
+In file included from firmware/myproject.cpp:4:
+In file included from firmware/parameters.h:13:
+In file included from firmware/nnet_utils/nnet_conv2d_stream.h:4:
+/opt/img/Vivado2024.1/Vitis_HLS/2024.1/common/technology/autopilot/ap_shift_reg.h:47:9: warning: there are more than one pragma inline in the function scope, ignore the pragma 
+#pragma HLS inline
+        ^
+/opt/img/Vivado2024.1/Vitis_HLS/2024.1/common/technology/autopilot/ap_shift_reg.h:47:9: warning: there are more than one pragma inline in the function scope, ignore the pragma 
+/opt/img/Vivado2024.1/Vitis_HLS/2024.1/common/technology/autopilot/ap_shift_reg.h:47:9: warning: there are more than one pragma inline in the function scope, ignore the pragma 
+/opt/img/Vivado2024.1/Vitis_HLS/2024.1/common/technology/autopilot/ap_shift_reg.h:47:9: warning: there are more than one pragma inline in the function scope, ignore the pragma 
+/opt/img/Vivado2024.1/Vitis_HLS/2024.1/common/technology/autopilot/ap_shift_reg.h:47:9: warning: there are more than one pragma inline in the function scope, ignore the pragma 
+/opt/img/Vivado2024.1/Vitis_HLS/2024.1/common/technology/autopilot/ap_shift_reg.h:47:9: warning: there are more than one pragma inline in the function scope, ignore the pragma 
+355 warnings generated.

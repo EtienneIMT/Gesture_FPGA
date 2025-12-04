@@ -1,1228 +1,1228 @@
 ---
-MainSourceFile:  /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+MainSourceFile:  /homes/e24berti/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
 Diagnostics:     
   - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_1207_1:  '
-    FileOffset:      1207
-    FilePath:        /opt/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/ap_int_base.h
+    Message:         'Added loop label VITIS_LOOP_1223_1:  '
+    FileOffset:      1223
+    FilePath:        /opt/img/Vivado2024.1/Vitis_HLS/2024.1/common/technology/autopilot/etc/ap_int_base.h
     Replacements:    
-      - FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          798119
+      - FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          804546
         Length:          0
-        ReplacementText: 'VITIS_LOOP_1207_1: '
+        ReplacementText: 'VITIS_LOOP_1223_1: '
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_676_1:  '
     FileOffset:      676
-    FilePath:        /opt/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/ap_int_ref.h
+    FilePath:        /opt/img/Vivado2024.1/Vitis_HLS/2024.1/common/technology/autopilot/etc/ap_int_ref.h
     Replacements:    
-      - FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          1025891
+      - FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          1032640
         Length:          0
         ReplacementText: 'VITIS_LOOP_676_1: '
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_690_1:  '
     FileOffset:      690
-    FilePath:        /opt/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/ap_int_ref.h
+    FilePath:        /opt/img/Vivado2024.1/Vitis_HLS/2024.1/common/technology/autopilot/etc/ap_int_ref.h
     Replacements:    
-      - FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          1026359
+      - FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          1033108
         Length:          0
         ReplacementText: 'VITIS_LOOP_690_1: '
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_704_1:  '
     FileOffset:      704
-    FilePath:        /opt/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/ap_int_ref.h
+    FilePath:        /opt/img/Vivado2024.1/Vitis_HLS/2024.1/common/technology/autopilot/etc/ap_int_ref.h
     Replacements:    
-      - FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          1026828
+      - FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          1033577
         Length:          0
         ReplacementText: 'VITIS_LOOP_704_1: '
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_1247_1:  '
     FileOffset:      1247
-    FilePath:        /opt/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/ap_fixed_base.h
+    FilePath:        /opt/img/Vivado2024.1/Vitis_HLS/2024.1/common/technology/autopilot/etc/ap_fixed_base.h
     Replacements:    
-      - FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          1310312
+      - FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          1317399
         Length:          0
         ReplacementText: 'VITIS_LOOP_1247_1: '
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_27_1:  '
     FileOffset:      27
-    FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_types.h
+    FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_types.h
     Replacements:    
-      - FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          1684464
+      - FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          1692002
         Length:          0
         ReplacementText: 'VITIS_LOOP_27_1: '
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_40_1:  '
     FileOffset:      40
-    FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_types.h
+    FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_types.h
     Replacements:    
-      - FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          1684839
+      - FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          1692377
         Length:          0
         ReplacementText: 'VITIS_LOOP_40_1: '
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_265_1:  '
     FileOffset:      265
-    FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_helpers.h
+    FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_helpers.h
     Replacements:    
-      - FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2386762
+      - FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2376116
         Length:          0
         ReplacementText: 'VITIS_LOOP_265_1: '
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_275_1:  '
     FileOffset:      275
-    FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_helpers.h
+    FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_helpers.h
     Replacements:    
-      - FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2387149
+      - FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2376503
         Length:          0
         ReplacementText: 'VITIS_LOOP_275_1: '
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_286_1:  '
     FileOffset:      286
-    FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_helpers.h
+    FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_helpers.h
     Replacements:    
-      - FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2387484
+      - FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2376838
         Length:          0
         ReplacementText: 'VITIS_LOOP_286_1: '
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_293_1:  '
     FileOffset:      293
-    FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_helpers.h
+    FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_helpers.h
     Replacements:    
-      - FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2387707
+      - FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2377061
         Length:          0
         ReplacementText: 'VITIS_LOOP_293_1: '
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_295_2:  '
     FileOffset:      295
-    FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_helpers.h
+    FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_helpers.h
     Replacements:    
-      - FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2387802
+      - FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2377156
         Length:          0
         ReplacementText: 'VITIS_LOOP_295_2: '
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_307_1:  '
     FileOffset:      307
-    FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_helpers.h
+    FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_helpers.h
     Replacements:    
-      - FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2388166
+      - FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2377520
         Length:          0
         ReplacementText: 'VITIS_LOOP_307_1: '
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_309_2:  '
     FileOffset:      309
-    FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_helpers.h
+    FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_helpers.h
     Replacements:    
-      - FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2388248
+      - FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2377602
         Length:          0
         ReplacementText: 'VITIS_LOOP_309_2: '
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_324_1:  '
     FileOffset:      324
-    FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_helpers.h
+    FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_helpers.h
     Replacements:    
-      - FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2388591
+      - FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2377945
         Length:          0
         ReplacementText: 'VITIS_LOOP_324_1: '
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_344_1:  '
     FileOffset:      344
-    FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_helpers.h
+    FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_helpers.h
     Replacements:    
-      - FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2389044
+      - FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2378398
         Length:          0
         ReplacementText: 'VITIS_LOOP_344_1: '
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_345_2:  '
     FileOffset:      345
-    FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_helpers.h
+    FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_helpers.h
     Replacements:    
-      - FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2389089
+      - FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2378443
         Length:          0
         ReplacementText: 'VITIS_LOOP_345_2: '
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_360_1:  '
     FileOffset:      360
-    FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_helpers.h
+    FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_helpers.h
     Replacements:    
-      - FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2389498
+      - FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2378852
         Length:          0
         ReplacementText: 'VITIS_LOOP_360_1: '
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_367_1:  '
     FileOffset:      367
-    FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_helpers.h
+    FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_helpers.h
     Replacements:    
-      - FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2389711
+      - FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2379065
         Length:          0
         ReplacementText: 'VITIS_LOOP_367_1: '
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_31_1:  '
     FileOffset:      31
-    FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_activation.h
+    FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_activation.h
     Replacements:    
-      - FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2392825
+      - FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2382199
         Length:          0
         ReplacementText: 'VITIS_LOOP_31_1: '
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_43_1:  '
     FileOffset:      43
-    FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_activation.h
+    FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_activation.h
     Replacements:    
-      - FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2393078
+      - FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2382452
         Length:          0
         ReplacementText: 'VITIS_LOOP_43_1: '
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_57_1:  '
     FileOffset:      57
-    FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_activation.h
+    FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_activation.h
     Replacements:    
-      - FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2393439
+      - FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2382813
         Length:          0
         ReplacementText: 'VITIS_LOOP_57_1: '
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_84_1:  '
     FileOffset:      84
-    FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_activation.h
+    FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_activation.h
     Replacements:    
-      - FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2394255
+      - FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2383629
         Length:          0
         ReplacementText: 'VITIS_LOOP_84_1: '
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_114_1:  '
     FileOffset:      114
-    FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_activation.h
+    FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_activation.h
     Replacements:    
-      - FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2394916
+      - FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2384290
         Length:          0
         ReplacementText: 'VITIS_LOOP_114_1: '
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_151_1:  '
     FileOffset:      151
-    FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_activation.h
+    FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_activation.h
     Replacements:    
-      - FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2396050
+      - FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2385424
         Length:          0
         ReplacementText: 'VITIS_LOOP_151_1: '
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_162_1:  '
     FileOffset:      162
-    FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_activation.h
+    FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_activation.h
     Replacements:    
-      - FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2396412
+      - FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2385786
         Length:          0
         ReplacementText: 'VITIS_LOOP_162_1: '
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_195_1:  '
     FileOffset:      195
-    FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_activation.h
+    FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_activation.h
     Replacements:    
-      - FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2397315
+      - FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2386689
         Length:          0
         ReplacementText: 'VITIS_LOOP_195_1: '
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_209_2:  '
     FileOffset:      209
-    FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_activation.h
+    FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_activation.h
     Replacements:    
-      - FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2397834
+      - FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2387208
         Length:          0
         ReplacementText: 'VITIS_LOOP_209_2: '
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_243_1:  '
     FileOffset:      243
-    FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_activation.h
+    FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_activation.h
     Replacements:    
-      - FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2398674
+      - FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2388048
         Length:          0
         ReplacementText: 'VITIS_LOOP_243_1: '
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_252_2:  '
     FileOffset:      252
-    FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_activation.h
+    FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_activation.h
     Replacements:    
-      - FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2398944
+      - FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2388318
         Length:          0
         ReplacementText: 'VITIS_LOOP_252_2: '
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_266_3:  '
     FileOffset:      266
-    FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_activation.h
+    FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_activation.h
     Replacements:    
-      - FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2399468
+      - FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2388842
         Length:          0
         ReplacementText: 'VITIS_LOOP_266_3: '
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_273_1:  '
     FileOffset:      273
-    FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_activation.h
+    FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_activation.h
     Replacements:    
-      - FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2399702
+      - FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2389076
         Length:          0
         ReplacementText: 'VITIS_LOOP_273_1: '
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_286_1:  '
     FileOffset:      286
-    FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_activation.h
+    FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_activation.h
     Replacements:    
-      - FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2400062
+      - FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2389436
         Length:          0
         ReplacementText: 'VITIS_LOOP_286_1: '
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_323_1:  '
     FileOffset:      323
-    FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_activation.h
+    FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_activation.h
     Replacements:    
-      - FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2400991
+      - FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2390365
         Length:          0
         ReplacementText: 'VITIS_LOOP_323_1: '
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_328_2:  '
     FileOffset:      328
-    FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_activation.h
+    FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_activation.h
     Replacements:    
-      - FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2401108
+      - FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2390482
         Length:          0
         ReplacementText: 'VITIS_LOOP_328_2: '
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_329_3:  '
     FileOffset:      329
-    FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_activation.h
+    FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_activation.h
     Replacements:    
-      - FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2401162
+      - FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2390536
         Length:          0
         ReplacementText: 'VITIS_LOOP_329_3: '
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_346_4:  '
     FileOffset:      346
-    FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_activation.h
+    FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_activation.h
     Replacements:    
-      - FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2401743
+      - FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2391117
         Length:          0
         ReplacementText: 'VITIS_LOOP_346_4: '
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_359_1:  '
     FileOffset:      359
-    FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_activation.h
+    FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_activation.h
     Replacements:    
-      - FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2402230
+      - FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2391604
         Length:          0
         ReplacementText: 'VITIS_LOOP_359_1: '
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_367_2:  '
     FileOffset:      367
-    FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_activation.h
+    FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_activation.h
     Replacements:    
-      - FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2402371
+      - FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2391745
         Length:          0
         ReplacementText: 'VITIS_LOOP_367_2: '
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_402_1:  '
     FileOffset:      402
-    FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_activation.h
+    FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_activation.h
     Replacements:    
-      - FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2403336
+      - FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2392710
         Length:          0
         ReplacementText: 'VITIS_LOOP_402_1: '
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_432_1:  '
     FileOffset:      432
-    FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_activation.h
+    FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_activation.h
     Replacements:    
-      - FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2403973
+      - FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2393347
         Length:          0
         ReplacementText: 'VITIS_LOOP_432_1: '
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_451_1:  '
     FileOffset:      451
-    FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_activation.h
+    FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_activation.h
     Replacements:    
-      - FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2404486
+      - FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2393860
         Length:          0
         ReplacementText: 'VITIS_LOOP_451_1: '
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_467_1:  '
     FileOffset:      467
-    FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_activation.h
+    FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_activation.h
     Replacements:    
-      - FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2404944
+      - FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2394318
         Length:          0
         ReplacementText: 'VITIS_LOOP_467_1: '
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_485_1:  '
     FileOffset:      485
-    FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_activation.h
+    FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_activation.h
     Replacements:    
-      - FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2405398
+      - FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2394772
         Length:          0
         ReplacementText: 'VITIS_LOOP_485_1: '
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_502_1:  '
     FileOffset:      502
-    FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_activation.h
+    FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_activation.h
     Replacements:    
-      - FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2405785
+      - FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2395159
         Length:          0
         ReplacementText: 'VITIS_LOOP_502_1: '
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_519_1:  '
     FileOffset:      519
-    FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_activation.h
+    FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_activation.h
     Replacements:    
-      - FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2406180
+      - FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2395554
         Length:          0
         ReplacementText: 'VITIS_LOOP_519_1: '
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_549_1:  '
     FileOffset:      549
-    FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_activation.h
+    FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_activation.h
     Replacements:    
-      - FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2406846
+      - FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2396220
         Length:          0
         ReplacementText: 'VITIS_LOOP_549_1: '
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_568_1:  '
     FileOffset:      568
-    FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_activation.h
+    FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_activation.h
     Replacements:    
-      - FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2407420
+      - FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2396794
         Length:          0
         ReplacementText: 'VITIS_LOOP_568_1: '
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_598_1:  '
     FileOffset:      598
-    FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_activation.h
+    FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_activation.h
     Replacements:    
-      - FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2408086
+      - FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2397460
         Length:          0
         ReplacementText: 'VITIS_LOOP_598_1: '
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_617_1:  '
     FileOffset:      617
-    FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_activation.h
+    FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_activation.h
     Replacements:    
-      - FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2408640
+      - FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2398014
         Length:          0
         ReplacementText: 'VITIS_LOOP_617_1: '
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_647_1:  '
     FileOffset:      647
-    FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_activation.h
+    FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_activation.h
     Replacements:    
-      - FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2409272
+      - FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2398646
         Length:          0
         ReplacementText: 'VITIS_LOOP_647_1: '
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_674_1:  '
     FileOffset:      674
-    FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_activation.h
+    FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_activation.h
     Replacements:    
-      - FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2410098
+      - FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2399472
         Length:          0
         ReplacementText: 'VITIS_LOOP_674_1: '
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_703_1:  '
     FileOffset:      703
-    FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_activation.h
+    FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_activation.h
     Replacements:    
-      - FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2410716
+      - FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2400090
         Length:          0
         ReplacementText: 'VITIS_LOOP_703_1: '
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_724_1:  '
     FileOffset:      724
-    FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_activation.h
+    FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_activation.h
     Replacements:    
-      - FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2411327
+      - FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2400701
         Length:          0
         ReplacementText: 'VITIS_LOOP_724_1: '
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_742_1:  '
     FileOffset:      742
-    FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_activation.h
+    FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_activation.h
     Replacements:    
-      - FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2411716
+      - FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2401090
         Length:          0
         ReplacementText: 'VITIS_LOOP_742_1: '
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_762_1:  '
     FileOffset:      762
-    FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_activation.h
+    FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_activation.h
     Replacements:    
-      - FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2412112
+      - FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2401486
         Length:          0
         ReplacementText: 'VITIS_LOOP_762_1: '
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_73_1:  '
     FileOffset:      73
-    FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_stream.h
+    FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_stream.h
     Replacements:    
-      - FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2414188
+      - FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2403562
         Length:          0
         ReplacementText: 'VITIS_LOOP_73_1: '
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_80_2:  '
     FileOffset:      80
-    FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_stream.h
+    FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_stream.h
     Replacements:    
-      - FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2414328
+      - FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2403702
         Length:          0
         ReplacementText: 'VITIS_LOOP_80_2: '
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_89_3:  '
     FileOffset:      89
-    FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_stream.h
+    FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_stream.h
     Replacements:    
-      - FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2414593
+      - FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2403967
         Length:          0
         ReplacementText: 'VITIS_LOOP_89_3: '
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_98_4:  '
     FileOffset:      98
-    FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_stream.h
+    FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_stream.h
     Replacements:    
-      - FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2414787
+      - FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2404161
         Length:          0
         ReplacementText: 'VITIS_LOOP_98_4: '
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_102_5:  '
     FileOffset:      102
-    FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_stream.h
+    FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_stream.h
     Replacements:    
-      - FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2414880
+      - FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2404254
         Length:          0
         ReplacementText: 'VITIS_LOOP_102_5: '
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_113_6:  '
     FileOffset:      113
-    FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_stream.h
+    FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_stream.h
     Replacements:    
-      - FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2415206
+      - FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2404580
         Length:          0
         ReplacementText: 'VITIS_LOOP_113_6: '
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_117_7:  '
     FileOffset:      117
-    FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_stream.h
+    FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_stream.h
     Replacements:    
-      - FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2415316
+      - FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2404690
         Length:          0
         ReplacementText: 'VITIS_LOOP_117_7: '
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_141_1:  '
     FileOffset:      141
-    FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_stream.h
+    FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_stream.h
     Replacements:    
-      - FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2416282
+      - FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2405656
         Length:          0
         ReplacementText: 'VITIS_LOOP_141_1: '
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_145_2:  '
     FileOffset:      145
-    FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_stream.h
+    FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_stream.h
     Replacements:    
-      - FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2416368
+      - FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2405742
         Length:          0
         ReplacementText: 'VITIS_LOOP_145_2: '
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_164_1:  '
     FileOffset:      164
-    FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_stream.h
+    FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_stream.h
     Replacements:    
-      - FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2417044
+      - FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2406418
         Length:          0
         ReplacementText: 'VITIS_LOOP_164_1: '
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_187_1:  '
     FileOffset:      187
-    FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_stream.h
+    FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_stream.h
     Replacements:    
-      - FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2417976
+      - FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2407350
         Length:          0
         ReplacementText: 'VITIS_LOOP_187_1: '
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_190_2:  '
     FileOffset:      190
-    FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_stream.h
+    FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_stream.h
     Replacements:    
-      - FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2418114
+      - FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2407488
         Length:          0
         ReplacementText: 'VITIS_LOOP_190_2: '
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_195_3:  '
     FileOffset:      195
-    FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_stream.h
+    FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_stream.h
     Replacements:    
-      - FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2418264
+      - FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2407638
         Length:          0
         ReplacementText: 'VITIS_LOOP_195_3: '
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_199_4:  '
     FileOffset:      199
-    FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_stream.h
+    FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_stream.h
     Replacements:    
-      - FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2418388
+      - FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2407762
         Length:          0
         ReplacementText: 'VITIS_LOOP_199_4: '
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_213_1:  '
     FileOffset:      213
-    FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_activation_stream.h
+    FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_activation_stream.h
     Replacements:    
-      - FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2424227
+      - FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2413621
         Length:          0
         ReplacementText: 'VITIS_LOOP_213_1: '
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_222_2:  '
     FileOffset:      222
-    FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_activation_stream.h
+    FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_activation_stream.h
     Replacements:    
-      - FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2424511
+      - FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2413905
         Length:          0
         ReplacementText: 'VITIS_LOOP_222_2: '
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_328_1:  '
     FileOffset:      328
-    FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_activation_stream.h
+    FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_activation_stream.h
     Replacements:    
-      - FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2427724
+      - FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2417118
         Length:          0
         ReplacementText: 'VITIS_LOOP_328_1: '
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_333_2:  '
     FileOffset:      333
-    FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_activation_stream.h
+    FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_activation_stream.h
     Replacements:    
-      - FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2427866
+      - FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2417260
         Length:          0
         ReplacementText: 'VITIS_LOOP_333_2: '
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_341_3:  '
     FileOffset:      341
-    FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_activation_stream.h
+    FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_activation_stream.h
     Replacements:    
-      - FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2428070
+      - FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2417464
         Length:          0
         ReplacementText: 'VITIS_LOOP_341_3: '
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_64_1:  '
     FileOffset:      64
-    FilePath:        /opt/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/ap_shift_reg.h
+    FilePath:        /opt/img/Vivado2024.1/Vitis_HLS/2024.1/common/technology/autopilot/ap_shift_reg.h
     Replacements:    
-      - FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2465077
+      - FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2453952
         Length:          0
         ReplacementText: 'VITIS_LOOP_64_1: '
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_71_1:  '
     FileOffset:      71
-    FilePath:        /opt/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/ap_shift_reg.h
+    FilePath:        /opt/img/Vivado2024.1/Vitis_HLS/2024.1/common/technology/autopilot/ap_shift_reg.h
     Replacements:    
-      - FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2465281
+      - FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2454156
         Length:          0
         ReplacementText: 'VITIS_LOOP_71_1: '
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_38_1:  '
     FileOffset:      38
-    FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_conv2d_stream.h
+    FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_conv2d_stream.h
     Replacements:    
-      - FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2479962
+      - FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2468837
         Length:          0
         ReplacementText: 'VITIS_LOOP_38_1: '
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_14_1:  '
     FileOffset:      14
-    FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_dense_compressed.h
+    FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_dense_compressed.h
     Replacements:    
-      - FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2483639
+      - FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2472524
         Length:          0
         ReplacementText: 'VITIS_LOOP_14_1: '
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_74_1:  '
     FileOffset:      74
-    FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_dense_compressed.h
+    FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_dense_compressed.h
     Replacements:    
-      - FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2485510
+      - FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2474395
         Length:          0
         ReplacementText: 'VITIS_LOOP_74_1: '
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_20_1:  '
     FileOffset:      20
-    FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_padding.h
+    FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_padding.h
     Replacements:    
-      - FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2489393
+      - FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2477679
         Length:          0
         ReplacementText: 'VITIS_LOOP_20_1: '
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_21_2:  '
     FileOffset:      21
-    FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_padding.h
+    FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_padding.h
     Replacements:    
-      - FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2489446
+      - FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2477732
         Length:          0
         ReplacementText: 'VITIS_LOOP_21_2: '
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_25_3:  '
     FileOffset:      25
-    FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_padding.h
+    FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_padding.h
     Replacements:    
-      - FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2489538
+      - FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2477824
         Length:          0
         ReplacementText: 'VITIS_LOOP_25_3: '
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_29_4:  '
     FileOffset:      29
-    FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_padding.h
+    FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_padding.h
     Replacements:    
-      - FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2489647
+      - FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2477933
         Length:          0
         ReplacementText: 'VITIS_LOOP_29_4: '
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_39_1:  '
     FileOffset:      39
-    FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_padding.h
+    FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_padding.h
     Replacements:    
-      - FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2489942
+      - FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2478228
         Length:          0
         ReplacementText: 'VITIS_LOOP_39_1: '
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_40_2:  '
     FileOffset:      40
-    FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_padding.h
+    FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_padding.h
     Replacements:    
-      - FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2489997
+      - FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2478283
         Length:          0
         ReplacementText: 'VITIS_LOOP_40_2: '
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_45_3:  '
     FileOffset:      45
-    FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_padding.h
+    FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_padding.h
     Replacements:    
-      - FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2490089
+      - FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2478375
         Length:          0
         ReplacementText: 'VITIS_LOOP_45_3: '
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_46_4:  '
     FileOffset:      46
-    FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_padding.h
+    FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_padding.h
     Replacements:    
-      - FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2490144
+      - FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2478430
         Length:          0
         ReplacementText: 'VITIS_LOOP_46_4: '
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_51_5:  '
     FileOffset:      51
-    FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_padding.h
+    FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_padding.h
     Replacements:    
-      - FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2490253
+      - FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2478539
         Length:          0
         ReplacementText: 'VITIS_LOOP_51_5: '
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_52_6:  '
     FileOffset:      52
-    FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_padding.h
+    FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_padding.h
     Replacements:    
-      - FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2490309
+      - FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2478595
         Length:          0
         ReplacementText: 'VITIS_LOOP_52_6: '
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_75_1:  '
     FileOffset:      75
-    FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_padding.h
+    FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_padding.h
     Replacements:    
-      - FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2491064
+      - FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2479350
         Length:          0
         ReplacementText: 'VITIS_LOOP_75_1: '
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_77_2:  '
     FileOffset:      77
-    FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_padding.h
+    FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_padding.h
     Replacements:    
-      - FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2491118
+      - FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2479404
         Length:          0
         ReplacementText: 'VITIS_LOOP_77_2: '
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_78_3:  '
     FileOffset:      78
-    FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_padding.h
+    FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_padding.h
     Replacements:    
-      - FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2491176
+      - FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2479462
         Length:          0
         ReplacementText: 'VITIS_LOOP_78_3: '
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_83_4:  '
     FileOffset:      83
-    FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_padding.h
+    FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_padding.h
     Replacements:    
-      - FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2491287
+      - FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2479573
         Length:          0
         ReplacementText: 'VITIS_LOOP_83_4: '
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_84_5:  '
     FileOffset:      84
-    FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_padding.h
+    FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_padding.h
     Replacements:    
-      - FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2491347
+      - FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2479633
         Length:          0
         ReplacementText: 'VITIS_LOOP_84_5: '
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_87_6:  '
     FileOffset:      87
-    FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_padding.h
+    FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_padding.h
     Replacements:    
-      - FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2491450
+      - FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2479736
         Length:          0
         ReplacementText: 'VITIS_LOOP_87_6: '
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_90_7:  '
     FileOffset:      90
-    FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_padding.h
+    FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_padding.h
     Replacements:    
-      - FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2491570
+      - FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2479856
         Length:          0
         ReplacementText: 'VITIS_LOOP_90_7: '
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_95_8:  '
     FileOffset:      95
-    FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_padding.h
+    FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_padding.h
     Replacements:    
-      - FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2491681
+      - FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2479967
         Length:          0
         ReplacementText: 'VITIS_LOOP_95_8: '
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_96_9:  '
     FileOffset:      96
-    FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_padding.h
+    FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_padding.h
     Replacements:    
-      - FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2491742
+      - FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2480028
         Length:          0
         ReplacementText: 'VITIS_LOOP_96_9: '
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_108_1:  '
     FileOffset:      108
-    FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_padding.h
+    FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_padding.h
     Replacements:    
-      - FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2492118
+      - FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2480404
         Length:          0
         ReplacementText: 'VITIS_LOOP_108_1: '
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_109_2:  '
     FileOffset:      109
-    FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_padding.h
+    FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_padding.h
     Replacements:    
-      - FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2492172
+      - FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2480458
         Length:          0
         ReplacementText: 'VITIS_LOOP_109_2: '
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_110_3:  '
     FileOffset:      110
-    FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_padding.h
+    FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_padding.h
     Replacements:    
-      - FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2492232
+      - FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2480518
         Length:          0
         ReplacementText: 'VITIS_LOOP_110_3: '
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_116_4:  '
     FileOffset:      116
-    FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_padding.h
+    FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_padding.h
     Replacements:    
-      - FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2492342
+      - FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2480628
         Length:          0
         ReplacementText: 'VITIS_LOOP_116_4: '
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_117_5:  '
     FileOffset:      117
-    FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_padding.h
+    FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_padding.h
     Replacements:    
-      - FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2492398
+      - FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2480684
         Length:          0
         ReplacementText: 'VITIS_LOOP_117_5: '
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_118_6:  '
     FileOffset:      118
-    FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_padding.h
+    FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_padding.h
     Replacements:    
-      - FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2492457
+      - FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2480743
         Length:          0
         ReplacementText: 'VITIS_LOOP_118_6: '
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_122_7:  '
     FileOffset:      122
-    FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_padding.h
+    FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_padding.h
     Replacements:    
-      - FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2492564
+      - FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2480850
         Length:          0
         ReplacementText: 'VITIS_LOOP_122_7: '
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_123_8:  '
     FileOffset:      123
-    FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_padding.h
+    FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_padding.h
     Replacements:    
-      - FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2492623
+      - FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2480909
         Length:          0
         ReplacementText: 'VITIS_LOOP_123_8: '
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_127_9:  '
     FileOffset:      127
-    FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_padding.h
+    FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_padding.h
     Replacements:    
-      - FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2492747
+      - FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2481033
         Length:          0
         ReplacementText: 'VITIS_LOOP_127_9: '
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_128_10:  '
     FileOffset:      128
-    FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_padding.h
+    FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_padding.h
     Replacements:    
-      - FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2492807
+      - FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2481093
         Length:          0
         ReplacementText: 'VITIS_LOOP_128_10: '
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_134_11:  '
     FileOffset:      134
-    FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_padding.h
+    FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_padding.h
     Replacements:    
-      - FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2492917
+      - FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2481203
         Length:          0
         ReplacementText: 'VITIS_LOOP_134_11: '
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_135_12:  '
     FileOffset:      135
-    FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_padding.h
+    FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_padding.h
     Replacements:    
-      - FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2492974
+      - FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2481260
         Length:          0
         ReplacementText: 'VITIS_LOOP_135_12: '
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_136_13:  '
     FileOffset:      136
-    FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_padding.h
+    FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_padding.h
     Replacements:    
-      - FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2493034
+      - FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2481320
         Length:          0
         ReplacementText: 'VITIS_LOOP_136_13: '
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_11_1:  '
     FileOffset:      11
-    FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_padding_stream.h
+    FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_padding_stream.h
     Replacements:    
-      - FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2493551
+      - FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2481847
         Length:          0
         ReplacementText: 'VITIS_LOOP_11_1: '
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_22_1:  '
     FileOffset:      22
-    FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_padding_stream.h
+    FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_padding_stream.h
     Replacements:    
-      - FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2493868
+      - FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2482164
         Length:          0
         ReplacementText: 'VITIS_LOOP_22_1: '
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_12_1:  '
     FileOffset:      12
-    FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_pooling.h
+    FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_pooling.h
     Replacements:    
-      - FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2495612
+      - FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2483908
         Length:          0
         ReplacementText: 'VITIS_LOOP_12_1: '
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_21_1:  '
     FileOffset:      21
-    FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_pooling.h
+    FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_pooling.h
     Replacements:    
-      - FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2495799
+      - FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2484095
         Length:          0
         ReplacementText: 'VITIS_LOOP_21_1: '
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_33_1:  '
     FileOffset:      33
-    FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_pooling.h
+    FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_pooling.h
     Replacements:    
-      - FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2496050
+      - FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2484346
         Length:          0
         ReplacementText: 'VITIS_LOOP_33_1: '
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_45_1:  '
     FileOffset:      45
-    FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_pooling.h
+    FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_pooling.h
     Replacements:    
-      - FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2496233
+      - FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2484529
         Length:          0
         ReplacementText: 'VITIS_LOOP_45_1: '
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_114_1:  '
     FileOffset:      114
-    FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_pooling.h
+    FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_pooling.h
     Replacements:    
-      - FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2497877
+      - FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2486173
         Length:          0
         ReplacementText: 'VITIS_LOOP_114_1: '
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_116_2:  '
     FileOffset:      116
-    FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_pooling.h
+    FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_pooling.h
     Replacements:    
-      - FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2497934
+      - FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2486230
         Length:          0
         ReplacementText: 'VITIS_LOOP_116_2: '
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_122_3:  '
     FileOffset:      122
-    FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_pooling.h
+    FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_pooling.h
     Replacements:    
-      - FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2498147
+      - FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2486443
         Length:          0
         ReplacementText: 'VITIS_LOOP_122_3: '
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_158_1:  '
     FileOffset:      158
-    FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_pooling.h
+    FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_pooling.h
     Replacements:    
-      - FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2499614
+      - FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2487910
         Length:          0
         ReplacementText: 'VITIS_LOOP_158_1: '
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_161_2:  '
     FileOffset:      161
-    FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_pooling.h
+    FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_pooling.h
     Replacements:    
-      - FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2499757
+      - FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2488053
         Length:          0
         ReplacementText: 'VITIS_LOOP_161_2: '
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_215_1:  '
     FileOffset:      215
-    FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_pooling.h
+    FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_pooling.h
     Replacements:    
-      - FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2501869
+      - FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2490165
         Length:          0
         ReplacementText: 'VITIS_LOOP_215_1: '
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_217_2:  '
     FileOffset:      217
-    FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_pooling.h
+    FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_pooling.h
     Replacements:    
-      - FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2501926
+      - FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2490222
         Length:          0
         ReplacementText: 'VITIS_LOOP_217_2: '
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_219_3:  '
     FileOffset:      219
-    FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_pooling.h
+    FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_pooling.h
     Replacements:    
-      - FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2502009
+      - FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2490305
         Length:          0
         ReplacementText: 'VITIS_LOOP_219_3: '
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_225_4:  '
     FileOffset:      225
-    FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_pooling.h
+    FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_pooling.h
     Replacements:    
-      - FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2502254
+      - FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2490550
         Length:          0
         ReplacementText: 'VITIS_LOOP_225_4: '
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_227_5:  '
     FileOffset:      227
-    FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_pooling.h
+    FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_pooling.h
     Replacements:    
-      - FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2502330
+      - FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2490626
         Length:          0
         ReplacementText: 'VITIS_LOOP_227_5: '
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_276_1:  '
     FileOffset:      276
-    FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_pooling.h
+    FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_pooling.h
     Replacements:    
-      - FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2504902
+      - FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2493198
         Length:          0
         ReplacementText: 'VITIS_LOOP_276_1: '
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_278_2:  '
     FileOffset:      278
-    FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_pooling.h
+    FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_pooling.h
     Replacements:    
-      - FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2504959
+      - FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2493255
         Length:          0
         ReplacementText: 'VITIS_LOOP_278_2: '
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_280_3:  '
     FileOffset:      280
-    FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_pooling.h
+    FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_pooling.h
     Replacements:    
-      - FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2505042
+      - FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2493338
         Length:          0
         ReplacementText: 'VITIS_LOOP_280_3: '
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_286_4:  '
     FileOffset:      286
-    FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_pooling.h
+    FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_pooling.h
     Replacements:    
-      - FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2505287
+      - FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2493583
         Length:          0
         ReplacementText: 'VITIS_LOOP_286_4: '
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_288_5:  '
     FileOffset:      288
-    FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_pooling.h
+    FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_pooling.h
     Replacements:    
-      - FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2505363
+      - FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2493659
         Length:          0
         ReplacementText: 'VITIS_LOOP_288_5: '
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_30_1:  '
     FileOffset:      30
-    FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_pooling_stream.h
+    FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_pooling_stream.h
     Replacements:    
-      - FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2529139
+      - FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2517635
         Length:          0
         ReplacementText: 'VITIS_LOOP_30_1: '
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_142_1:  '
     FileOffset:      142
-    FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_pooling_stream.h
+    FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_pooling_stream.h
     Replacements:    
-      - FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2533809
+      - FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2522305
         Length:          0
         ReplacementText: 'VITIS_LOOP_142_1: '
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_359_1:  '
     FileOffset:      359
-    FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_pooling_stream.h
+    FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/firmware/nnet_utils/nnet_pooling_stream.h
     Replacements:    
-      - FilePath:        /home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2541628
+      - FilePath:        /homes/e24berti/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2530124
         Length:          0
         ReplacementText: 'VITIS_LOOP_359_1: '
 ...

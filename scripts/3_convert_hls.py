@@ -16,7 +16,10 @@ def create_hls_config():
     config = {}
     config['ProjectName'] = 'hls_gesture_model'
     config['OutputDir'] = HLS_PROJECT_PATH
-    config['Part'] = 'xczu3eg-sbva484-1-e' # Part Cible (UltraZed-EG)
+
+    #config['Part'] = 'xczu3eg-sbva484-1-e' # Part Cible (UltraZed-EG)
+    config['Part'] = 'xc7z020clg484-1' # Part Cible de Test (ZedBoard)
+
     config['ClockPeriod'] = 10 # ns (Cible 100MHz)
     config['IOType'] = 'io_stream' # IMPORTANT: pour AXI-Stream et DMA
     
@@ -25,7 +28,7 @@ def create_hls_config():
     # CELA DOIT ÊTRE AJUSTÉ en fonction de vos quantificateurs QKeras et de l'analyse 'profile'
     config['Model'] = {
         'Precision': 'ap_fixed<8,3>', 
-        'ReuseFactor': 1, # Facteur de réutilisation = 1 -> Full parallélisme (max performance, max ressources)
+        'ReuseFactor': 128, # Facteur de réutilisation = 1 -> Full parallélisme (max performance, max ressources)
         'Strategy': 'Latency' # Optimiser pour la latence
     }
 

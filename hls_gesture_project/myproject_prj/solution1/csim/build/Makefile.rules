@@ -1,5 +1,5 @@
 # Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-# Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+# Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 
 #===------------------------------------------------------------------------===#
 #
@@ -103,11 +103,24 @@ DEFINE =
 ATBG_CFLAG = -DSST_SIM_ENABLE -DSST_ATBG_ENABLE
 IFLAG += -I $(INCPATH)
 IFLAG += -I "$(AUTOPILOT_ROOT)/include"
-#IFLAG += -I "$(AUTOPILOT_TECH)/autopilot/sim"
-#IFLAG += -I "$(AUTOPILOT_TECH)/autopilot/etc"
 IFLAG += -I "$(AUTOPILOT_TECH)/generic/SystemC/AESL_comp"
-LFLAG += -Wl,--as-needed
-LFLAG += -Wl,-rpath, -lpthread
+
+ifdef __USE_VCXX_CLANG__
+  # use the clang linker 'lld' and link with the pthread library
+  LFLAG += -Wl,--as-needed -lpthread -fuse-ld=lld
+
+  ifeq ($(AUTOPILOT_MACH),win64)
+    # disable ASLR when linking because the gdb version used does not support ASLR.
+    # see: https://sourceware.org/bugzilla/show_bug.cgi?id=26037
+    LFLAG += -Wl,--no-dynamicbase
+    # statically link with the gcc library
+    LFLAG += -static-libgcc
+  else # if on linux use rpath instead of runpath
+    LFLAG += -Wl,--disable-new-dtags
+  endif
+else
+  LFLAG += -Wl,--as-needed -Wl,-rpath, -lpthread
+endif
 
 ifeq ($(AUTOPILOT_MACH),win64)
   LLCTARGET += -mtriple=x86_64-pc-mingw32
@@ -117,57 +130,89 @@ endif
 
 ifdef __SIM_MATHHLS__
 
-  ifdef __USE_CLANG__ 
+  # use the gcc compiled libraries hlsmath when compiling with the vcxx clang compiler
+  ifdef __USE_VCXX_CLANG__
     ifeq ($(AUTOPILOT_MACH),win64)
-      LFLAG += -Wl,-rpath,"$(MATHHLSLIB)" -L "$(MATHHLSLIB)" -lhlsmc++-CLANG39-x64
+      LFLAG += -L "$(MATHHLSLIB)" -lhlsmc++-GCC95-x64
     else
-      LFLAG += -Wl,-rpath,"$(MATHHLSLIB)" -L "$(MATHHLSLIB)" -lhlsmc++-CLANG39
+      LFLAG += -Wl,-rpath,"$(MATHHLSLIB)" -L "$(MATHHLSLIB)" -lhlsmc++-GCC46
     endif
-  else 
+  else ifdef __USE_CLANG__ # if we are using the clang compiler that is not the vcxx compiler use the old clang compiled libraries
+      ifeq ($(AUTOPILOT_MACH),win64)
+        LFLAG += -L "$(MATHHLSLIB)" -lhlsmc++-CLANG39-x64
+      else
+        LFLAG += -Wl,-rpath,"$(MATHHLSLIB)" -L "$(MATHHLSLIB)" -lhlsmc++-CLANG39
+      endif
+  else
     ifeq ($(AUTOPILOT_MACH),win64)
-      LFLAG += -Wl,-rpath,"$(MATHHLSLIB)" -L "$(MATHHLSLIB)" -lhlsmc++-GCC62-x64
+      LFLAG += -L "$(MATHHLSLIB)" -lhlsmc++-GCC62-x64
     else
       LFLAG += -Wl,-rpath,"$(MATHHLSLIB)" -L "$(MATHHLSLIB)" -lhlsmc++-GCC46
     endif
   endif
 
-  ifndef __SIM_MATHSTD__ 
-    ifdef __USE_CLANG__ 
+  ifndef __SIM_MATHSTD__
+    ifdef __USE_VCXX_CLANG__ # use the gcc compiled libraries hlsmath when compiling with the vcxx compiler
       ifeq ($(AUTOPILOT_MACH),win64)
-        LFLAG += -fno-builtin -fno-inline -Wl,-rpath,"$(MATHHLSLIB)" -L "$(MATHHLSLIB)" -lhlsm-CLANG39-x64
+        LFLAG += -fno-builtin -fno-inline -L "$(MATHHLSLIB)" -lhlsm-GCC95-x64
+      else
+        LFLAG += -fno-builtin -fno-inline -Wl,-rpath,"$(MATHHLSLIB)" -L "$(MATHHLSLIB)" -lhlsm-GCC46
+      endif
+    else ifdef __USE_CLANG__ # if we are using the clang compiler that is not the vcxx compiler use the old clang compiled libraries
+      ifeq ($(AUTOPILOT_MACH),win64)
+        LFLAG += -fno-builtin -fno-inline -L "$(MATHHLSLIB)" -lhlsm-CLANG39-x64
       else
         LFLAG += -fno-builtin -fno-inline -Wl,-rpath,"$(MATHHLSLIB)" -L "$(MATHHLSLIB)" -lhlsm-CLANG39
       endif
     else
       ifeq ($(AUTOPILOT_MACH),win64)
-        LFLAG += -fno-builtin -fno-inline -Wl,-rpath,"$(MATHHLSLIB)" -L "$(MATHHLSLIB)" -lhlsm-GCC62-x64
+        LFLAG += -fno-builtin -fno-inline -L "$(MATHHLSLIB)" -lhlsm-GCC62-x64
       else
         LFLAG += -fno-builtin -fno-inline -Wl,-rpath,"$(MATHHLSLIB)" -L "$(MATHHLSLIB)" -lhlsm-GCC46
       endif
     endif
   endif
 
-  export LD_LIBRARY_PATH := ${LD_LIBRARY_PATH}:$(MATHHLSLIB)
+
+  ifneq ($(AUTOPILOT_MACH),win64)
+    export LD_LIBRARY_PATH := ${LD_LIBRARY_PATH}:$(MATHHLSLIB)
+  endif
 endif
 
 ifdef __SIM_FPO__
-   LFLAG += -Wl,-rpath,"$(FPOLIB)" -L "$(FPOLIB)" -lgmp -lmpfr -lIp_floating_point_v7_1_bitacc_cmodel
+  ifneq ($(AUTOPILOT_MACH),win64)
+    LFLAG += -Wl,-rpath,"$(FPOLIB)"
+  endif
+
+  LFLAG += -L "$(FPOLIB)" -lgmp -lmpfr -lIp_floating_point_v7_1_bitacc_cmodel
 endif
 
 
 ifdef __SIM_FFT__
-  LFLAG += -Wl,-rpath,"$(FFTLIB)" -L "$(FFTLIB)" -lIp_xfft_v9_1_bitacc_cmodel
-  export LD_LIBRARY_PATH := ${LD_LIBRARY_PATH}:$(FFTLIB)
+  ifneq ($(AUTOPILOT_MACH),win64)
+    LFLAG += -Wl,-rpath,"$(FFTLIB)"
+    export LD_LIBRARY_PATH := ${LD_LIBRARY_PATH}:$(FFTLIB)
+  endif
+
+  LFLAG += -L "$(FFTLIB)" -lIp_xfft_v9_1_bitacc_cmodel
 endif
 
 ifdef __SIM_FIR__
-  LFLAG += -Wl,-rpath,"$(FIRLIB)" -L "$(FIRLIB)" -lgmp -lIp_fir_compiler_v7_2_bitacc_cmodel
-  export LD_LIBRARY_PATH := ${LD_LIBRARY_PATH}:$(FIRLIB)
+  ifneq ($(AUTOPILOT_MACH),win64)
+    LFLAG += -Wl,-rpath,"$(FIRLIB)"
+    export LD_LIBRARY_PATH := ${LD_LIBRARY_PATH}:$(FIRLIB)
+  endif
+
+  LFLAG += -L "$(FIRLIB)" -lgmp -lIp_fir_compiler_v7_2_bitacc_cmodel
 endif
 
 ifdef __SIM_DDS__
-  LFLAG += -Wl,-rpath,"$(DDSLIB)" -L "$(DDSLIB)" -lIp_dds_compiler_v6_0_bitacc_cmodel
-  export LD_LIBRARY_PATH := ${LD_LIBRARY_PATH}:$(DDSLIB)
+  ifneq ($(AUTOPILOT_MACH),win64)
+    LFLAG += -Wl,-rpath,"$(DDSLIB)"
+    export LD_LIBRARY_PATH := ${LD_LIBRARY_PATH}:$(DDSLIB)
+  endif
+
+  LFLAG += -L "$(DDSLIB)" -lIp_dds_compiler_v6_0_bitacc_cmodel
 endif
 
 CFLAG += $(DEBUG) $(DEFINE) -DC_TEST
@@ -241,10 +286,6 @@ VPATH=$(HLS_RtlSCDir)
 .SUFFIXES:
 .SUFFIXES: .c .cc .cpp .h
 
-
-#ENABLE_PROFILING :=
-#ENABLE_OPTIMIZED := 1
-
 ifdef ENABLE_PROFILING
   BuildMode := profile
   CXX.Flags := -O3 -DNDEBUG -felide-constructors -finline-functions -pg
@@ -253,8 +294,6 @@ ifdef ENABLE_PROFILING
 else
   ifdef AP_ENABLE_OPTIMIZED
     BuildMode := release
-    #CXX.Flags  := -O3 -DNDEBUG -finline-functions \
-    #              -felide-constructors -fomit-frame-pointer
     CXX.Flags  := -O1 -DNDEBUG
     C.Flags    := -O1 -DNDEBUG -fomit-frame-pointer
     LD.Flags   := -O1 -DNDEBUG 
@@ -292,14 +331,7 @@ CPP.Flags += $(CPPFLAGS)
 LD.Flags  += $(LDFLAGS) $(ExtraLDFlags)
 AR.Flags  := cru
 LibTool.Flags := --tag=CXX
-#CompileCommonOpts := -Wall -W -Wwrite-strings -Wno-unused
 CompileCommonOpts := 
-
-ifdef __USE_CLANG__
-ifdef __COSIM_FLOW__
-#CompileCommonOpts += -D_GLIBCXX_USE_CXX11_ABI=0
-endif
-endif
 
 #-------------- C/C++ to binary ----------------------------------------
 Compile.C     = $(CC) $(CPP.Flags) $(CompileCommonOpts) -c $(C.Flags)
@@ -361,15 +393,6 @@ BCCXX.Flags = $(CPP.Flags) $(CompileCommonOpts) $(CXX.Flags) $(Extra.BCCPP.Flags
 Compile.BCC   = $(AUTOPILOT_TOOL)/clang/bin/clang -hls $(BCC.Flags) -c -emit-llvm 
 Compile.BCCXX = $(AUTOPILOT_TOOL)/clang/bin/clang++ -hls $(BCCXX.Flags) -c -emit-llvm
 Compile.BCLD  = $(AUTOPILOT_TOOL)/clang/bin/llvm-ld -disable-inlining
-
-#ifndef BCLibDir
-#BCLibDir = $(HLS_RtlSCDir)/../tmp
-#endif
-
-#ExtraUserBCs := $(wildcard $(BCLibDir)/*.o.3.sim.bc)
-#ExtraUsers := $(notdir $(ExtraUsers))
-
-#VPATH=$(BCLibDir):$(VPATH)
 
 SOURCES_C.BC += $(wildcard *.c)
 OBJECTS_C.BC = $(SOURCES_C.BC:%.c=$(ObjDir)/%.bc)

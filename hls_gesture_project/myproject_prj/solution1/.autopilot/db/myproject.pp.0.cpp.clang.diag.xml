@@ -1,6 +1,6 @@
 <dict>
   <key>main-file</key>
-  <string>/home/Etienne/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp</string>
+  <string>/homes/e24berti/Gesture_FPGA/hls_gesture_project/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp</string>
   <key>diagnostics</key>
   <array>
     <dict>
@@ -2815,7 +2815,7 @@
       <key>message</key>
       <string>&apos;region&apos; in &apos;#pragma HLS Inline&apos; is deprecated, use &apos;Inline Pragma&apos; instead</string>
       <key>ID</key>
-      <integer>5538</integer>
+      <integer>5540</integer>
       <key>WarningOption</key>
       <string>ignored-hls-pragmas</string>
     </dict>
@@ -2847,7 +2847,7 @@
       <key>message</key>
       <string>&apos;region&apos; in &apos;#pragma HLS Inline&apos; is deprecated, use &apos;Inline Pragma&apos; instead</string>
       <key>ID</key>
-      <integer>5538</integer>
+      <integer>5540</integer>
       <key>WarningOption</key>
       <string>ignored-hls-pragmas</string>
     </dict>
@@ -4223,7 +4223,7 @@
       <key>message</key>
       <string>unexpected pragma argument &apos;pool_op&apos;, expects function/operation</string>
       <key>ID</key>
-      <integer>5566</integer>
+      <integer>5570</integer>
       <key>WarningOption</key>
       <string>invalid-hls-pragmas</string>
     </dict>
@@ -4247,7 +4247,7 @@
       <key>level</key>
       <string>warning</string>
       <key>filename</key>
-      <string>/opt/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/utils/x_hls_utils.h</string>
+      <string>/opt/img/Vivado2024.1/Vitis_HLS/2024.1/common/technology/autopilot/utils/x_hls_utils.h</string>
       <key>line</key>
       <integer>224</integer>
       <key>column</key>
@@ -4263,7 +4263,7 @@
       <key>level</key>
       <string>warning</string>
       <key>filename</key>
-      <string>/opt/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/utils/x_hls_utils.h</string>
+      <string>/opt/img/Vivado2024.1/Vitis_HLS/2024.1/common/technology/autopilot/utils/x_hls_utils.h</string>
       <key>line</key>
       <integer>225</integer>
       <key>column</key>
@@ -4279,7 +4279,7 @@
       <key>level</key>
       <string>warning</string>
       <key>filename</key>
-      <string>/opt/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/utils/x_hls_utils.h</string>
+      <string>/opt/img/Vivado2024.1/Vitis_HLS/2024.1/common/technology/autopilot/utils/x_hls_utils.h</string>
       <key>line</key>
       <integer>226</integer>
       <key>column</key>
@@ -5079,7 +5079,7 @@
       <key>level</key>
       <string>warning</string>
       <key>filename</key>
-      <string>/home/Etienne/Gesture_FPGA/hls_gesture_project/build_prj.tcl</string>
+      <string>/homes/e24berti/Gesture_FPGA/hls_gesture_project/build_prj.tcl</string>
       <key>line</key>
       <integer>183</integer>
       <key>column</key>
@@ -5359,7 +5359,7 @@
       <key>message</key>
       <string>Only for/while/do loop or function body support the pipeline pragma</string>
       <key>ID</key>
-      <integer>5571</integer>
+      <integer>5575</integer>
       <key>WarningOption</key>
       <string>ignored-hls-attributes</string>
     </dict>
@@ -5375,7 +5375,7 @@
       <key>message</key>
       <string>Only for/while/do loop or function body support the pipeline pragma</string>
       <key>ID</key>
-      <integer>5571</integer>
+      <integer>5575</integer>
       <key>WarningOption</key>
       <string>ignored-hls-attributes</string>
     </dict>
@@ -5391,7 +5391,7 @@
       <key>message</key>
       <string>Only for/while/do loop or function body support the pipeline pragma</string>
       <key>ID</key>
-      <integer>5571</integer>
+      <integer>5575</integer>
       <key>WarningOption</key>
       <string>ignored-hls-attributes</string>
     </dict>
@@ -5407,7 +5407,7 @@
       <key>message</key>
       <string>Only for/while/do loop or function body support the pipeline pragma</string>
       <key>ID</key>
-      <integer>5571</integer>
+      <integer>5575</integer>
       <key>WarningOption</key>
       <string>ignored-hls-attributes</string>
     </dict>
@@ -5423,7 +5423,7 @@
       <key>message</key>
       <string>Only for/while/do loop or function body support the pipeline pragma</string>
       <key>ID</key>
-      <integer>5571</integer>
+      <integer>5575</integer>
       <key>WarningOption</key>
       <string>ignored-hls-attributes</string>
     </dict>
@@ -5439,7 +5439,7 @@
       <key>message</key>
       <string>Only for/while/do loop or function body support the pipeline pragma</string>
       <key>ID</key>
-      <integer>5571</integer>
+      <integer>5575</integer>
       <key>WarningOption</key>
       <string>ignored-hls-attributes</string>
     </dict>
@@ -5455,7 +5455,7 @@
       <key>message</key>
       <string>Only for/while/do loop or function body support the pipeline pragma</string>
       <key>ID</key>
-      <integer>5571</integer>
+      <integer>5575</integer>
       <key>WarningOption</key>
       <string>ignored-hls-attributes</string>
     </dict>
@@ -5471,7 +5471,7 @@
       <key>message</key>
       <string>Only for/while/do loop or function body support the pipeline pragma</string>
       <key>ID</key>
-      <integer>5571</integer>
+      <integer>5575</integer>
       <key>WarningOption</key>
       <string>ignored-hls-attributes</string>
     </dict>
@@ -5487,7 +5487,7 @@
       <key>message</key>
       <string>Only for/while/do loop or function body support the pipeline pragma</string>
       <key>ID</key>
-      <integer>5571</integer>
+      <integer>5575</integer>
       <key>WarningOption</key>
       <string>ignored-hls-attributes</string>
     </dict>
@@ -5503,7 +5503,7 @@
       <key>message</key>
       <string>Only for/while/do loop or function body support the pipeline pragma</string>
       <key>ID</key>
-      <integer>5571</integer>
+      <integer>5575</integer>
       <key>WarningOption</key>
       <string>ignored-hls-attributes</string>
     </dict>
@@ -5519,7 +5519,7 @@
       <key>message</key>
       <string>Only for/while/do loop or function body support the pipeline pragma</string>
       <key>ID</key>
-      <integer>5571</integer>
+      <integer>5575</integer>
       <key>WarningOption</key>
       <string>ignored-hls-attributes</string>
     </dict>
@@ -5535,7 +5535,7 @@
       <key>message</key>
       <string>Only for/while/do loop or function body support the pipeline pragma</string>
       <key>ID</key>
-      <integer>5571</integer>
+      <integer>5575</integer>
       <key>WarningOption</key>
       <string>ignored-hls-attributes</string>
     </dict>
@@ -5551,7 +5551,7 @@
       <key>message</key>
       <string>Only for/while/do loop or function body support the pipeline pragma</string>
       <key>ID</key>
-      <integer>5571</integer>
+      <integer>5575</integer>
       <key>WarningOption</key>
       <string>ignored-hls-attributes</string>
     </dict>
@@ -5567,7 +5567,7 @@
       <key>message</key>
       <string>Only for/while/do loop or function body support the pipeline pragma</string>
       <key>ID</key>
-      <integer>5571</integer>
+      <integer>5575</integer>
       <key>WarningOption</key>
       <string>ignored-hls-attributes</string>
     </dict>
@@ -5583,9 +5583,93 @@
       <key>message</key>
       <string>Only for/while/do loop or function body support the pipeline pragma</string>
       <key>ID</key>
-      <integer>5571</integer>
+      <integer>5575</integer>
       <key>WarningOption</key>
       <string>ignored-hls-attributes</string>
+    </dict>
+    <dict>
+      <key>level</key>
+      <string>warning</string>
+      <key>filename</key>
+      <string>/opt/img/Vivado2024.1/Vitis_HLS/2024.1/common/technology/autopilot/ap_shift_reg.h</string>
+      <key>line</key>
+      <integer>47</integer>
+      <key>column</key>
+      <integer>9</integer>
+      <key>message</key>
+      <string>there are more than one pragma inline in the function scope, ignore the pragma </string>
+      <key>ID</key>
+      <integer>5584</integer>
+    </dict>
+    <dict>
+      <key>level</key>
+      <string>warning</string>
+      <key>filename</key>
+      <string>/opt/img/Vivado2024.1/Vitis_HLS/2024.1/common/technology/autopilot/ap_shift_reg.h</string>
+      <key>line</key>
+      <integer>47</integer>
+      <key>column</key>
+      <integer>9</integer>
+      <key>message</key>
+      <string>there are more than one pragma inline in the function scope, ignore the pragma </string>
+      <key>ID</key>
+      <integer>5584</integer>
+    </dict>
+    <dict>
+      <key>level</key>
+      <string>warning</string>
+      <key>filename</key>
+      <string>/opt/img/Vivado2024.1/Vitis_HLS/2024.1/common/technology/autopilot/ap_shift_reg.h</string>
+      <key>line</key>
+      <integer>47</integer>
+      <key>column</key>
+      <integer>9</integer>
+      <key>message</key>
+      <string>there are more than one pragma inline in the function scope, ignore the pragma </string>
+      <key>ID</key>
+      <integer>5584</integer>
+    </dict>
+    <dict>
+      <key>level</key>
+      <string>warning</string>
+      <key>filename</key>
+      <string>/opt/img/Vivado2024.1/Vitis_HLS/2024.1/common/technology/autopilot/ap_shift_reg.h</string>
+      <key>line</key>
+      <integer>47</integer>
+      <key>column</key>
+      <integer>9</integer>
+      <key>message</key>
+      <string>there are more than one pragma inline in the function scope, ignore the pragma </string>
+      <key>ID</key>
+      <integer>5584</integer>
+    </dict>
+    <dict>
+      <key>level</key>
+      <string>warning</string>
+      <key>filename</key>
+      <string>/opt/img/Vivado2024.1/Vitis_HLS/2024.1/common/technology/autopilot/ap_shift_reg.h</string>
+      <key>line</key>
+      <integer>47</integer>
+      <key>column</key>
+      <integer>9</integer>
+      <key>message</key>
+      <string>there are more than one pragma inline in the function scope, ignore the pragma </string>
+      <key>ID</key>
+      <integer>5584</integer>
+    </dict>
+    <dict>
+      <key>level</key>
+      <string>warning</string>
+      <key>filename</key>
+      <string>/opt/img/Vivado2024.1/Vitis_HLS/2024.1/common/technology/autopilot/ap_shift_reg.h</string>
+      <key>line</key>
+      <integer>47</integer>
+      <key>column</key>
+      <integer>9</integer>
+      <key>message</key>
+      <string>there are more than one pragma inline in the function scope, ignore the pragma </string>
+      <key>ID</key>
+      <integer>5584</integer>
     </dict>
   </array>
 </dict>
