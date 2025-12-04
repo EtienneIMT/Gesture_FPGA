@@ -27,9 +27,9 @@ def create_hls_config():
     # Nous utilisons 'ap_fixed<8,3>' : 8 bits au total, 3 bits pour la partie entière
     # CELA DOIT ÊTRE AJUSTÉ en fonction de vos quantificateurs QKeras et de l'analyse 'profile'
     config['Model'] = {
-        'Precision': 'ap_fixed<8,3>', 
-        'ReuseFactor': 128, # Facteur de réutilisation = 1 -> Full parallélisme (max performance, max ressources)
-        'Strategy': 'Latency' # Optimiser pour la latence
+        'Precision': 'ap_fixed<10,4>', 
+        'ReuseFactor': 64, # Facteur de réutilisation = 1 -> Full parallélisme (max performance, max ressources)
+        'Strategy': 'Resource' # Optimiser pour la latence
     }
 
     # Vous pouvez affiner la précision et le ReuseFactor pour chaque couche ici
