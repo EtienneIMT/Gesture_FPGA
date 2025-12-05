@@ -38,3 +38,30 @@ hls_gesture_project.tar.gz
 
 # === Installeurs/Binaries ===
 Miniforge*-*.sh
+
+# === Vivado Project ===
+# Ignorer les fichiers temporaires et logs Vivado
+*.jou
+*.log
+*.str
+*.dmp
+
+# Ignorer les dossiers de compilation lourds
+*.runs/
+*.gen/
+*.cache/
+*.hw/
+*.ip_user_files/
+*.sim/
+
+# Ignorer les backups automatiques
+*.backup.jou
+*.backup.log
+
+# Ignorer les fichiers temporaires python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# (Optionnel) Ignorer le projet Vivado lui-même si tu utilises la méthode TCL
+# *.xpr

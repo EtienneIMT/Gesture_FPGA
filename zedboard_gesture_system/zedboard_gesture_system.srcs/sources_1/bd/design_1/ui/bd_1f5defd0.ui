@@ -1,0 +1,44 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.883513",
+   "Default View_TopLeft":"216,304",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.7.1 2023-07-26 3bc4126617 VDI=43 GEI=38 GUI=JA:21.0 TLS
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -lvl 9 -x 2790 -y 350 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 9 -x 2790 -y 380 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 8 -x 2540 -y 440 -defaultsOSRD
+preplace inst myproject_0 -pg 1 -lvl 3 -x 800 -y 660 -defaultsOSRD
+preplace inst axi_dma_0 -pg 1 -lvl 6 -x 1800 -y 660 -defaultsOSRD
+preplace inst ps7_0_axi_periph -pg 1 -lvl 5 -x 1440 -y 420 -defaultsOSRD
+preplace inst rst_ps7_0_100M -pg 1 -lvl 1 -x 210 -y 700 -defaultsOSRD
+preplace inst axi_mem_intercon -pg 1 -lvl 7 -x 2160 -y 150 -defaultsOSRD
+preplace inst xlconstant_0 -pg 1 -lvl 2 -x 510 -y 740 -defaultsOSRD
+preplace inst axis_dwidth_converter_0 -pg 1 -lvl 2 -x 510 -y 620 -defaultsOSRD
+preplace inst axis_dwidth_converter_1 -pg 1 -lvl 5 -x 1440 -y 700 -defaultsOSRD
+preplace inst axis_subset_converter_0 -pg 1 -lvl 4 -x 1120 -y 680 -defaultsOSRD
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 9 30 800 390 800 630 770 960 770 1290 560 1620 450 2000 450 2320 580 2770
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 9 20 530 NJ 530 NJ 530 NJ 530 1280J 550 1600J 530 NJ 530 2310J 590 2760
+preplace netloc rst_ps7_0_100M_peripheral_aresetn 1 1 6 400 810 640 760 970 760 1270 290 1590 240 2010
+preplace netloc xlconstant_0_dout 1 2 1 620J 660n
+preplace netloc processing_system7_0_DDR 1 8 1 2770J 350n
+preplace netloc processing_system7_0_FIXED_IO 1 8 1 NJ 380
+preplace netloc processing_system7_0_M_AXI_GP0 1 4 5 1290 300 NJ 300 NJ 300 NJ 300 2760
+preplace netloc ps7_0_axi_periph_M00_AXI 1 5 1 1610 420n
+preplace netloc axi_dma_0_M_AXI_MM2S 1 6 1 1980 60n
+preplace netloc axi_mem_intercon_M00_AXI 1 7 1 2320 150n
+preplace netloc axi_dma_0_M_AXI_S2MM 1 6 1 1990 80n
+preplace netloc axi_dma_0_M_AXIS_MM2S 1 1 6 400 540 NJ 540 NJ 540 NJ 540 NJ 540 1970
+preplace netloc axis_dwidth_converter_0_M_AXIS 1 2 1 N 620
+preplace netloc myproject_0_layer18_out 1 3 1 N 660
+preplace netloc axis_subset_converter_0_M_AXIS 1 4 1 N 680
+preplace netloc axis_dwidth_converter_1_M_AXIS 1 5 1 1630 630n
+levelinfo -pg 1 0 210 510 800 1120 1440 1800 2160 2540 2790
+pagesize -pg 1 -db -bbox -sgen 0 0 2900 830
+"
+}
+{
+   "da_axi4_cnt":"3",
+   "da_clkrst_cnt":"3",
+   "da_ps7_cnt":"1"
+}
