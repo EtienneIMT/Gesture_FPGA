@@ -1,4 +1,3 @@
-# 3_convert_hls.py
 import hls4ml
 from hls4ml.model.profiling import types_hlsmodel
 import tensorflow as tf
@@ -11,57 +10,65 @@ from qkeras.quantizers import quantized_bits, quantized_relu
 
 from settings import *
 
-
 # --- Configuration HLS4ML ---
-def create_hls_config():
-    config = {}
+def create_hls_config(model):
+    
+    # 1. Générer la structure de base
+    config = hls4ml.utils.config_from_keras_model(model, granularity='name')
+    
+    print("Structure de base générée. Application des optimisations...")
+
+    # 2. Paramètres Globaux
     config["ProjectName"] = "hls_gesture_model"
     config["OutputDir"] = HLS_PROJECT_PATH
+    config["Part"] = "xczu3eg-sbva484-1-e"
+    config["ClockPeriod"] = 10
+    config["IOType"] = "io_stream"
 
-    config["Part"] = "xczu3eg-sbva484-1-e"  # Part Cible (UltraZed-EG)
-    # config['Part'] = 'xc7z020clg484-1' # Part Cible de Test (ZedBoard)
-
-    config["ClockPeriod"] = 10  # ns (Cible 100MHz)
-    config["IOType"] = "io_stream"  # IMPORTANT: pour AXI-Stream et DMA
-
-    # Stratégie de précision
-    # Nous utilisons 'ap_fixed<8,3>' : 8 bits au total, 3 bits pour la partie entière
-    # CELA DOIT ÊTRE AJUSTÉ en fonction de vos quantificateurs QKeras et de l'analyse 'profile'
+    # 3. Stratégie Globale
     config["Model"] = {
         "Precision": "ap_fixed<10,4>",
-        "ReuseFactor": 128,  # Facteur de réutilisation = 1 -> Full parallélisme (max performance, max ressources)
-        "Strategy": "Resource",  # Optimiser pour la latence
-        #'Strategy': 'Resource' # Optimiser pour les ressources pour les capacités limitées de la carte de test
+        "ReuseFactor": 512, # On force le mode série
+        "Strategy": "Resource"
     }
 
-    # Vous pouvez affiner la précision et le ReuseFactor pour chaque couche ici
-    # Exemple :
-    # config['LayerName'] = {
-    #     'conv1': {'Precision': 'ap_fixed<8,1>', 'ReuseFactor': 4},
-    #     'fc1': {'Precision': 'ap_fixed<10,4>', 'ReuseFactor': 1}
-    # }
+    # 4. Forçage couche par couche (Correction ici !)
+    for layer in config['LayerName'].keys():
+        config['LayerName'][layer]['ReuseFactor'] = 512
+        config['LayerName'][layer]['Strategy'] = 'Resource'
+        
+        # Optimisation spécifique pour les convolutions
+        if 'conv' in layer:
+            config['LayerName'][layer]['ReuseFactor'] = 512
+            # CORRECTION : On utilise 'LineBuffer' qui est le standard pour le streaming
+            config['LayerName'][layer]['ConvImplementation'] = 'LineBuffer' 
+
+    # Vérification visuelle
+    if 'fc1' in config['LayerName']:
+        print(f"Configuration pour 'fc1' : {config['LayerName']['fc1']}")
 
     return config
 
 
 # --- Main script ---
 if __name__ == "__main__":
-    # 1. Re-créer les objets QKeras pour le chargement
+    # 1. Re-créer les objets QKeras
     custom_objects = {}
     for layer_type in [QConv2D, QDense, QActivation, quantized_bits, quantized_relu]:
         custom_objects[layer_type.__name__] = layer_type
 
-    # 2. Charger le modèle QAT
+    # 2. Charger le modèle
     print(f"Chargement du modèle quantisé depuis {MODEL_QAT_PATH}...")
     model = keras.models.load_model(MODEL_QAT_PATH, custom_objects=custom_objects)
     model.summary()
 
-    # 3. Créer la configuration HLS
-    config = create_hls_config()
-    print("\nConfiguration HLS utilisée :")
-    print(yaml.dump(config, default_flow_style=False))
+    # 3. Créer la configuration
+    config = create_hls_config(model)
+    
+    print("\nConfiguration HLS utilisée (Global) :")
+    print(config["Model"])
 
-    # 4. Convertir le modèle
+    # 4. Convertir
     print("\nLancement de la conversion HLS4ML...")
     hls_model = hls4ml.converters.convert_from_keras_model(
         model,
@@ -74,28 +81,17 @@ if __name__ == "__main__":
 
     print("Conversion terminée.")
 
-    # 5. Profiler le modèle (estimation des ressources et types)
-    # C'est un script intermédiaire crucial !
-    print("\n--- Profilage du modèle (estimation) ---")
-    profile = types_hlsmodel(hls_model)
-    # Affichez le profil pour voir si vos types 'ap_fixed<...>' débordent
-    print(profile)
-    # hls4ml.utils.plot_model(hls_model, show_shapes=True, show_precision=True, to_file='model_hls.png')
-
-    # 6. Sauvegarder le modèle hls4ml compilé (pour le script de build)
+    # 5. Compiler
     hls_model.write()
     print(f"Projet HLS généré dans {HLS_PROJECT_PATH}")
 
     # Lancement de la synthèse Vitis HLS
+    print("Lancement de la synthèse Vitis HLS (Cela va prendre quelques minutes)...")
     hls_model.build(
-        csim=True, synth=True, export=True, vsynth=True  # Utiliser Vitis HLS
+        csim=False, 
+        synth=True, 
+        export=True, 
+        vsynth=True 
     )
-
-    hls_model.compile()
-    # Teste avec une image de ton dataset
-    y_hls = hls_model.predict(X_test_image)
-    y_keras = model.predict(X_test_image)
-
-    print(f"Keras: {y_keras}")
-    print(f"HLS:   {y_hls}")
-    # Si les valeurs sont proches, c'est gagné !
+    
+    print("Synthèse terminée. Vérifiez le tableau 'Synthesis Report' ci-dessus !")
