@@ -11,25 +11,27 @@ from qkeras.quantizers import quantized_bits, quantized_relu
 
 from settings import *
 
+
 # --- Configuration HLS4ML ---
 def create_hls_config():
     config = {}
-    config['ProjectName'] = 'hls_gesture_model'
-    config['OutputDir'] = HLS_PROJECT_PATH
+    config["ProjectName"] = "hls_gesture_model"
+    config["OutputDir"] = HLS_PROJECT_PATH
 
-    #config['Part'] = 'xczu3eg-sbva484-1-e' # Part Cible (UltraZed-EG)
-    config['Part'] = 'xc7z020clg484-1' # Part Cible de Test (ZedBoard)
+    config["Part"] = "xczu3eg-sbva484-1-e"  # Part Cible (UltraZed-EG)
+    # config['Part'] = 'xc7z020clg484-1' # Part Cible de Test (ZedBoard)
 
-    config['ClockPeriod'] = 10 # ns (Cible 100MHz)
-    config['IOType'] = 'io_stream' # IMPORTANT: pour AXI-Stream et DMA
-    
+    config["ClockPeriod"] = 10  # ns (Cible 100MHz)
+    config["IOType"] = "io_stream"  # IMPORTANT: pour AXI-Stream et DMA
+
     # Stratégie de précision
     # Nous utilisons 'ap_fixed<8,3>' : 8 bits au total, 3 bits pour la partie entière
     # CELA DOIT ÊTRE AJUSTÉ en fonction de vos quantificateurs QKeras et de l'analyse 'profile'
-    config['Model'] = {
-        'Precision': 'ap_fixed<10,4>', 
-        'ReuseFactor': 64, # Facteur de réutilisation = 1 -> Full parallélisme (max performance, max ressources)
-        'Strategy': 'Resource' # Optimiser pour la latence
+    config["Model"] = {
+        "Precision": "ap_fixed<10,4>",
+        "ReuseFactor": 128,  # Facteur de réutilisation = 1 -> Full parallélisme (max performance, max ressources)
+        "Strategy": "Resource",  # Optimiser pour la latence
+        #'Strategy': 'Resource' # Optimiser pour les ressources pour les capacités limitées de la carte de test
     }
 
     # Vous pouvez affiner la précision et le ReuseFactor pour chaque couche ici
@@ -38,8 +40,9 @@ def create_hls_config():
     #     'conv1': {'Precision': 'ap_fixed<8,1>', 'ReuseFactor': 4},
     #     'fc1': {'Precision': 'ap_fixed<10,4>', 'ReuseFactor': 1}
     # }
-    
+
     return config
+
 
 # --- Main script ---
 if __name__ == "__main__":
@@ -52,7 +55,7 @@ if __name__ == "__main__":
     print(f"Chargement du modèle quantisé depuis {MODEL_QAT_PATH}...")
     model = keras.models.load_model(MODEL_QAT_PATH, custom_objects=custom_objects)
     model.summary()
-    
+
     # 3. Créer la configuration HLS
     config = create_hls_config()
     print("\nConfiguration HLS utilisée :")
@@ -63,14 +66,14 @@ if __name__ == "__main__":
     hls_model = hls4ml.converters.convert_from_keras_model(
         model,
         hls_config=config,
-        output_dir=config['OutputDir'],
-        part=config['Part'],
-        clock_period=config['ClockPeriod'],
-        io_type=config['IOType']
+        output_dir=config["OutputDir"],
+        part=config["Part"],
+        clock_period=config["ClockPeriod"],
+        io_type=config["IOType"],
     )
-    
+
     print("Conversion terminée.")
-    
+
     # 5. Profiler le modèle (estimation des ressources et types)
     # C'est un script intermédiaire crucial !
     print("\n--- Profilage du modèle (estimation) ---")
@@ -83,10 +86,16 @@ if __name__ == "__main__":
     hls_model.write()
     print(f"Projet HLS généré dans {HLS_PROJECT_PATH}")
 
-# Lancement de la synthèse Vitis HLS
-hls_model.build(
-    csim=True, 
-    synth=True, 
-    export=True, 
-    vsynth=True # Utiliser Vitis HLS
-)
+    # Lancement de la synthèse Vitis HLS
+    hls_model.build(
+        csim=True, synth=True, export=True, vsynth=True  # Utiliser Vitis HLS
+    )
+
+    hls_model.compile()
+    # Teste avec une image de ton dataset
+    y_hls = hls_model.predict(X_test_image)
+    y_keras = model.predict(X_test_image)
+
+    print(f"Keras: {y_keras}")
+    print(f"HLS:   {y_hls}")
+    # Si les valeurs sont proches, c'est gagné !

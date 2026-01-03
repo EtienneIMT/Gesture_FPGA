@@ -22,6 +22,7 @@ dist/
 # === Données et Modèles (Trop lourds pour Git) ===
 data/raw/
 data/processed/
+data/clean/
 models/*.h5
 models/*.pt
 models/*.onnx
@@ -35,6 +36,8 @@ hls4ml_build/
 hls_gesture_project/
 hls_gesture_project.tar.gz
 .directory
+
+gesture_system_UltraZed/
 
 # === Installeurs/Binaries ===
 Miniforge*-*.sh

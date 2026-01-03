@@ -1,4 +1,4 @@
-# 4_build_hls_ip.py
+# 4_build_hls_ip.py : inutile si export=True dans le script 3
 import hls4ml
 import os
 from settings import HLS_PROJECT_PATH
