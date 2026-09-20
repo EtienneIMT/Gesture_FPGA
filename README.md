@@ -1,36 +1,22 @@
-# 🧠 Real-Time Gesture Recognition FPGA Accelerator
+# Real-Time Gesture Recognition FPGA Accelerator
 
-This project demonstrates a complete **hardware/software co-design workflow** to accelerate a Convolutional Neural Network (CNN) for hand gesture recognition on an embedded Xilinx Zynq UltraScale+ MPSoC platform (Avnet UltraZed-EG).
+This repository contains a hardware/software co-design workflow to accelerate Convolutional Neural Network (CNN) inference for hand gesture recognition. The architecture targets a Xilinx Zynq UltraScale+ MPSoC (Avnet UltraZed-EG), offloading compute-intensive inference from the ARM CPU to the Programmable Logic (PL).
 
-The objective is to **offload inference from the CPU (ARM) to the FPGA (PL)** to achieve low-latency, energy-efficient inference suitable for embedded applications (robotics, smart devices, HMI).
+## Architecture and Workflow
 
----
+The project establishes an automated pipeline from a high-level TensorFlow/Keras model to a synthesized hardware IP block:
 
-## 🚀 Architecture and Workflow
+1. **Baseline Training:** A compact CNN is trained on the SignMNIST dataset using Keras (float32).
+2. **Quantization-Aware Training (QAT):** The model is converted to QKeras and fine-tuned for low-precision arithmetic (e.g., INT8) to map efficiently to DSP slices and logic fabric.
+3. **Hardware IP Generation:** The quantized `.h5` model is parsed by HLS4ML, which infers hardware data types and generates optimized C++ code for High-Level Synthesis.
+4. **HLS Synthesis:** Vitis HLS synthesizes the C++ design into an RTL IP block (Verilog/VHDL).
+5. **System Integration:** The generated IP is integrated into a Vivado Block Design. It connects to the Processing System (PS) via AXI-Lite for control registers and utilizes AXI DMA for high-throughput pixel streaming from DDR memory.
 
-This project doesn't just train a model; it compiles it into hardware. The complete workflow, from Keras to an FPGA bitstream, is as follows:
+## Current Status & Roadmap
 
-1.  **Keras (Float) Training:** A compact CNN is first trained with Keras in `float32` to establish an accuracy baseline.
-2.  **QAT Training (QKeras):** The model is converted to **QKeras** and retrained (or fine-tuned) using **Quantization-Aware Training (QAT)**. This adapts the network weights to low-precision arithmetic (e.g., `INT8`) that the FPGA can compute efficiently.
-3.  **.h5 Export:** The quantized model is saved in the `.h5` format. **HLS4ML** is capable of reading this file and directly interpreting the QKeras layers to infer the hardware data types (e.g., `ap_fixed<8,2>`).
-4.  **HLS Synthesis (HLS4ML):** **HLS4ML** is used to convert the `.h5` graph into optimized **HLS C++ code**. It generates a complete project ready for synthesis.
-5.  **Hardware Compilation (Vitis HLS):** **Vitis HLS** (called by the HLS4ML build script) synthesizes the C++ into a hardware **IP block** (RTL - Verilog/VHDL) ready to be imported into a logic design.
-6.  **System Integration (Vivado):** The hardware IP is imported into **Vivado** and integrated into a Zynq MPSoC **Block Design**. It is connected to the processor (PS) via an **AXI-Lite** interface (for control) and to the DDR memory via **AXI DMA** (for the image pixel stream). A **bitstream** is then generated.
-7.  **Deployment (PYNQ):** The final application runs on **PYNQ** (Python on Zynq) on the UltraZed-EG board. The Python code (running on the ARM CPU) handles:
-    * Video capture via OpenCV.
-    * Image preprocessing (64x64 resize, normalization).
-    * Sending the image to the accelerator (PL) via DMA.
-    * Receiving the results (logits) from the PL.
-    * Post-processing (Softmax on the CPU) and displaying the recognized gesture.
+The hardware design, synthesis, and Vivado block integration are complete. The project is currently pending physical board bring-up and software driver integration. 
 
----
-
-## 🚧 Limitations & Future Work
-
-Dataset: This model is trained on SignMNIST. Performance on real-world camera feeds is poor due to the "domain gap".
-
-Roadmap:
-
-1. Fine-tune the model on a real-world dataset (like HaGRID) to improve camera inference.
-2. Complete the full PYNQ integration (scripts/5_run_inference_pynq.py).
-3. Benchmark power consumption on the UltraZed board.
+Future development phases include:
+* **Physical Deployment:** Finalize the PYNQ overlay integration to handle OpenCV video capture, image preprocessing, and AXI DMA transfers on the ARM CPU.
+* **Dataset Transition:** Address the current domain gap by fine-tuning the model on real-world camera feeds (e.g., HaGRID dataset) rather than static SignMNIST images.
+* **Hardware Benchmarking:** Measure end-to-end inference latency and active power consumption on the UltraZed-EG board.
