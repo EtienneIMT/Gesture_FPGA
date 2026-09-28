@@ -33,10 +33,15 @@ Gesture_FPGA/
 │   ├── 2_train_quantized.py # Quantization-Aware Training (QKeras)
 │   ├── 3_convert_hls.py    # HLS4ML conversion & Vitis HLS Synthesis
 │   └── cam_test.py         # Quick webcam test
+├── data/                   # Dataset directory (raw and processed images)
+├── doc/                    # Additional documentation and synthesis reports
 ├── hw_export/              # Generated hardware handoff files (.bin, .bit, .hwh)
 ├── zedboard_gesture_system/# Vivado Project for ZedBoard integration
 ├── IP/                     # Generated IP blocks for Vivado integration
-└── README.md
+├── environment_keras.yml   # Conda environment dependencies
+├── .gitignore              # Git ignore rules
+├── .gitattributes          # Git attributes/LFS rules
+└── README.md               # Project documentation
 ```
 
 ## Current Status
