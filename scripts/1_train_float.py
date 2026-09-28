@@ -1,41 +1,46 @@
-# 1_train_float.py
+"""
+Train the baseline floating-point (float32) CNN model for gesture recognition.
+"""
+
+import sys
+import os
 import tensorflow as tf
 from tensorflow import keras
-from keras.models import Sequential
-from keras.layers import Input, Conv2D, MaxPooling2D, Flatten, Dense, Dropout
-from keras.optimizers import Adam
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import Input, Conv2D, MaxPooling2D, Flatten, Dense, Dropout, BatchNormalization
+from tensorflow.keras.optimizers import Adam
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
-
-# Importer vos fonctions et constantes
-from settings import *
-from data_loader import load_data
-
-from tensorflow.keras.layers import BatchNormalization
 from tensorflow.keras.callbacks import ModelCheckpoint, ReduceLROnPlateau
 
+# Ensure the root directory is on the path so we can import from src
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+from src.settings import INPUT_SHAPE, NUM_CLASSES, MODEL_FLOAT_PATH
+from src.data_loader import load_data
+
 def build_pro_model():
+    """Builds a compact CNN architecture optimized for edge deployment."""
     model = Sequential(name="cnn_float_pro")
     model.add(Input(shape=INPUT_SHAPE))
     
-    # Bloc 1
-    model.add(Conv2D(16, (3, 3), padding='same', use_bias=False)) # bias=False car BatchNormalisation le gère
-    model.add(BatchNormalization()) # <--- MAGIE ICI
+    # Block 1
+    model.add(Conv2D(16, (3, 3), padding='same', use_bias=False))
+    model.add(BatchNormalization())
     model.add(tf.keras.layers.Activation('relu'))
     model.add(MaxPooling2D((2, 2))) 
     
-    # Bloc 2
+    # Block 2
     model.add(Conv2D(32, (3, 3), padding='same', use_bias=False))
-    model.add(BatchNormalization()) # <--- MAGIE ICI
+    model.add(BatchNormalization())
     model.add(tf.keras.layers.Activation('relu'))
     model.add(MaxPooling2D((2, 2))) 
     
-    # Bloc 3
+    # Block 3
     model.add(Conv2D(64, (3, 3), padding='same', use_bias=False))
-    model.add(BatchNormalization()) # <--- MAGIE ICI
+    model.add(BatchNormalization())
     model.add(tf.keras.layers.Activation('relu'))
     model.add(MaxPooling2D((2, 2)))
     
-    # Bloc 4 (On garde pour le 64px)
+    # Block 4
     model.add(Conv2D(64, (3, 3), padding='same', use_bias=False))
     model.add(BatchNormalization())
     model.add(tf.keras.layers.Activation('relu'))
@@ -47,18 +52,19 @@ def build_pro_model():
     model.add(BatchNormalization())
     model.add(tf.keras.layers.Activation('relu'))
     
-    model.add(Dropout(0.4)) # Un peu plus de dropout pour forcer l'apprentissage robuste
+    # Dropout for robust training
+    model.add(Dropout(0.4))
     model.add(Dense(NUM_CLASSES, activation='softmax', name='output_softmax'))
     
     return model
 
 if __name__ == "__main__":
-    # ... (Chargement données et DataAugmentation comme avant) ...
+    print("Loading data...")
     (X_train, y_train), (X_test, y_test) = load_data()
     
-    # Reprends ton ImageDataGenerator existant ici
+    # Data Augmentation
     datagen = ImageDataGenerator(
-        rotation_range=20,      # Un peu plus de rotation (20°)
+        rotation_range=20,
         width_shift_range=0.1,
         height_shift_range=0.1,
         zoom_range=0.1,
@@ -66,31 +72,28 @@ if __name__ == "__main__":
     )
     datagen.fit(X_train)
 
-    model = build_pro_model() # Utilise le nouveau modèle
+    model = build_pro_model()
     model.compile(optimizer=Adam(learning_rate=0.001),
                   loss='categorical_crossentropy',
                   metrics=['accuracy'])
 
-    # --- CALLBACKS INTELLIGENTS ---
-    # 1. Sauvegarde uniquement si le score de validation s'améliore
+    # Callbacks for learning rate scheduling and saving the best model
     checkpoint = ModelCheckpoint(MODEL_FLOAT_PATH, 
                                  monitor='val_accuracy', 
                                  verbose=1, 
                                  save_best_only=True, 
                                  mode='max')
                                  
-    # 2. Réduit la vitesse d'apprentissage si on stagne (très efficace pour les derniers %)
     reduce_lr = ReduceLROnPlateau(monitor='val_loss', factor=0.5,
                                   patience=5, min_lr=0.00001, verbose=1)
 
-    print("\n--- Entraînement PRO ---")
+    print("\n--- Starting Baseline Training ---")
     model.fit(datagen.flow(X_train, y_train, batch_size=32),
-              epochs=50, # On laisse le temps !
+              epochs=50,
               validation_data=(X_test, y_test),
-              callbacks=[checkpoint, reduce_lr]) # On ajoute les callbacks
+              callbacks=[checkpoint, reduce_lr])
 
-    # On recharge le MEILLEUR modèle pour l'évaluation finale (pas le dernier)
-    print("Chargement du meilleur modèle sauvegardé...")
+    print("\nLoading the best saved model for final evaluation...")
     best_model = keras.models.load_model(MODEL_FLOAT_PATH)
     loss, acc = best_model.evaluate(X_test, y_test)
-    print(f"Précision FINALE (Best): {acc*100:.2f}%")
+    print(f"Final Validation Accuracy: {acc*100:.2f}%")

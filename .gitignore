@@ -3,10 +3,11 @@ __pycache__/
 *.py[cod]
 *.so
 
-# Environnements
+# Environments
 .venv/
 venv/
 env/
+.env
 
 # Build artifacts
 build/
@@ -15,11 +16,13 @@ dist/
 
 # Jupyter
 *.ipynb_checkpoints
+.ipynb_checkpoints/
 
 # OS specific
 .DS_Store
+.directory
 
-# === Données et Modèles (Trop lourds pour Git) ===
+# === Data and Models (Too large for Git) ===
 data/raw/
 data/processed/
 data/clean/
@@ -30,26 +33,25 @@ models/*.data
 onnx/*.onnx
 onnx/*.data
 
-# === Artefacts HLS/Vivado (Générés) ===
+# === HLS/Vivado Artifacts (Generated) ===
 hls4ml_prj/
 hls4ml_build/
 hls_gesture_project/
 hls_gesture_project.tar.gz
-.directory
-
 gesture_system_UltraZed/
 
-# === Installeurs/Binaries ===
+# === Installers/Binaries ===
 Miniforge*-*.sh
 
 # === Vivado Project ===
-# Ignorer les fichiers temporaires et logs Vivado
+# Ignore Vivado temporary files and logs
 *.jou
 *.log
 *.str
 *.dmp
+vitis_hls.log
 
-# Ignorer les dossiers de compilation lourds
+# Ignore heavy compilation folders
 *.runs/
 *.gen/
 *.cache/
@@ -57,14 +59,9 @@ Miniforge*-*.sh
 *.ip_user_files/
 *.sim/
 
-# Ignorer les backups automatiques
+# Ignore automatic backups
 *.backup.jou
 *.backup.log
 
-# Ignorer les fichiers temporaires python
-__pycache__/
-*.pyc
-.ipynb_checkpoints/
-
-# (Optionnel) Ignorer le projet Vivado lui-même si tu utilises la méthode TCL
+# (Optional) Ignore the Vivado project itself if using TCL method
 # *.xpr
