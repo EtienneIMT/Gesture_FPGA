@@ -1,7 +1,7 @@
 # Real-Time Gesture Recognition FPGA Accelerator
 
-[![Python](https://img.shields.io/badge/Python-3.x-blue.svg)](https://www.python.org/)
-[![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-orange.svg)](https://www.tensorflow.org/)
+[![Python](https://img.shields.io/badge/Python-3.9-blue.svg)](https://www.python.org/)
+[![TensorFlow](https://img.shields.io/badge/TensorFlow-2.13.0-orange.svg)](https://www.tensorflow.org/)
 [![Vitis HLS](https://img.shields.io/badge/Xilinx-Vitis_HLS-black.svg)](https://www.xilinx.com/products/design-tools/vitis.html)
 
 This repository contains a complete hardware/software co-design workflow to accelerate Convolutional Neural Network (CNN) inference for hand gesture recognition. The architecture offloads compute-intensive inference from the CPU to the Programmable Logic (PL) of an FPGA. 
@@ -22,26 +22,26 @@ The project establishes an automated pipeline from a high-level TensorFlow/Keras
 
 ```text
 Gesture_FPGA/
-├── src/                    # Core libraries and settings
-│   ├── settings.py         # Global paths and constants
-│   ├── data_loader.py      # Data loading and caching
-│   └── infer_test.py       # Inference testing scripts
-├── scripts/                # Execution pipeline scripts
-│   ├── preprocess_dataset.py # CSV to Image extraction
-│   ├── clean_dataset.py    # Hand bounding box extraction (MediaPipe)
-│   ├── 1_train_float.py    # Float32 Model Training
-│   ├── 2_train_quantized.py # Quantization-Aware Training (QKeras)
-│   ├── 3_convert_hls.py    # HLS4ML conversion & Vitis HLS Synthesis
-│   └── cam_test.py         # Quick webcam test
-├── data/                   # Dataset directory (raw and processed images)
-├── doc/                    # Additional documentation and synthesis reports
-├── hw_export/              # Generated hardware handoff files (.bin, .bit, .hwh)
-├── zedboard_gesture_system/# Vivado Project for ZedBoard integration
-├── IP/                     # Generated IP blocks for Vivado integration
-├── environment_keras.yml   # Conda environment dependencies
-├── .gitignore              # Git ignore rules
-├── .gitattributes          # Git attributes/LFS rules
-└── README.md               # Project documentation
+├── data/                           # Dataset directory (Created locally, ignored by Git)
+├── doc/                            # Additional documentation and synthesis reports
+├── hw_export/                      # Generated hardware handoff files (.bin, .bit, .hwh)
+├── IP/                             # Generated IP blocks for Vivado integration
+├── scripts/                        # Execution pipeline scripts
+│   ├── 1_train_float.py            # Float32 Model Training
+│   ├── 2_train_quantized.py        # Quantization-Aware Training (QKeras)
+│   ├── 3_convert_hls.py            # HLS4ML conversion & Vitis HLS Synthesis
+│   ├── cam_test.py                 # Quick webcam test
+│   ├── clean_dataset.py            # Hand bounding box extraction (MediaPipe)
+│   └── preprocess_dataset.py       # CSV to Image extraction
+├── src/                            # Core libraries and settings
+│   ├── data_loader.py              # Data loading and caching
+│   ├── infer_test.py               # Inference testing scripts
+│   └── settings.py                 # Global paths and constants
+├── zedboard_gesture_system/        # Vivado Project for ZedBoard integration
+├── .gitattributes                  # Git attributes/LFS rules
+├── .gitignore                      # Git ignore rules
+├── environment_keras.yml           # Conda environment dependencies
+└── README.md                       # Project documentation
 ```
 
 ## Current Status
@@ -51,11 +51,20 @@ The hardware design, synthesis, and Vivado block integration are complete. The h
 ## Getting Started
 
 ### Prerequisites
-- Python 3.8+
-- TensorFlow 2.x
-- QKeras
-- hls4ml
+
+To avoid dependency conflicts, please use the exact versions provided in `environment_keras.yml`. Key dependencies include:
+- Python 3.9
+- TensorFlow 2.13.0
+- Keras 2.13.1
+- QKeras 0.9.0
+- hls4ml 0.8.1
 - Xilinx Vivado & Vitis HLS (Tested with 2020.2 / 2022.2)
+
+You can easily set up the reproducible environment using Conda:
+```bash
+conda env create -f environment_keras.yml
+conda activate gesture_fpga
+```
 
 ### Running the Pipeline
 To re-run the end-to-end workflow:
